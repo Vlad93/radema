@@ -1,0 +1,188 @@
+.product-card {
+  position: relative;
+  padding: 16px;
+  padding-top: 106px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: auto;
+  border-radius: 10px;
+  background-color: $grey_light;
+  width: auto;
+  &:focus-visible {
+    outline-width: 1px;
+    outline-color: $primary;
+  }
+   @include _576 {
+    padding: 30px;
+    padding-top: 207px;
+   }
+    &__sale {
+      position: absolute;
+      top: 30px;
+      left: 0;
+      min-width: 84px;
+      min-height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $secondary;
+        &::after {
+          content: '';
+          position: absolute;
+          left: 100%;
+          top: 0;
+          display: block;
+          width: 0;
+          height: 0;
+          border-top: 17px solid transparent;
+          border-left: 10px solid $secondary;
+          border-bottom: 17px solid transparent;
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          left: calc(100% - 1px);
+          top: 0;
+          display: block;
+          width: 1px;
+          height: 100%;
+          background-color: $secondary;
+        }
+        &-number {
+          font-size: 14px;
+          font-weight: 700;
+          color: $white;
+        }
+    }
+    &__rating {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+        @include _576 {
+          top: 30px;
+          left: 30px;
+        }
+    }
+    &__img-wrap {
+      position: absolute;
+      top: 32px;
+      left: 0;
+      padding: 0 16px;
+      max-height: 58px;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+        @include _576 {
+          top: 67px;
+          max-height: 124px;
+        }
+        & .product-card__img {
+          object-fit: contain;
+          object-position: bottom;
+          width: 100%;
+          height: 100%;
+        }
+    }
+    &__info-wrap {
+      position: relative;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      height: 100%;
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+    &__sheme {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      visibility: visible;
+      z-index: 0;
+      margin-top: auto;
+      max-width: 40%;
+      width: 100%;
+      @include _1200 {
+        display: block;
+      }
+      // transition: transform .45s ease, visibility .45s ease;
+        &-img {
+          width: 100%;
+          object-fit: contain;
+        }
+    }
+    &__price-wrap {
+      // margin-top: auto;
+      margin-bottom: 23px;
+    }
+    &__price {
+      margin-bottom: 16px;
+      font-size: 16px;
+      color: $grey_shade;
+        @include _576 {
+          margin-bottom: 24px;
+        }
+        &_new {
+          margin-right: 26px;
+          font-size: 18px;
+          color: $secondary;
+        }
+        &_old {
+          position: relative;
+          color: $grey;
+            &::after {
+              content: '';
+              display: block;
+              position: absolute;
+              left: 0;
+              top: 54%;
+              width: 100%;
+              height: 1px;
+              background-color: $grey;
+            }
+        }
+    }
+    &__title {
+      margin-top: 0;
+      margin-bottom: 17px;
+      padding-right: 14px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.3em;
+        @include _576 {
+          margin-bottom: 24px;
+          padding-right: 0;
+          font-size: 24px;
+        }
+        @include _1200 {
+          margin-bottom: 23px;
+          padding-right: 11px;
+        }
+    }
+
+    &__btn {
+      margin-top: auto;
+      padding: 10px 23px;
+        @include _576 {
+          padding: 16px 33px;
+        }
+    }
+}
+
+.product-rating {
+  padding-left: 19px;
+  font-size: 12px;
+  line-height: 1.3em;
+  color: $secondary;
+  background: url('../img/star.svg') no-repeat left center / 13px 12px;
+    @include _576 {
+      padding-left: 22px;
+      font-size: 16px;
+      background-size: 15.7px 15px;
+    }
+}

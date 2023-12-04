@@ -1,0 +1,10 @@
+.section-title {
+  margin-bottom: 26px;
+  display: inline-block;
+  @include font(Open Sans, 400, sans-serif);
+  font-size: 24px;
+  line-height: 1em;
+  @include _576 {
+    font-size: 32px;
+  }
+}

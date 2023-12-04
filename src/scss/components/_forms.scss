@@ -1,0 +1,149 @@
+.input, .textarea {
+  padding: 15px 18px 17px;
+  width: 100%;
+  @include font(Open Sans, 400, sans-serif);
+  font-size: 16px;
+  line-height: 1em;
+  color: $black;
+  border-radius: 10px;
+  background-color: $grey-light;
+  outline: 1px solid transparent;
+  transition: background-color .3s ease, outline-color .3s ease;
+  &::placeholder {
+    color: $grey;
+  }
+  &:hover {
+    background-color: $md-grey;
+  }
+  &:focus {
+    outline-color: $primary;
+    background-color: transparent;
+  }
+  &:active {
+    outline-color: $green_input;
+    background-color: transparent;
+  }
+  &.is-invalid {
+    outline-color: $red_input;
+  }
+  &.is-success {
+    outline-color: $green_input;
+  }
+  @include _576 {
+    padding: 15px 18px 17px;
+  }
+}
+
+.input-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.input-error {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 19px;
+  font-size: 12px;
+  color: $red_input;
+}
+
+.checkbox {
+  position: relative;
+  & .input-error {
+    bottom: auto;
+    left: 20px;
+    @include _576 {
+      left: 22px;
+    }
+  }
+  &-label {
+    padding-left: 20px;
+    position: relative;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.3em;
+    &:hover {
+      cursor: pointer;
+    }
+    @include _576 {
+      padding-left: 22px;
+      font-size: 14px;
+    }
+  }
+  &__input {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    z-index: 0;
+    // visibility: hidden;
+  }
+  &__link {
+    color: $primary;
+    text-decoration: underline;
+    z-index: 1;
+    transition: background-color .3s ease, color .3s ease, text-decoration .3s ease;
+    &:focus-visible {
+      color: $black;
+      background-color: $pink_violet;
+      text-decoration: none;
+      outline: none;
+    }
+    &:active {
+      background-color: transparent;
+      color: $primary_shade;
+    }
+    @include _767 {
+      &:hover {
+        background-color: transparent;
+        color: $primary_light;
+      }
+      &:active {
+        background-color: transparent;
+        color: $primary_shade;
+      }
+    }
+  }
+  &__span {
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      display: block;
+      width: 14px;
+      height: 14px;
+      border: 1px solid $grey;
+      border-radius: 2px;
+      background: transparent;
+      transition: background-color .3s ease, border-color .3s ease;
+    }
+  }
+  &__input:checked + &__span::before {
+    background: url('../img/check.svg') no-repeat center center / 10px 10px, $primary;
+    border-color: $primary;
+  }
+  // &-label:focus-within .checkbox__span::before {
+  //   border-color: $primary;
+  // }
+  &__input:focus + .checkbox__span {
+    color: $primary;
+  }
+  &__input:focus + .checkbox__span::before {
+    border-color: $primary;
+  }
+}
+
+.submit-btn {
+  padding: 16px 34px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  @include _576 {
+    margin-bottom: 11px;
+  }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

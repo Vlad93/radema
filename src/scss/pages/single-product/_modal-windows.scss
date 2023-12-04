@@ -1,0 +1,269 @@
+.modal-window {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s ease, visibility .3s ease;
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+    &__overlay {
+      cursor: pointer;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 7;
+      background-color: rgba(51, 51, 51, .3);
+    }
+    &__wrap {
+      position: absolute;
+      padding: 29px 10px 27px 16px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 8;
+      display: flex;
+      max-width: calc(100% - 24px);
+      width: 100%;
+      max-height: 90vh;
+      overflow: auto;
+      border-radius: 10px;
+      background-color: #fff;
+      @include _767 {
+        padding: 30px;
+        max-width: calc(100% - 144px);
+      }
+      @include _992 {
+        max-width: 624px;
+      }
+    }
+    &-swiper-gallery &__wrap {
+      padding: 32px 0 0;
+      @include _767 {
+        padding-top: 50px;
+        max-width: calc(100% - 144px);
+      }
+      @include _992 {
+        max-width: calc(100% - 72px);
+      }
+      @include _1300 {
+        width: calc($containerMaxWidth - 72px);
+      }
+    }
+    &__content {
+      max-width: 100%;
+    }
+    &__btn-close {
+      position: absolute;
+      right: 16px;
+      top: 14px;
+      display: block;
+      width: 12px;
+      height: 12px;
+      border: none;
+      border-radius: 0;
+      background-color: transparent;
+      transition: background-color .3s ease;
+        &-icon {
+          fill: $grey;
+          transition: fill .3s ease;
+        }
+      &:active &-icon {
+        fill: $primary_shade;
+      }
+      @include _767 {
+        width: 20px;
+        height: 20px;
+        top: 20px;
+        right: 20px;
+        &:focus-visible  &-icon {
+          fill: $primary_light;
+        }
+        &:hover  &-icon {
+          fill: $primary;
+        }
+        &:active &-icon {
+          fill: $primary_shade;
+        }
+      }
+    }
+    &__swiper-thumbs-wrap {
+      position: relative;
+      background-color: $grey_light;
+    }
+}
+
+.modal-window-swiper-top {
+  margin-bottom: 32px;
+  max-width: calc(100% - 32px);
+  margin-left: auto;
+  margin-right: auto;
+  @include _576 {
+    max-width: calc(100% - 40px);
+  }
+  @include _767 {
+    margin-bottom: 50px;
+  }
+  @include _992 {
+    max-width: calc(100% - 130px);
+  }
+  &__wrap {
+    align-items: center;
+  }
+  &__img {
+    max-height: 32.5vw;
+    object-fit: contain;
+    @include _576 {
+      max-height: 228px;
+    }
+    @include _992 {
+      max-height: 322px;
+    }
+    @include _1200 {
+      margin-left: auto;
+      margin-right: auto;
+      max-height: 418px;
+      max-width: 83%;
+    }
+  }
+}
+
+.modal-window-swiper-thumbs {
+  max-width: 60vw;
+  margin: 0 auto 0;
+  padding: 16px 0;
+  overflow: hidden;
+  background-color: $grey_light;
+  @include _576 {
+    max-width: 60.7vw;
+  }
+  @include _767 {
+    padding: 20px 0;
+  }
+  @include _992 {
+    max-width: calc(100% - 130px);
+  }
+  &__wrap {
+    align-items: center;
+  }
+  &__swiper-slide {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // &.swiper-slide-thumb-active {
+    //   display: none;
+    // }
+    @include _767 {
+      &:focus-visible {
+        outline-color: $primary;
+      }
+    }
+  }
+  &__img {
+    margin: 0 auto 0;
+    max-height: 86px;
+    max-width: 54vw;
+    object-fit: contain;
+    @include _767 {
+      max-width: 253px;
+      max-height: 126px;
+    }
+  }
+  &-nav {
+    @include _576 {
+      position: static;
+    }
+    &__btn-prev  {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &__btn-next  {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.modal-window-buy-one-click {
+  & .modal-window__title {
+    margin-bottom: 8px;
+  }
+  & .modal-window__desc {
+    margin: 0;
+    margin-bottom: 18px;
+    font-size: 14px;
+    line-height: 1.37em;
+    @include _576 {
+      max-width: 65%;
+    }
+    @include _767 {
+      margin-bottom: 30px;
+    }
+  }
+  & .input-error {
+    bottom: calc(100% + 2px);
+  }
+  & .checkbox .input-error {
+    bottom: auto;
+  }
+}
+
+.buy-one-click-form {
+  &__input-wrap {
+    margin-bottom: 16px;
+      &-article {
+        display: none;
+      }
+    @include _767 {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.modal-window-thanks {
+  & .modal-window__wrap {
+    width: 100%;
+    min-height: 67.5vw;
+    background: url('../img/elephant.svg') no-repeat center 28% / 25% 23% , $white;
+    @include _576 {
+      min-height: 65vw;
+      background-size: 27.5% 28%;
+      background-position: 45% 39%;
+    }
+    @include _767 {
+      min-height: 421px;
+    }
+  }
+  & .modal-window__content {
+    position: absolute;
+    bottom: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include _576 {
+      bottom: 24%;
+      width: 100%;
+    }
+  }
+  & .modal-window__text {
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    @include _576 {
+      font-size: 32px;
+    }
+  }
+
+}
+

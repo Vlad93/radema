@@ -1,0 +1,29 @@
+@keyframes circleProgressbar {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes spWaveAf {
+  from {
+    transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+@keyframes spWaveBe {
+  from {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+}

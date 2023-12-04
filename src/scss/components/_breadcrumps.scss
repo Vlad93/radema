@@ -1,0 +1,48 @@
+.breadcrumps {
+  &__item:not(:last-of-type) {
+    position: relative;
+    margin-right: 15px;
+    &::after {
+      content: '/';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-45%);
+      left: calc(100% + 6px);
+      display: block;
+      @include font(Open Sans, 400, sans-serif);
+      font-size: 14px;
+      color: $grey;
+    }
+  }
+  &__link {
+    font-size: 14px;
+    line-height: 1em;
+    color: $grey;
+    outline: 4px solid transparent;
+    outline-offset: 0;
+    transition: color .3s ease, background-color .3s ease, outline-color .3s ease;
+    &:focus-visible {
+      color: $primary_shade;
+      background-color: $pink_violet;
+      outline-color: $pink_violet;
+    }
+    &:active {
+      color: $primary_shade;
+    }
+    @include _767 {
+      &:hover {
+        color: $primary;
+        background-color: transparent;
+        outline-color: transparent;
+      }
+      &:active {
+        color: $primary_shade;
+      }
+    }
+  }
+  &__active-page {
+    font-size: 14px;
+    line-height: 1em;
+    color: $primary_shade;
+  }
+}

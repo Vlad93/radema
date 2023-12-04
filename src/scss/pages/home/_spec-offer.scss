@@ -1,0 +1,106 @@
+.section-spec-offer {
+  padding-top: 35px;
+  padding-bottom: 35px;
+    @include _576 {
+      padding-top: 70px;
+      // padding-bottom: 69px;
+    }
+    &__container {
+      @include _576 {
+        position: relative;
+      }
+    }
+    &__title {
+      @include _576 {
+        max-width: calc(100% - 97px);
+      }
+    }
+}
+.spec-offer-swiper {
+  overflow: hidden;
+    &__wrap {
+      margin-bottom: 16px;
+      @include _576 {
+        margin-bottom: 0;
+      }
+    }
+    &__product-card {
+      padding: 30px;
+      padding-top: 298px;
+      @include _1200 {
+        flex-basis: calc((51.7% - 64px) / 2);
+        width: auto;
+      }
+      & .product-card__img-wrap {
+        top: 70px;
+        padding: 0 21px;
+        max-height: 212px;
+          & .product-card__img {
+            object-position: center;
+          }
+      }
+      & .product-card__title {
+        font-size: 24px;
+      }
+      & .product-card__btn {
+        padding: 16px 33px;
+      }
+      // @include _1200 {
+      //   flex-basis: calc((100% - 64px) / 3);
+      //   width: auto;
+      // }
+      &.product-card-sheme {
+        @include _1200 {
+          flex-basis: 48.3%;
+          & .product-card__sheme {
+            position: relative;
+            margin-left: auto;
+            // transform: scale(1);
+          }
+          & .product-card__title {
+            max-width: 70%;
+            width: auto;
+          }
+        }
+      }
+    }
+    &__product-card .product-card__price {
+      margin-bottom: 0;
+    }
+    &__product-card .product-card__title {
+      margin-bottom: 23px;
+      @include _576 {
+        margin-bottom: 22px;
+      }
+    }
+    // &__nav {
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: center;
+    //   @include _576 {
+    //     position: absolute;
+    //     right: 20px;
+    //     top: 0;
+    //   }
+    //   @include _767 {
+    //     right: 72px;
+    //   }
+    //   @include _992 {
+    //     right: 36px;
+    //   }
+    // }
+    // &__btn {
+    //   width: 32px;
+    //   height: 32px;
+    //     &-prev {
+    //       margin-right: 13px;
+    //     }
+    //     &.swiper-button-disabled {
+    //       pointer-events: none;
+    //       border-color: $grey;
+    //       & svg {
+    //         stroke: $grey;
+    //       }
+    //     }
+    // }
+}

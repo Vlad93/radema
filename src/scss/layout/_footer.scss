@@ -1,0 +1,144 @@
+.footer {
+  &__main {
+    padding: 23px 0 0;
+    background-color: $md_grey;
+    @include _992 {
+      padding: 24px 0 23px;
+    }
+  }
+  &__container {
+    @include _992 {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__logo-socmedia-wrap {
+    margin-bottom: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include _576 {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    @include _992 {
+      max-width: 23%;
+      margin-bottom: 0;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    @include _1200 {
+      max-width: 20%;
+    }
+  }
+  &__logo {
+    margin-bottom: 24px;
+    display: block;
+    width: 187px;
+    height: 27px;
+    &:focus-visible {
+      outline: 1px solid $primary;
+      outline-offset: 3px;
+    }
+    @include _576 {
+      margin-bottom: 0;
+    }
+  }
+  &__soc-media {
+    justify-content: center;
+  }
+  &__links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 16px;
+    @include _576 {
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 32px;
+    }
+    @include _992 {
+      justify-items: end;
+      grid-row-gap: 16px;
+    }
+  }
+  &__copyrights {
+    padding: 5px 0;
+    text-align: center;
+    font-size: 14px;
+    color: $grey;
+    background-color: $grey_light;
+      &-content {
+        margin-right: 9px;
+      }
+    @include _992 {
+      padding: 6px 0 8px;
+    }
+  }
+}
+
+.footer-links {
+  @include _992 {
+    padding-top: 3px;
+    width: 77%;
+  }
+  @include _1200 {
+    width: 71%;
+  }
+  &__part {
+    margin-bottom: 24px;
+    grid-column: auto / span 1;
+    // width: calc(50% - 8px);
+    @include _576 {
+      width: auto;
+    }
+    @include _992 {
+      margin-bottom: 0;
+      justify-self: center;
+      // &:nth-of-type(4n + 1), &:first-of-type {
+      //   justify-self: start;
+      // }
+      &:nth-of-type(4n) {
+        justify-self: end;
+      }
+    }
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1em;
+    color: $black;
+  }
+  &__item:not(:last-of-type) {
+    margin-bottom: 6px;
+    @include _992 {
+      margin-bottom: 5px;
+    }
+  }
+  &__link {
+    font-size: 14px;
+    color: $grey;
+    outline: 4px solid transparent;
+    outline-offset: 0;
+    transition: color .3s ease, background-color .3s ease, outline-color .3s ease;
+    &:focus-visible {
+      color: $primary_shade;
+      background-color: $pink_violet;
+      outline-color: $pink_violet;
+    }
+    &:active {
+      color: $primary_shade;
+    }
+    @include _767 {
+      &:hover {
+        color: $primary;
+        background-color: transparent;
+        outline-color: transparent;
+      }
+      &:active {
+        color: $primary_shade;
+      }
+    }
+  }
+}

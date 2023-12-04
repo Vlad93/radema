@@ -1,0 +1,32 @@
+.section-related-products {
+  padding-top: 37px;
+  @include _576 {
+    padding-top: 20px;
+    padding-bottom: 54px;
+  }
+  @include _992 {
+    padding-top: 35px;
+    padding-bottom: 54px;
+  }
+  @include _1200 {
+      padding-top: 41px;
+    }
+  &__container {
+    position: relative;
+  }
+  &__title {
+    margin-bottom: 28px;
+    @include _576 {
+      margin-bottom: 24px;
+      font-size: 24px;
+      line-height: 1.3em;
+    }
+  }
+}
+
+.related-products-swiper {
+  overflow: hidden;
+  &__wrap {
+    margin-bottom: 16px;
+  }
+}

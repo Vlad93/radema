@@ -1,0 +1,169 @@
+.btn-arrow-right {
+  display: block;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $primary;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: border-color .3s ease, background-color .3s ease;
+    &__icon {
+      padding: 0;
+      padding-left: 1px;
+      display: block;
+      flex: 0 0 9px;
+      height: 12px;
+      stroke-width: 2px;
+      fill: $white;
+      stroke: $primary;
+      transition: fill .3s ease, stroke .3s ease;
+    }
+  &:focus-visible {
+    outline: none;
+  }
+  &:active {
+    background: $primary_shade;
+    border-color: $primary_shade;
+  }
+  &:active &__icon {
+    fill: $primary_shade;
+    stroke: $white;
+  }
+  @include _767 {
+    &:focus-visible {
+      background-color: $primary_light;
+      border-color: $primary;
+    }
+    &:focus-visible &__icon {
+      fill: $primary_light;
+      stroke: $white;
+    }
+    &:hover {
+      background-color: $primary;
+      border-color: $primary;
+    }
+    &:hover &__icon {
+      fill: $primary;
+      stroke: $white;
+    }
+    &:active {
+      background: $primary_shade;
+      border-color: $primary_shade;
+    }
+    &:active &__icon {
+      fill: $primary_shade;
+      stroke: $white;
+    }
+  }
+}
+
+.btn-arrow-left {
+  @extend .btn-arrow-right;
+    &__icon {
+      @extend .btn-arrow-right__icon;
+      transform: rotate(180deg);
+    }
+}
+
+.btn {
+  display: inline-block;
+  padding: 19px 48px;
+  @include font(Open Sans, 700, sans-serif);
+  font-size: 16px;
+  color: $white;
+  background-color: $primary;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: background-color .3s ease, border-color .3s ease;
+  &:active {
+    background-color: $primary_shade;
+    border-color: transparent;
+  }
+  @include _576 {
+    width: auto;
+  }
+  @include _767 {
+    &:focus-visible {
+      border-color: $primary_shade;
+      background-color: $primary_light;
+    }
+    &:hover {
+      background-color: $primary_light;
+      border-color: transparent;
+    }
+    &:active {
+      background-color: $primary_shade;
+      border-color: transparent;
+    }
+  }
+}
+.btn-ghost {
+  display: inline-block;
+  padding: 19px 48px;
+  @include font(Open Sans, 600, sans-serif);
+  font-size: 16px;
+  color: $primary;
+  background-color: transparent;
+  border: 2px solid $primary;
+  border-radius: 10px;
+  transition: background-color .3s ease, border-color .3s ease, color .3s ease;
+  &:active {
+    color: $white;
+    background-color: $primary_shade;
+    border-color: transparent;
+  }
+  @include _576 {
+    width: auto;
+  }
+  @include _767 {
+    &:focus-visible {
+      outline: none;
+      color: $white;
+      border-color: $primary;
+      background-color: $primary_light;
+    }
+    &:hover {
+      color: $white;
+      background-color: $primary;
+      border-color: transparent;
+    }
+    &:active {
+      color: $white;
+      background-color: $primary_shade;
+      border-color: transparent;
+    }
+  }
+}
+
+.swiper-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include _576 {
+    position: absolute;
+    right: 20px;
+    top: 0;
+  }
+  @include _767 {
+    right: 72px;
+  }
+  @include _992 {
+    right: 36px;
+  }
+    &__btn {
+      width: 32px;
+      height: 32px;
+        &-prev {
+          margin-right: 13px;
+        }
+        &.swiper-button-disabled {
+          pointer-events: none;
+          border-color: $grey;
+          & svg {
+            stroke: $grey;
+          }
+        }
+    }
+}
