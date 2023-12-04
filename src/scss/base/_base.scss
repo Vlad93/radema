@@ -1,6 +1,7 @@
 html {
 	box-sizing: border-box;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -43,9 +44,10 @@ button {
 
 body {
   min-width: 320px;
-  @include font(Open Sans, 400, sans-serif);
+  @include font(Gilroy, 400, sans-serif);
   font-size: 16px;
-  color: $black;
+  line-height: 1.35em;
+  color: $primary;
   &.lock {
     width: 100vw;
     position: fixed;
@@ -54,25 +56,14 @@ body {
 }
 
 .container {
-  padding: 0 12px;
+  padding: 0 40px;
   max-width: $containerMaxWidth;
   margin: 0 auto;
-  @include _576 {
-    padding: 0 20px;
-  }
-  @include _767 {
-    padding: 0 72px;
-  }
-  @include _992 {
-    padding: 0 36px;
-  }
 }
 
 img {
   display: block;
   max-width: 100%;
-  width: 100%;
-  height: 100%;
 }
 
 svg {
@@ -87,23 +78,6 @@ svg {
   }
 }
 
-.section-title {
-  margin: 0;
-  font-size: 24px;
-  line-height: 1.3em;
-  @include _767 {
-    font-size: 18px;
-  }
-}
-
-.swiper-wrapper {
-  box-sizing: border-box;
-}
-
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets {
-  bottom: 0;
-}
-
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0;
+p,h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
 }

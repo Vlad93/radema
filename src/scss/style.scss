@@ -6,30 +6,17 @@
 @import "base/typography";
 @import "base/base";
 
-@import "components/buttons";
-@import "components/forms";
-@import "components/product-card";
-@import "components/soc-media";
-@import "components/titles";
-@import "components/tooltips";
-@import "components/breadcrumps";
-@import "components/preloader";
+@import "components/logo/logo";
+// @import "components/buttons";
+// @import "components/forms";
+// @import "components/soc-media";
+// @import "components/titles";
+// @import "components/tooltips";
+// @import "components/breadcrumps";
+// @import "components/preloader";
 
-@import "layout/header";
-@import "layout/footer";
-@import "layout/section";
-@import "layout/products-grid";
+// @import "layout/header";
+// @import "layout/footer";
+// @import "layout/section";
 
 @import "pages/home/hero";
-@import "pages/home/spec-offer";
-@import "pages/home/high-rating";
-@import "pages/home/new-collection";
-@import "pages/home/top-categories";
-@import "pages/home/useful";
-@import "pages/home/feedback";
-
-@import "pages/catalog/catalog";
-
-@import "pages/single-product/single-product";
-@import "pages/single-product/related-products";
-@import "pages/single-product/modal-windows";
