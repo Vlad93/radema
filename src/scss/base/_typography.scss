@@ -3,3 +3,15 @@
 @include font-face("Gilroy", "Gilroy-Medium", 500);
 @include font-face("Gilroy", "Gilroy-SemiBold", 600);
 @include font-face("Gilroy", "Gilroy-Bold", 700);
+
+
+.title {
+  margin-bottom: 26px;
+  @include font(Gilroy, 700, sans-serif);
+  font-size: 38px;
+  color: $white;
+}
+
+.title-accent {
+  color: $primary_blue;
+}

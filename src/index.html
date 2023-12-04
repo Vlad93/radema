@@ -21,21 +21,21 @@
           <a href="/" class="header__logo logo" aria-label="Логотип Radema">
             <img class="logo__img" src="img/logo.png" alt="Logo">
           </a>
-          <div class="header__desc-wrap">
-            <p class="header-text">
+          <div class="header__desc">
+            <p class="header__desc-text">
               Медицинский маркетинг для клиник с 2018 года в Москве и РФ
             </p>
           </div>
           <div class="header__messangers-wrap messangers messangers--header">
             <ul class="messangers__list">
               <li class="messangers__item">
-                <a href="" class="messangers__link" aria-label="WhattsApp ссылка" target="_blank"></a>
+                <a style="background-image: url('./img/icons/whatsApp.svg');" href="" class="messangers__link" aria-label="WhattsApp ссылка" target="_blank"></a>
               </li>
               <li class="messangers__item">
-                <a href="" class="messangers__link" aria-label="Telegram ссылка" target="_blank"></a>
+                <a style="background-image: url('./img/icons/telegram.svg');" href="" class="messangers__link" aria-label="Telegram ссылка" target="_blank"></a>
               </li>
               <li class="messangers__item">
-                <a href="" class="messangers__link" aria-label="Почта ссылка" target="_blank"></a>
+                <a style="background-image: url('./img/icons/mail.svg');" href="" class="messangers__link" aria-label="Почта ссылка" target="_blank"></a>
               </li>
             </ul>
             <p class="messangers__text">
@@ -48,9 +48,9 @@
                 Звоните ПН-ПТ с 9:00 до 19:00
               </span>
             </div>
-            <a href="tel:88005458225" class="phone__link">8 800 545 82 25</a>
+            <a style="background-image:url('./img/icons/phone.svg');" href="tel:88005458225" class="phone__link">8 800 545 82 25</a>
           </div>
-          <button type="button" class="header__cooperation btn">
+          <button type="button" class="header__cooperation-btn btn">
             Обсудить сотрудничество
           </button>
         </div>
@@ -58,8 +58,8 @@
       <div class="header__bottom">
         <nav class="header__nav header-menu">
           <ul class="header-menu__list menu" aria-label="Главное меню">
-            <li class="menu__item">
-              <a href="#" class="menu__link toggle">
+            <li class="menu__item toggle">
+              <a href="#" class="menu__link">
                 Услуги
               </a>
               <button type="button" class="menu__dropdown-btn" aria-label="Открыть подменю"></button>
@@ -153,20 +153,6 @@
 
   </footer>
 
-  <div class="modal-window modal-window-thanks">
-    <div class="modal-window__overlay"></div>
-    <div class="modal-window__wrap">
-      <button class="modal-window__btn-close">
-        <svg class="modal-window__btn-close-icon" viewbox="0 0 12 12"><use xlink:href="#close"></use></svg>
-      </button>
-      <div class="modal-window__content">
-        <p class="modal-window__text">
-          Спасибо, мы вам перезвоним!
-        </p>
-      </div>
-    </div>
-  </div>
-
   <div class="preloader"></div>
 
   <script src="js/polyfill.min.js"></script>
@@ -177,6 +163,6 @@
   <script src="https://unpkg.com/tippy.js@6"></script>
   <script src="js/inputmask.min.js"></script>
   <script src="js/just-validate.production.min.js"></script>
-  <script src="js/app.min.js"></script>
+  <!-- <script src="js/app.min.js"></script> -->
 </body>
 </html>

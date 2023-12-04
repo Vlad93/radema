@@ -116,7 +116,7 @@ const htmlMinify = () => {
 }
 
 const svgSprites = () => {
-  return src('src/images/svg/**/*.svg')
+  return src('src/images/icons/**/*.svg')
     .pipe(svgSprite({
       mode: {
         stack: {
@@ -134,6 +134,7 @@ const imagesDev = () => {
     'src/images/**/*.jpg',
     'src/images/**/*.png',
     'src/images/*.svg',
+    'src/images/**/*.svg',
     'src/images/**/*.jpeg'
   ])
     .pipe(gulpif(isDevFlag, dest('dev/img')))

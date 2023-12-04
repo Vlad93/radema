@@ -1,0 +1,34 @@
+.messangers {
+  display: flex;
+  align-items: center;
+  &__list {
+    margin-right: 14px;
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    &:not(:last-of-type) {
+      margin-right: 10px;
+    }
+  }
+  &__link {
+    display: block;
+    width: 32px;
+    height: 32px;
+    transition: opacity .4s ease;
+    &:hover {
+      opacity: .7;
+    }
+  }
+  &__text {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 105px;
+    font-size: 12px;
+    &-accent {
+      font-weight: 700;
+      color: $green;
+    }
+  }
+}

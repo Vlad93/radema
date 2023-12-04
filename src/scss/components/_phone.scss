@@ -1,0 +1,36 @@
+.phone {
+  &__working-time {
+    margin-bottom: 3px;
+    display: flex;
+    align-items: center;
+    &::before {
+      margin-right: 5px;
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $green;
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 1);
+	    animation: pulse-green 2s infinite;
+    }
+    &-text {
+      font-weight: 700;
+      font-size: 12px;
+      opacity: .5;
+      text-transform: uppercase;
+    }
+  }
+  &__link {
+    padding-left: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px 20px;
+    transition: color .4s ease;
+    &:hover {
+      color: $red;
+    }
+  }
+}
