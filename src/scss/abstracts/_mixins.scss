@@ -15,6 +15,12 @@
   font-weight: $weight;
 }
 
+@mixin interactive {
+  @media (hover: hover) and (pointer: fine) {
+    @content;
+  }
+}
+
 @mixin _1300 {
   @media screen and (min-width: 1300px) {
     @content;

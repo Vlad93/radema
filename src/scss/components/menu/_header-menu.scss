@@ -1,0 +1,37 @@
+.menu {
+  &__item.toggle {
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    font-size: 14px;
+    transition: color .4s ease;
+  }
+  &__dropdown-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    &-icon {
+      width: 16px;
+      height: 16px;
+      fill: transparent;
+      stroke: $white;
+      transition: stroke .4s ease, transform .4s ease;
+    }
+  }
+  @include interactive {
+    &__item.toggle.is-active  &__link {
+      color: $red;
+    }
+    &__item.toggle.is-active &__dropdown-btn-icon {
+      stroke: $red;
+      transform: rotate(180deg);
+    }
+  }
+}
+

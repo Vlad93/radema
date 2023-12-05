@@ -1,0 +1,12 @@
+.submenu {
+
+  &__link {
+    outline: none;
+    transition: color .4s ease;
+    @include interactive {
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+}
