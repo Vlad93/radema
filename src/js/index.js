@@ -26,6 +26,12 @@ window.addEventListener('DOMContentLoaded', () => {
       closeAutoDelay: 100,
     });
     dropdownObjects.push(dropdown);
+    const windowWidth = window.innerWidth;
+    const rightMarginSubmenu = windowWidth - Math.round(item.getBoundingClientRect().right);
+    if (rightMarginSubmenu < 318) {
+      const differSize = 318 - rightMarginSubmenu;
+      item.querySelector('.submenu').style.left = `-${differSize}px`;
+    }
   };
   document.querySelectorAll('.menu__item.toggle').forEach((item) => {
     item.addEventListener('click', (e) => {

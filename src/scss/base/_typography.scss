@@ -8,10 +8,15 @@
 .title {
   margin-bottom: 26px;
   @include font(Gilroy, 700, sans-serif);
+  line-height: 1.35em;
   font-size: 38px;
   color: $white;
 }
 
 .title-accent {
   color: $primary_blue;
+}
+
+.text-accent {
+  font-weight: 600;
 }
