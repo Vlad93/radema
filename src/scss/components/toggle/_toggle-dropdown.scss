@@ -1,0 +1,10 @@
+.toggle-panel--dropdown {
+  padding: 30px;
+  width: 318px;
+  scale: none;
+  transform-origin: 0 0;
+  transform: scaleY(1);
+  &:where(:not(.is-active)) {
+    scale: none;
+  }
+}

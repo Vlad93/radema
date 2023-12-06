@@ -1,9 +1,10 @@
 .toggle {
+  position: relative;
   padding: 0;
   background-color: transparent;
   color: inherit;
   transition: opacity .4s ease, transform .4s ease;
-  &:hover, &.is-active:not(.is-reset) {
+  &:hover, &:focus, &.is-active:not(.is-reset) {
     color: inherit;
     background-color: transparent;
   }

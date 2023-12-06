@@ -1,5 +1,6 @@
 .menu {
-  &__item.toggle {
+  &__item.dropdown-wrap {
+    position: relative;
     display: flex;
     align-items: center;
   }

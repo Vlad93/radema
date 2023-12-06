@@ -1,6 +1,19 @@
 .submenu {
-
+  position: absolute;
+  border-radius: 16px;
+  background: rgba(2, 5, 40, 0.95);
+  backdrop-filter: blur(2px);
+  transition: opacity .4s ease, visibility .4s ease, transform .4s ease;
+  &:where(:not(.is-active)) {
+    opacity: .0;
+    transform: scaleY(0);
+    visibility: hidden;
+  }
+  &__item:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
   &__link {
+    font-size: 16px;
     outline: none;
     transition: color .4s ease;
     @include interactive {
