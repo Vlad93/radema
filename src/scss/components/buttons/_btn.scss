@@ -1,5 +1,6 @@
 .btn {
   padding: 16px 20px;
+  display: inline-block;
   text-align: center;
   font-size: 14px;
   font-weight: 700;
@@ -8,9 +9,10 @@
   outline: none;
   color: $white;
   background: linear-gradient(132deg, rgba(2, 5, 40, 0.38) -48.79%, #F85E61 57.89%), #EE1A24;
-  transition: box-shadow .4s ease;
+  transition: box-shadow .3s ease;
   @include interactive {
     &:hover {
+      color: $white;
       box-shadow: 0px 16px 64px 0px rgba(238, 26, 36, 0.50);
     }
   }

@@ -1,0 +1,20 @@
+.btn-ghost {
+  padding: 19px;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35em;
+  border: 2px solid $white;
+  border-radius: 200px;
+  outline: none;
+  color: $white;
+  background: transparent;
+  transition: background .2s ease;
+  @include interactive {
+    &:hover, &:focus {
+      color: $white;
+      background: linear-gradient(132deg, rgba(2, 5, 40, 0.38) -48.79%, #F85E61 57.89%), #EE1A24;;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.section-projects{
+  &__list {
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    grid-auto-flow: row;
+  }
+  &__btn {
+    padding: 19px;
+    margin: 0 auto;
+    display: block;
+    max-width: 360px;
+    width: 100%;
+  }
+}
