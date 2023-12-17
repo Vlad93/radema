@@ -1,0 +1,11 @@
+.section-product {
+  &__wrap {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  &__item {
+    height: auto;
+    flex: 0 1 50%;
+  }
+}

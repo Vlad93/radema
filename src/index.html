@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <!-- css -->
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <!-- favicon  -->
   <link rel="shortcut icon" href="img/favicon.png">
   <title>Radema</title>
@@ -231,137 +231,1329 @@
     </section>
     <section class="section-projects section">
       <div class="container">
-        <h2 class="section-projects__title section-title title">
-          Ознакомьтесь с результатами нескольких проектов <span class="title title-accent">за 2023 год</span>
-        </h2>
-        <p class="section-projects__subtitle section-subtitle">
-          От аналитики рекламных кампаний и сайта до роста числа пациентов в вашей клинике
-        </p>
-        <div class="section-projects__list">
-          <article class="section-projects__item project-card">
-            <div class="project-card__logo-location-wrap">
-              <div class="project-card__logo">
-                <picture>
-                  <source type="image/webp" srcset="img/dokamed-white.webp">
-                  <img src="img/dokamed-white.png" alt="Докмед" class="project-card__logo-img">
-                </picture>
-              </div>
-              <span class="project-card__location">
-                Севастополь
-              </span>
+        <div class="section-title-wrap">
+          <h2 class="section-projects__title section-title title" onScrollDisplay_JS>
+            <span class="title title-accent">Приводим первичных пациентов</span> в Москве<br>
+            и регионах, а не просто холодных лидов с сайта
+          </h2>
+          <p class="section-projects__subtitle section-subtitle">
+            Ознакомьтесь с результатами нескольких<br> проектов за 2023 год
+          </p>
+        </div>
+        <div class="section-projects__list projects-slider slider" projectsSlider_JS>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <article class="section-projects__slide project-card swiper-slide">
+                <div class="project-card__logo-location-wrap">
+                  <div class="project-card__logo">
+                    <picture>
+                      <source type="image/webp" srcset="img/dokamed-white.webp">
+                      <img src="img/dokamed-white.png" alt="Докмед" class="project-card__logo-img">
+                    </picture>
+                  </div>
+                  <span class="project-card__location">
+                    Севастополь
+                  </span>
+                </div>
+                <div class="project-card__progress">
+                  <div class="project-card__progress-item">
+                    <span class="project-card__progress-numbers">
+                      на 50%
+                    </span>
+                    <p class="project-card__progress-text">
+                      увеличили общую выручку
+                    </p>
+                  </div>
+                  <div class="project-card__progress-item">
+                    <span class="project-card__progress-numbers decline">
+                      в 2 раза
+                    </span>
+                    <p class="project-card__progress-text">
+                      уменьшили стоимость<br>лида (СРL)
+                    </p>
+                  </div>
+                  <div class="project-card__progress-item">
+                    <span class="project-card__progress-numbers">
+                      ТОП-3
+                    </span>
+                    <p class="project-card__progress-text">
+                      в выдаче Яндекс и Google благодаря SEO-оптимизации
+                    </p>
+                  </div>
+                </div>
+                <a href="" class="project-card__btn btn-ghost">
+                  Читать кейс
+                </a>
+              </article>
+              <article class="section-projects__slide project-card swiper-slide">
+                <div class="project-card__logo-location-wrap">
+                  <div class="project-card__logo">
+                    <picture>
+                      <source type="image/webp" srcset="img/polzaru-white.webp">
+                      <img src="img/polzaru-white.png" alt="Докмед" class="project-card__logo-img">
+                    </picture>
+                  </div>
+                  <span class="project-card__location">
+                    Москва
+                  </span>
+                </div>
+                <div class="project-card__progress">
+                  <div class="project-card__progress-item">
+                    <span class="project-card__progress-numbers">
+                      в 27 раз
+                    </span>
+                    <p class="project-card__progress-text">
+                      увеличили количество<br>заказов за год
+                    </p>
+                  </div>
+                  <div class="project-card__progress-item">
+                    <span class="project-card__progress-numbers">
+                      в 4 раза
+                    </span>
+                    <p class="project-card__progress-text">
+                      увеличили конверсию<br>сайта (CR)
+                    </p>
+                  </div>
+                  <div class="project-card__progress-item">
+                    <span class="project-card__progress-numbers decline">
+                      в 6 раз
+                    </span>
+                    <p class="project-card__progress-text">
+                      уменьшили стоимость<br>заказа (CPO)
+                    </p>
+                  </div>
+                </div>
+                <a href="" class="project-card__btn btn-ghost">
+                  Читать кейс
+                </a>
+              </article>
+              <article class="section-projects__slide project-card swiper-slide">
+                <div class="project-card__logo-location-wrap">
+                  <div class="project-card__logo">
+                    <picture>
+                      <source type="image/webp" srcset="img/aliksma-white.webp">
+                      <img src="img/aliksma-white.png" alt="Докмед" class="project-card__logo-img">
+                    </picture>
+                  </div>
+                  <span class="project-card__location">
+                    Москва
+                  </span>
+                </div>
+                <div class="project-card__progress">
+                  <div class="project-card__progress-item">
+                    <span class="project-card__progress-numbers">
+                      в 2 раза
+                    </span>
+                    <p class="project-card__progress-text">
+                      увеличили количество первичных пациентов с рекламы
+                    </p>
+                  </div>
+                  <div class="project-card__progress-item">
+                    <span class="project-card__progress-numbers decline">
+                      на 35%
+                    </span>
+                    <p class="project-card__progress-text">
+                      снизили стоимость заявки<br>(с 2 500 до 1 500 ₽)
+                    </p>
+                  </div>
+                </div>
+                <a href="" class="project-card__btn btn-ghost">
+                  Читать кейс
+                </a>
+              </article>
+              <!-- <article class="section-projects__slide project-card swiper-slide">
+                <div class="project-card__logo-location-wrap">
+                  <div class="project-card__logo">
+                    <picture>
+                      <source type="image/webp" srcset="img/aliksma-white.webp">
+                      <img src="img/aliksma-white.png" alt="Докмед" class="project-card__logo-img">
+                    </picture>
+                  </div>
+                  <span class="project-card__location">
+                    Москва
+                  </span>
+                </div>
+                <div class="project-card__progress">
+                  <div class="project-card__progress-item">
+                    <span class="project-card__progress-numbers">
+                      в 2 раза
+                    </span>
+                    <p class="project-card__progress-text">
+                      увеличили количество первичных пациентов с рекламы
+                    </p>
+                  </div>
+                  <div class="project-card__progress-item">
+                    <span class="project-card__progress-numbers decline">
+                      на 35%
+                    </span>
+                    <p class="project-card__progress-text">
+                      снизили стоимость заявки<br>(с 2 500 до 1 500 ₽)
+                    </p>
+                  </div>
+                </div>
+                <a href="" class="project-card__btn btn-ghost">
+                  Читать кейс
+                </a>
+              </article> -->
             </div>
-            <div class="project-card__progress">
-              <div class="project-card__progress-item">
-                <span class="project-card__progress-numbers">
-                  на 50%
-                </span>
-                <p class="project-card__progress-text">
-                  увеличили общую выручку
-                </p>
-              </div>
-              <div class="project-card__progress-item">
-                <span class="project-card__progress-numbers decline">
-                  в 2 раза
-                </span>
-                <p class="project-card__progress-text">
-                  уменьшили стоимость<br>лида (СРL)
-                </p>
-              </div>
-              <div class="project-card__progress-item">
-                <span class="project-card__progress-numbers">
-                  ТОП-3
-                </span>
-                <p class="project-card__progress-text">
-                  в выдаче Яндекс и Google благодаря SEO-оптимизации
-                </p>
-              </div>
-            </div>
-            <a href="" class="project-card__btn btn-ghost">
-              Читать кейс
-            </a>
-          </article>
-          <article class="section-projects__item project-card">
-            <div class="project-card__logo-location-wrap">
-              <div class="project-card__logo">
-                <picture>
-                  <source type="image/webp" srcset="img/polzaru-white.webp">
-                  <img src="img/polzaru-white.png" alt="Докмед" class="project-card__logo-img">
-                </picture>
-              </div>
-              <span class="project-card__location">
-                Москва
-              </span>
-            </div>
-            <div class="project-card__progress">
-              <div class="project-card__progress-item">
-                <span class="project-card__progress-numbers">
-                  в 27 раз
-                </span>
-                <p class="project-card__progress-text">
-                  увеличили количество<br>заказов за год
-                </p>
-              </div>
-              <div class="project-card__progress-item">
-                <span class="project-card__progress-numbers">
-                  в 4 раза
-                </span>
-                <p class="project-card__progress-text">
-                  увеличили конверсию<br>сайта (CR)
-                </p>
-              </div>
-              <div class="project-card__progress-item">
-                <span class="project-card__progress-numbers decline">
-                  в 6 раз
-                </span>
-                <p class="project-card__progress-text">
-                  уменьшили стоимость<br>заказа (CPO)
-                </p>
-              </div>
-            </div>
-            <a href="" class="project-card__btn btn-ghost">
-              Читать кейс
-            </a>
-          </article>
-          <article class="section-projects__item project-card">
-            <div class="project-card__logo-location-wrap">
-              <div class="project-card__logo">
-                <picture>
-                  <source type="image/webp" srcset="img/aliksma-white.webp">
-                  <img src="img/aliksma-white.png" alt="Докмед" class="project-card__logo-img">
-                </picture>
-              </div>
-              <span class="project-card__location">
-                Москва
-              </span>
-            </div>
-            <div class="project-card__progress">
-              <div class="project-card__progress-item">
-                <span class="project-card__progress-numbers">
-                  в 2 раза
-                </span>
-                <p class="project-card__progress-text">
-                  увеличили количество первичных пациентов с рекламы
-                </p>
-              </div>
-              <div class="project-card__progress-item">
-                <span class="project-card__progress-numbers decline">
-                  на 35%
-                </span>
-                <p class="project-card__progress-text">
-                  снизили стоимость заявки<br>(с 2 500 до 1 500 ₽)
-                </p>
-              </div>
-            </div>
-            <a href="" class="project-card__btn btn-ghost">
-              Читать кейс
-            </a>
-          </article>
+          </div>
+          <button class="slider-prev-btn slider-btn btn" aria-label="Предыдущий слайд">
+            <img class="slider-prev-btn-icon" src="./img/icons/arrowLeft.svg" alt="">
+          </button>
+          <button class="slider-next-btn slider-btn btn" aria-label="Следующий слайд">
+            <img class="slider-next-btn-icon" src="./img/icons/arrowLeft.svg" alt="">
+          </button>
+        </div>
+        <div class="slider-hint">
+          <span>ЛИСТАЙТЕ ВЛЕВО ВПРАВО</span>
+          <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.7603 5.82319C11.5048 5.82319 11.2697 5.9028 11.0724 6.03549C10.904 5.54602 10.4425 5.19514 9.90269 5.19514C9.64728 5.19514 9.41218 5.27475 9.21482 5.40744C9.04647 4.91797 8.58499 4.56708 8.04514 4.56708C7.81875 4.56708 7.60687 4.629 7.42692 4.73515V2.67702C7.42692 1.9841 6.87255 1.41797 6.18758 1.41797C5.5026 1.41797 4.94824 1.98115 4.94824 2.67702V8.02285L3.87143 7.20314C3.2329 6.71662 2.32734 6.78149 1.76136 7.35647C1.39856 7.72504 1.39856 8.32361 1.76136 8.68924L6.17016 13.1682C6.6955 13.7019 7.39789 13.9967 8.14092 13.9967H9.59213C11.47 13.9967 12.9967 12.4458 12.9967 10.538V7.0793C12.9996 6.38637 12.4423 5.82319 11.7603 5.82319ZM12.3785 10.541C12.3785 12.1008 11.1275 13.3716 9.59213 13.3716H8.14092C7.56043 13.3716 7.01767 13.1416 6.60843 12.7259L2.19963 8.24695C2.07773 8.12311 2.07773 7.92555 2.19963 7.80171C2.39119 7.6071 2.6466 7.50685 2.90492 7.50685C3.1139 7.50685 3.32577 7.57172 3.49992 7.70735L5.07014 8.90449C5.16302 8.97525 5.29072 8.98705 5.39521 8.93397C5.4997 8.8809 5.56645 8.7718 5.56645 8.65385V2.67702C5.56645 2.32909 5.84509 2.04897 6.18467 2.04897C6.52426 2.04897 6.80289 2.33204 6.80289 2.67702V7.3948C6.80289 7.56877 6.94221 7.7103 7.11345 7.7103C7.2847 7.7103 7.42401 7.56877 7.42401 7.3948V5.82319C7.42401 5.47525 7.70265 5.19514 8.04223 5.19514C8.38182 5.19514 8.66045 5.4782 8.66045 5.82319V7.3948C8.66045 7.56877 8.79977 7.7103 8.97101 7.7103C9.14226 7.7103 9.28157 7.56877 9.28157 7.3948V6.45124C9.28157 6.10331 9.56021 5.82319 9.89979 5.82319C10.2394 5.82319 10.518 6.10626 10.518 6.45124V7.3948C10.518 7.56877 10.6573 7.7103 10.8286 7.7103C10.9998 7.7103 11.1391 7.56877 11.1391 7.3948V7.0793C11.1391 6.73136 11.4178 6.45124 11.7573 6.45124C12.0969 6.45124 12.3756 6.73431 12.3756 7.0793L12.3785 10.541Z"
+              fill="#1C1C1C" />
+              <path d="M11.3053 2.21146L12.3705 1.10573L11.3053 0L11.1573 0.153328L11.97 0.99663H8.0459V1.21483H11.97L11.1573 2.05813L11.3053 2.21146Z" fill="#31B939" />
+              <path d="M1.06519 0L0 1.10573L1.06519 2.21146L1.21322 2.05813L0.400536 1.21483H4.32463V0.99663H0.400536L1.21322 0.153328L1.06519 0Z" fill="#31B939" />
+          </svg>
         </div>
         <a href="#" class="section-projects__btn btn">
-          Перейти в портфолио
+          Смотреть больше кейсов
         </a>
       </div>
     </section>
+    <section class="section-quiz section calc-price">
+      <div class="section-quiz__container wrapper container">
+        <div class="section-title-wrap">
+          <h2 class="section-quiz__title section-title title" onscrolldisplay_js>
+            Рассчитайте точную стоимость<br> проекта и <span class="title title-accent">получите бонус</span>
+          </h2>
+          <p class="section-quiz__subtitle section-subtitle">
+            Ответьте всего на 8 вопросов за 1 минуту
+          </p>
+        </div>
+      </div>
+      <div class="calc-price__container" data-questions-count="8">
+      <form action="#" method="POST" class="calc-price__quiz" id="quiz" formValidate_JS data-thanks="">
+        <input type="hidden" name="action" value="quiz">
+          <div class="quiz-progress">
+              <div class="progress-bar">
+                <div class="progress-text">Шаг <span>1</span> из <span>8</span></div>
+              </div>
+          </div>
+          <div class="quiz-questions-container">
+              <!-- quizSingleAnswer_JS="1" ведет на вопрос с data-question-id="1" -->
+              <!-- data-question-step="1" нужен для вычислления прогресса, для data-question-id="1-1" или data-question-id="1-2" будет равен data-question-step="1" т.е. это номер вопроса без учета вариативности -->
+
+            <div class="quiz-question active" data-question-id="1" data-question-step="1">
+              <div class="question-title">
+                  <span>Вопрос 1</span>
+                  <p>Какое направление у вашей клиники?</p>
+              </div>
+              <input type="hidden" name="title_1" value="Какое направление у вашей клиники?">
+              <div class="answers-container">
+                <div class="container-flex">
+                  <div class="answers-wrap">
+                    <div class="answers-item" quizSingleAnswer_JS="1">
+                      <input type="radio" name="quetion_1" value="Стоматология">
+                      <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
+                          <img src="img/stomatology.jpg" alt="">
+                      </div>
+                      <span class="answers-item__icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
+                          <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
+                          </svg>
+                      </span>
+                      <p class="answers-item__text">Стоматология</p>
+                    </div>
+                  </div>
+                  <div class="answers-wrap">
+                    <div class="answers-item" quizSingleAnswer_JS="2">
+                      <input type="radio" name="quetion_2" value="Медицинский центр">
+                      <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
+                          <img src="img/med-center.jpg" alt="">
+                      </div>
+                      <span class="answers-item__icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
+                          <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
+                          </svg>
+                      </span>
+                      <p class="answers-item__text">Медицинский центр</p>
+                    </div>
+                  </div>
+                  <div class="answers-wrap">
+                    <div class="answers-item" quizSingleAnswer_JS="3">
+                      <input type="radio" name="quetion_3" value="Центр эстетической медицины">
+                      <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
+                          <img src="img/esteticmed.jpg" alt="">
+                      </div>
+                      <span class="answers-item__icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
+                          <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
+                          </svg>
+                      </span>
+                      <p class="answers-item__text">Центр эстетической медицины</p>
+                    </div>
+                  </div>
+                  <div class="answers-wrap">
+                    <div class="answers-item" quizSingleAnswer_JS="4">
+                      <input type="radio" name="quetion_4" value="Косметология">
+                      <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
+                          <img src="img/cosmetology.jpg" alt="">
+                      </div>
+                      <span class="answers-item__icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
+                          <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
+                          </svg>
+                      </span>
+                      <p class="answers-item__text">Косметология</p>
+                    </div>
+                  </div>
+                  <div class="answers-wrap">
+                    <div class="answers-item" quizSingleAnswer_JS="5">
+                      <input type="radio" name="quetion_5" value="Компания-производитель ">
+                      <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
+                          <img src="img/company.jpg" alt="">
+                      </div>
+                      <span class="answers-item__icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
+                          <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
+                          </svg>
+                      </span>
+                      <p class="answers-item__text">Компания-производитель</p>
+                    </div>
+                  </div>
+                  <div class="answers-wrap">
+                    <div class="answers-item" quizSingleAnswer_JS="6">
+                      <input type="radio" name="quetion_6" value="Другое">
+                      <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
+                          <img src="img/other.jpg" alt="">
+                      </div>
+                      <span class="answers-item__icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
+                          <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
+                          </svg>
+                      </span>
+                      <p class="answers-item__text">Другое</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="question-control">
+                <div class="btn-wrap">
+                    <div class="question-control__btn prev-btn" data-target-question="1"><span>Назад</span>
+                    </div>
+                </div>
+                <div class="btn-wrap active">
+                    <div class="question-control__btn next-btn md-main-color-btn disabled" data-target-question=""><span>Далее</span>
+                    </div>
+                    <div class="btn-wrap__hint">Чтобы продолжить ответьте на вопрос выше</div>
+                </div>
+              </div>
+            </div>
+            <div class="quiz-question" data-question-id="2" data-question-step="2">
+              <div class="question-title">
+                  <span>Вопрос 2</span>
+                  <p>Какое направление у вашей клиники?</p>
+              </div>
+              <input type="hidden" name="title_2" value="Какое направление у вашей клиники?">
+              <div class="answers-container">
+                <div class="container-flex">
+                  <div class="answers-wrap">
+                    <div class="answers-item" quizSingleAnswer_JS="1">
+                      <input type="radio" name="quetion_1" value="Стоматология">
+                      <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
+                          <img src="img/stomatology.jpg" alt="">
+                      </div>
+                      <span class="answers-item__icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
+                          <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
+                          </svg>
+                      </span>
+                      <p class="answers-item__text">Стоматология</p>
+                    </div>
+                  </div>
+                  <div class="answers-wrap">
+                    <div class="answers-item" quizSingleAnswer_JS="2">
+                      <input type="radio" name="quetion_2" value="Медицинский центр">
+                      <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
+                          <img src="img/med-center.jpg" alt="">
+                      </div>
+                      <span class="answers-item__icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
+                          <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
+                          </svg>
+                      </span>
+                      <p class="answers-item__text">Медицинский центр</p>
+                    </div>
+                  </div>
+                  <div class="answers-wrap">
+                    <div class="answers-item" quizSingleAnswer_JS="3">
+                      <input type="radio" name="quetion_3" value="Центр эстетической медицины">
+                      <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
+                          <img src="img/esteticmed.jpg" alt="">
+                      </div>
+                      <span class="answers-item__icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
+                          <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
+                          </svg>
+                      </span>
+                      <p class="answers-item__text">Центр эстетической медицины</p>
+                    </div>
+                  </div>
+                  <div class="answers-wrap">
+                    <div class="answers-item" quizSingleAnswer_JS="4">
+                      <input type="radio" name="quetion_4" value="Косметология">
+                      <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
+                          <img src="img/cosmetology.jpg" alt="">
+                      </div>
+                      <span class="answers-item__icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
+                          <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
+                          </svg>
+                      </span>
+                      <p class="answers-item__text">Косметология</p>
+                    </div>
+                  </div>
+                  <div class="answers-wrap">
+                    <div class="answers-item" quizSingleAnswer_JS="5">
+                      <input type="radio" name="quetion_5" value="Компания-производитель ">
+                      <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
+                          <img src="img/company.jpg" alt="">
+                      </div>
+                      <span class="answers-item__icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
+                          <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
+                          </svg>
+                      </span>
+                      <p class="answers-item__text">Компания-производитель</p>
+                    </div>
+                  </div>
+                  <div class="answers-wrap">
+                    <div class="answers-item" quizSingleAnswer_JS="6">
+                      <input type="radio" name="quetion_6" value="Другое">
+                      <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
+                          <img src="img/other.jpg" alt="">
+                      </div>
+                      <span class="answers-item__icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
+                          <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
+                          </svg>
+                      </span>
+                      <p class="answers-item__text">Другое</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="question-control">
+                <div class="btn-wrap">
+                    <div class="question-control__btn prev-btn" data-target-question=""><span>Назад</span>
+                    </div>
+                </div>
+                <div class="btn-wrap active">
+                    <div class="question-control__btn next-btn md-main-color-btn disabled" data-target-question=""><span>Далее</span>
+                    </div>
+                    <div class="btn-wrap__hint">Чтобы продолжить ответьте на вопрос выше</div>
+                </div>
+              </div>
+            </div>
+            <input type="hidden" name="total" value="8">
+
+            <!-- Финал -->
+            <div class="quiz-question" data-question-id="9" data-question-step="9">
+              <div class="quiz-final">
+                <div class="quiz-final__content">
+                  <div class="quiz-final__text"><?php echo $final['up'];?></div>
+                  <div class="quiz-final__title"><?php echo $final['header'];?></div>
+                  <div class="quiz-final__form  md-standart-form" quizSocialContainer_JS>
+                    <div class="form-top">
+                      <label class="form-top__item active" quizSocialSelect_JS>
+                        <input type="radio" name="social" value="WhatsApp" checked="checked">
+                          <span class="WhatsApp">
+                              <img src="./img/icons/whatsApp.svg" alt="">
+                          </span>
+                        <p>WhatsApp</p>
+                      </label>
+                      <label class="form-top__item" quizSocialSelect_JS>
+                        <input type="radio" name="social" value="Viber">
+                          <span class="viber">
+                              <img src="<?php echo get_template_directory_uri();?>/assets/img/general/viber.svg" alt="">
+                          </span>
+                        <p>Viber</p>
+                      </label>
+                      <label class="form-top__item" quizSocialSelect_JS>
+                        <input type="radio" name="social" value="Telegram">
+                          <span class="telegram">
+                              <img src="<?php echo get_template_directory_uri();?>/assets/img/general/telegram.svg" alt="">
+                          </span>
+                        <p>Telegram</p>
+                      </label>
+                      <label class="form-top__item" quizSocialSelect_JS quizSocialEmailSelect_JS>
+                        <input type="radio" name="social" value="E-mail">
+                          <span>
+                              <img src="<?php echo get_template_directory_uri();?>/assets/img/general/@.svg" alt="">
+                          </span>
+                        <p>E-mail</p>
+                      </label>
+                      <label class="form-top__item" quizSocialSelect_JS>
+                        <input type="radio" name="social" value="телефона">
+                          <span class="zvonok">
+                              <img src="<?php echo get_template_directory_uri();?>/assets/img/general/phone.svg" alt="">
+                          </span>
+                        <p>Позвонить</p>
+                      </label>
+                    </div>
+                    <div class="form-container">
+                        <input type="text" name="name" class="form-input" placeholder="Ваше имя" required>
+                        <input type="email" name="email" class="form-input" placeholder="Ваш e-mail" required>
+                        <input type="text" name="phone" class="form-input" placeholder="Ваш номер WhatsApp" phoneMask_JS required quizSocialInput_JS>
+                        <input type="email" name="email" class="form-input hidden" placeholder="Ваш e-mail" quizSocialEmailInput_JS>
+                        <button class="form-btn md-main-color-btn" agreementControlBtn_JS>
+                            <span>Получить расчет</span>
+                        </button>
+                    </div>
+                    <div class="form-checkbox">
+                        <div agreementControl_JS class="checked">
+                            <input type="checkbox" name="agreement" agreementControlCheckbox_JS checked>
+                            <img src="" alt="">
+                        </div>
+                        <p>
+                            Cогласен с условиями <span popupOpen="politika-popup">политики
+                            конфиденциальности данных</span>
+                        </p>
+                    </div>
+                    <div class="form-bottom">
+                      <div class="form-bottom__title">Вы также получите:</div>
+                      <div class="form-bottom__item">
+                        <div class="item-img">
+                            <img src="<?php echo $gifts['img'] ?>" alt="">
+                        </div>
+                        <div class="item-text"><?php echo $gifts['text'] ?></div>
+                        <div class="item-icon">
+                            <img src="<?php echo get_template_directory_uri();?>/assets/img/general/locker-open.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+
+                    </div>
+                </div>
+                <div class="quiz-final__img">
+                    <img src="<?php echo $final['hand'];?>" alt="">
+          <?php if($final['circle']):?>
+                    <div class="circle">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/img/general/pdf-circle.svg" alt="">
+                        <p><?php echo $final['circle'];?></p>
+                    </div>
+          <?php endif;?>
+                </div>
+              </div>
+            </div>
+          </div>
+      </form>
+      <aside class="calc-price__info">
+            <div class="info-person">
+              <div class="info-person__img">
+                  <img src="./img/v-krasnoy-rubashke-quiz.webp" alt="">
+              </div>
+              <div class="info-person__name"><span>Вячеслав Радецкий</span></div>
+          </div>
+          <div class="info-text">
+              <p data-question-hint="1" class="active"></p>
+          </div>
+          <div class="info-bottom">
+              <div class="info-bottom__text">В конце получите:</div>
+              <div class="info-bottom__container">
+                <div class="info-bottom__item">
+                  <div class="item-img">
+                      <img src="<?php echo $gifts['img'] ?>" alt="">
+                  </div>
+                  <div class="item-text"><?php echo $gifts['text'] ?></div>
+                  <div class="item-icon">
+                      <img src="<?php echo get_template_directory_uri();?>/assets/img/general/locker.svg" alt="">
+                  </div>
+                </div>
+              </div>
+          </div>
+      </aside>
+      <div class="calc-price__preloader">
+          <div class="circle"></div>
+          <p>Обработка данных</p>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="section-for-whom section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <h2 class="section-for-whom__title section-title title" onscrolldisplay_js>
+          <span class="title title-accent">Специализируемся</span> исключительно на <span class="title title-accent">медицинском маркетинге</span> для
+        </h2>
+      </div>
+      <div class="section-for-whom__wrap for-whom">
+        <div class="for-whom__item" style="background-image: url('./img/for-whom-med-center.webp');">
+          <h3 class="for-whom__title title-3">
+            Медицинских центров
+          </h3>
+        </div>
+        <div class="for-whom__item" style="background-image: url('./img/for-whom-stomatology.webp');">
+          <h3 class="for-whom__title title-3">
+            Стоматологических клиник
+          </h3>
+        </div>
+        <div class="for-whom__item" style="background-image: url('./img/for-whom-companies.webp');">
+          <h3 class="for-whom__title title-3">
+            Компаний-производителей
+          </h3>
+          <p class="for-whom__text">
+            БАД, косметологических средств и медицинского оборудования
+          </p>
+        </div>
+        <div class="for-whom__item" style="background-image: url('./img/for-whom-cosmetology.webp');">
+          <h3 class="for-whom__title title-3">
+            Косметологий
+            и центров эстетической медицины
+          </h3>
+        </div>
+      </div>
+      <p class="section-for-whom__text">
+        И других проектов в сфере медицины
+      </p>
+    </div>
+  </section> -->
+  <section class="section-problem-solution section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <h2 class="section-problem-solution__title section-title title" onscrolldisplay_js>
+          <span class="title title-accent">9 из 10 наших клиентов</span> сталкиваются<br>с одними и теми же <span class="title title-accent">проблемами</span>
+        </h2>
+      </div>
+      <div class="section-problem-solution__accordion problem-solution-accordion">
+        <div class="problem-solution-accordion__titles-wrap">
+          <h3 class="problem-solution-accordion__title title-3 title-problem">
+            ПРОБЛЕМА
+          </h3>
+          <h3 class="problem-solution-accordion__title title-3 title-solution">
+            Как мы решим вашу проблему
+          </h3>
+        </div>
+        <div class="problem-solution-accordion__wrap">
+          <div class="problem-solution-accordion__item active">
+            <button class="problem-solution-accordion__btn">
+              <span class="problem-solution-accordion__img-wrap">
+                <img src="./img/radio.webp" alt="" class="problem-solution-accordion__img">
+              </span>
+              <h4 class="problem-solution-accordion__item-title title-3">
+                Работает только сарафанное радио
+              </h4>
+              <span class="problem-solution-accordion__icon-wrap">
+                <svg class="problem-solution-accordion__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="problem-solution-accordion__content">
+              <ul class="solution-list">
+                <li class="solution-list__item">
+                  <span class="solution-list__text">
+                    Подключим другие рекламные инструменты
+                  </span>
+                </li>
+                <li class="solution-list__item">
+                  <span class="solution-list__text">
+                    Маркетинговый аудит сайта
+                  </span>
+                </li>
+                <li class="solution-list__item">
+                  <span class="solution-list__text">
+                    Разработаем стратегию онлайн-продвижения
+                  </span>
+                </li>
+                <li class="solution-list__item">
+                  <span class="solution-list__text">
+                    Запустим работающие маркетинговые связки (Сайт + квиз + лид-магнит + реклама и другое)
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="problem-solution-accordion__item">
+            <button class="problem-solution-accordion__btn">
+              <span class="problem-solution-accordion__img-wrap">
+                <img src="./img/notebook.webp" alt="" class="problem-solution-accordion__img">
+              </span>
+              <h4 class="problem-solution-accordion__item-title title-3">
+                Сайт работает, но с него очень мало заявок
+              </h4>
+              <span class="problem-solution-accordion__icon-wrap">
+                <svg class="problem-solution-accordion__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="problem-solution-accordion__content">
+              <ul class="solution-list">
+                <li class="solution-list__item">
+                  <span class="solution-list__text">
+                    Какой-то текст
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="problem-solution-accordion__item">
+            <button class="problem-solution-accordion__btn">
+              <span class="problem-solution-accordion__img-wrap">
+                <img src="./img/moneybag.webp" alt="" class="problem-solution-accordion__img">
+              </span>
+              <h4 class="problem-solution-accordion__item-title title-3">
+                Заявки есть – продаж нет / нет показателей эффективности отдела продаж
+              </h4>
+              <span class="problem-solution-accordion__icon-wrap">
+                <svg class="problem-solution-accordion__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="problem-solution-accordion__content">
+              <ul class="solution-list">
+                <li class="solution-list__item">
+                  <span class="solution-list__text">
+                    Какой-то текст
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="problem-solution-accordion__item">
+            <button class="problem-solution-accordion__btn">
+              <span class="problem-solution-accordion__img-wrap">
+                <img src="./img/loudspeaker.webp" alt="" class="problem-solution-accordion__img">
+              </span>
+              <h4 class="problem-solution-accordion__item-title title-3">
+                Выручка в кассе не окупает рекламные вложения
+              </h4>
+              <span class="problem-solution-accordion__icon-wrap">
+                <svg class="problem-solution-accordion__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="problem-solution-accordion__content">
+              <ul class="solution-list">
+                <li class="solution-list__item">
+                  <span class="solution-list__text">
+                    Какой-то текст
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="problem-solution-accordion__item">
+            <button class="problem-solution-accordion__btn">
+              <span class="problem-solution-accordion__img-wrap">
+                <img src="./img/city.webp" alt="" class="problem-solution-accordion__img">
+              </span>
+              <h4 class="problem-solution-accordion__item-title title-3">
+                Тратите деньги на рекламу, но непонятно что работает, а что нет
+              </h4>
+              <span class="problem-solution-accordion__icon-wrap">
+                <svg class="problem-solution-accordion__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="problem-solution-accordion__content">
+              <ul class="solution-list">
+                <li class="solution-list__item">
+                  <span class="solution-list__text">
+                    Какой-то текст
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="problem-solution-accordion__item">
+            <button class="problem-solution-accordion__btn">
+              <span class="problem-solution-accordion__img-wrap">
+                <img src="./img/retro-phone.webp" alt="" class="problem-solution-accordion__img">
+              </span>
+              <h4 class="problem-solution-accordion__item-title title-3">
+                Мало повторных продаж и постоянно приходится привлекать новых клиентов
+              </h4>
+              <span class="problem-solution-accordion__icon-wrap">
+                <svg class="problem-solution-accordion__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="problem-solution-accordion__content">
+              <ul class="solution-list">
+                <li class="solution-list__item">
+                  <span class="solution-list__text">
+                    Какой-то текст
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="problem-solution-accordion__item">
+            <button class="problem-solution-accordion__btn">
+              <span class="problem-solution-accordion__img-wrap">
+                <img src="./img/bad.webp" alt="" class="problem-solution-accordion__img">
+              </span>
+              <h4 class="problem-solution-accordion__item-title title-3">
+                Исполнители настраивают некачественную рекламу.
+              </h4>
+              <span class="problem-solution-accordion__icon-wrap">
+                <svg class="problem-solution-accordion__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="problem-solution-accordion__content">
+              <ul class="solution-list">
+                <li class="solution-list__item">
+                  <span class="solution-list__text">
+                    Какой-то текст
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-product section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <h2 class="section-product__title section-title title" onscrolldisplay_js>
+          Cтроим комплексный маркетинг<br> и <span class="title title-accent">отвечаем за результат</span>
+        </h2>
+        <p class="section-product__subtitle section-subtitle">
+          Подбираем подходящий пакет услуг под ваши цели и задачи
+        </p>
+      </div>
+      <div class="section-product__wrap">
+        <div class="section-product__item product-card">
+          <div class="product-card__header" style="background: linear-gradient(180deg, rgba(28, 173, 228, 0.80) 0%, rgba(39, 206, 215, 0.80) 100%)">
+            <div class="product-card__header-wrap">
+              <img class="product-card__header-icon" src="./img/rocket.webp" alt="">
+              <h3 class="product-card__title title">
+                Рост заявок
+              </h3>
+            </div>
+          </div>
+          <div class="product-card__wrap">
+            <div class="product-card__info">
+              <p class="product-card__info-text">
+                Если вам необходимо увеличить количество первичных пациентов, вырасти в доходах
+              </p>
+            </div>
+            <div class="product-card__main">
+              <div class="product-card__service">
+                <h4 class="product-card__service-title title-black">
+                  Сайт
+                </h4>
+                <ul class="product-card__service-list">
+                  <li class="product-card__service-item">
+                    <p class="product-card__service-text">
+                      Создание лендинга на высокомаржинальную услугу (имплантация/протезирование/брекеты/виниры)
+                    </p>
+                  </li>
+                  <li class="product-card__service-item">
+                    <p class="product-card__service-text">
+                      Разработка проверенных конверсионных элементов на сайт (квизы, лид-магниты)
+                    </p>
+                  </li>
+                  <li class="product-card__service-item">
+                    <p class="product-card__service-text">
+                      Ежемесячная доработка сайта, увеличение конверсии
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="product-card__service">
+                <h4 class="product-card__service-title title-black">
+                  Реклама
+                </h4>
+                <ul class="product-card__service-list">
+                  <li class="product-card__service-item">
+                    <p class="product-card__service-text">
+                      Настройка и ведение контекстной рекламы Яндекс Директ. (Поиск, РСЯ + ретаргетинг)
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="product-card__service">
+                <h4 class="product-card__service-title title-black">
+                  Аналитика
+                </h4>
+                <ul class="product-card__service-list">
+                  <li class="product-card__service-item">
+                    <p class="product-card__service-text">
+                      Настройка аналитики для маркетинга и продаж (сквозная аналитика, Яндекс.Метрика, отчет продаж)
+                    </p>
+                  </li>
+                  <li class="product-card__service-item">
+                    <p class="product-card__service-text">
+                      Еженедельный отчет (контроль эффективности маркетинга и продаж)
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="product-card__service">
+                <h4 class="product-card__service-title title-black">
+                  Индивидуальный сервис
+                </h4>
+                <ul class="product-card__service-list">
+                  <li class="product-card__service-item">
+                    <p class="product-card__service-text">
+                      Личный менеджер
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">
+                79 000 ₽
+              </span>
+              <button class="product-card__btn btn">
+                Обсудить детали
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="section-product__item product-card">
+          <div class="product-card__header" style="background: radial-gradient(237.79% 329.81% at 24.02% 0%, rgba(28, 173, 228, 0.40) 0%, rgba(0, 0, 0, 0.00) 100%), #040B2D;">
+            <div class="product-card__header-wrap">
+              <img class="product-card__header-icon" src="./img/fire.webp" alt="">
+              <h3 class="product-card__title title">
+                Масштабирование
+              </h3>
+            </div>
+          </div>
+          <div class="product-card__wrap">
+            <div class="product-card__info">
+              <p class="product-card__info-text">
+                Если вы хотите открыть новые филиалы, оптимизировать маркетинг и продажи, увеличить финансовый результат от собственных вложений
+              </p>
+            </div>
+            <div class="product-card__plus-block">
+              <h4 class="product-card__plus-title title-black">
+                Всё то, что в тарифе «Рост заявок»
+              </h4>
+              <img src="./img/icons/switcher.svg" alt="">
+            </div>
+            <div class="product-card__plus-icon-wrap">
+              <img class="product-card__plus-icon" src="./img/icons/plus.svg" alt="">
+            </div>
+            <div class="product-card__main">
+              <div class="product-card__service">
+                <h4 class="product-card__service-title title-black">
+                  Автоматизация
+                </h4>
+                <ul class="product-card__service-list">
+                  <li class="product-card__service-item">
+                    <p class="product-card__service-text">
+                      Настройка и внедрение CRM-системы
+                    </p>
+                  </li>
+                  <li class="product-card__service-item">
+                    <p class="product-card__service-text">
+                      Доработка воронки CRM, оптимизация, консультирование (работа интеграторов до 4-х часов)
+                    </p>
+                  </li>
+                  <li class="product-card__service-item">
+                    <p class="product-card__service-text">
+                      Обучение администраторов работе в CRM-системе
+                    </p>
+                  </li>
+                  <li class="product-card__service-item">
+                    <p class="product-card__service-text">
+                      Ежедневная проверка ведения CRM
+                    </p>
+                  </li>
+                  <li class="product-card__service-item">
+                    <p class="product-card__service-text">
+                      Подключение виртуальной АТС (ip-телефония)
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="product-card__service">
+                <h4 class="product-card__service-title title-black">
+                  Продажи
+                </h4>
+                <ul class="product-card__service-list">
+                  <li class="product-card__service-item">
+                    <p class="product-card__service-text">
+                      Прослушка и аудит звонков
+                    </p>
+                  </li>
+                  <li class="product-card__service-item">
+                    <p class="product-card__service-text">
+                      Написание и доработка скриптов продаж
+                    </p>
+                  </li>
+                  <li class="product-card__service-item">
+                    <p class="product-card__service-text">
+                      Обучение стандартам ведения диалога/скрипту/продажам
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">
+                129 000 ₽
+              </span>
+              <button class="product-card__btn btn">
+                Обсудить детали
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-services section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <h2 class="section-services__title section-title title" onscrolldisplay_js>
+          Cтроим комплексный маркетинг<br> и <span class="title title-accent">отвечаем за результат</span>
+        </h2>
+        <p class="section-services__subtitle section-subtitle">
+          Подбираем подходящий пакет услуг под ваши цели и задачи
+        </p>
+      </div>
+      <div class="section-projects__list services-slider slider" servicesSlider_JS>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <article class="section-services__slide services-card swiper-slide">
+              <div class="services-card__icon-wrap">
+                <img src="img/service-cursor.svg" alt="Докмед" class="services-card__icon">
+              </div>
+              <h3 class="services-card__title title-3">
+                Контекстная реклама
+              </h3>
+              <ul class="services-card__work">
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Размещение рекламы в поисковых системах и на сайтах
+                  </p>
+                </li>
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Размещение рекламы в поисковых системах и на сайтах
+                  </p>
+                </li>
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Размещение рекламы в поисковых системах и на сайтах
+                  </p>
+                </li>
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Размещение рекламы в поисковых системах и на сайтах
+                  </p>
+                </li>
+              </ul>
+              <span class="services-card__price">
+                от 39 000 ₽
+              </span>
+              <a href="#" class="services-card__btn btn-ghost">
+                Заказать услугу
+              </a>
+            </article>
+            <article class="section-services__slide services-card swiper-slide">
+              <div class="services-card__icon-wrap">
+                <img src="img/service-magnifyingGlass.svg" alt="" class="services-card__icon">
+              </div>
+              <h3 class="services-card__title title-3">
+                SEO продвижение сайта
+              </h3>
+              <ul class="services-card__work">
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Оптимизация вашего сайта для поисковых систем
+                  </p>
+                </li>
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Оптимизация вашего сайта для поисковых систем
+                  </p>
+                </li>
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Оптимизация вашего сайта для поисковых систем
+                  </p>
+                </li>
+              </ul>
+              <span class="services-card__price">
+                от 39 000 ₽
+              </span>
+              <a href="#" class="services-card__btn btn-ghost">
+                Заказать услугу
+              </a>
+            </article>
+            <article class="section-services__slide services-card swiper-slide">
+              <div class="services-card__icon-wrap">
+                <img src="img/service-target.svg" alt="" class="services-card__icon">
+              </div>
+              <h3 class="services-card__title title-3">
+                Таргетированная реклама
+              </h3>
+              <ul class="services-card__work">
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Создание и запуск рекламных кампаний
+                  </p>
+                </li>
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Создание и запуск рекламных кампаний
+                  </p>
+                </li>
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Создание и запуск рекламных кампаний
+                  </p>
+                </li>
+              </ul>
+              <span class="services-card__price">
+                от 39 000 ₽
+              </span>
+              <a href="#" class="services-card__btn btn-ghost">
+                Заказать услугу
+              </a>
+            </article>
+            <article class="section-services__slide services-card swiper-slide">
+              <div class="services-card__icon-wrap">
+                <img src="img/service-star.svg" alt="" class="services-card__icon">
+              </div>
+              <h3 class="services-card__title title-3">
+                Работа с репутацией (карты, отзывики)
+              </h3>
+              <ul class="services-card__work">
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Управление репутацией в поисковых системах, включая работу с агрегаторами и отзывиками
+                  </p>
+                </li>
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Управление репутацией в поисковых системах, включая работу с агрегаторами и отзывиками
+                  </p>
+                </li>
+              </ul>
+              <span class="services-card__price">
+                от 19 000 ₽
+              </span>
+              <a href="#" class="services-card__btn btn-ghost">
+                Заказать услугу
+              </a>
+            </article>
+            <article class="section-services__slide services-card swiper-slide">
+              <div class="services-card__icon-wrap">
+                <img src="img/service-bellRinging.svg" alt="" class="services-card__icon">
+              </div>
+              <h3 class="services-card__title title-3">
+                SMM — ведение социальных сетей
+              </h3>
+              <ul class="services-card__work">
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Ведение групп в социальных сетях
+                  </p>
+                </li>
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Создание контента
+                  </p>
+                </li>
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Взаимодействие с аудиторией
+                  </p>
+                </li>
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Увеличение продаж и узнаваемости вашего бренда
+                  </p>
+                </li>
+              </ul>
+              <span class="services-card__price">
+                от 79 000 ₽
+              </span>
+              <a href="#" class="services-card__btn btn-ghost">
+                Заказать услугу
+              </a>
+            </article>
+            <article class="section-services__slide services-card swiper-slide">
+              <div class="services-card__icon-wrap">
+                <img src="img/service-laptop.svg" alt="" class="services-card__icon">
+              </div>
+              <h3 class="services-card__title title-3">
+                Разработка сайта
+              </h3>
+              <ul class="services-card__work">
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Создание авторского продающего сайта, который доносит ценности вашей компании и приводит новых пациентов
+                  </p>
+                </li>
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Создание авторского продающего сайта, который доносит ценности вашей компании и приводит новых пациентов
+                  </p>
+                </li>
+              </ul>
+              <span class="services-card__price">
+                от 99 000 ₽
+              </span>
+              <a href="#" class="services-card__btn btn-ghost">
+                Заказать услугу
+              </a>
+            </article>
+            <article class="section-services__slide services-card swiper-slide">
+              <div class="services-card__icon-wrap">
+                <img src="img/service-funnel.svg" alt="" class="services-card__icon">
+              </div>
+              <h3 class="services-card__title title-3">
+                Интеграция CRM-систем
+              </h3>
+              <ul class="services-card__work">
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Интеграция вашей CRM-системы с другими инструментами и платформами для автоматизации процессов и улучшения управления клиентами
+                  </p>
+                </li>
+              </ul>
+              <span class="services-card__price">
+                от 45 000 ₽
+              </span>
+              <a href="#" class="services-card__btn btn-ghost">
+                Заказать услугу
+              </a>
+            </article>
+            <article class="section-services__slide services-card swiper-slide">
+              <div class="services-card__icon-wrap">
+                <img src="img/service-paperPlaneTilt.svg" alt="" class="services-card__icon">
+              </div>
+              <h3 class="services-card__title title-3">
+                Продвижение в Telegram
+              </h3>
+              <ul class="services-card__work">
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Продвижение вашего бренда, продуктов или услуг через мессенджер Telegram
+                  </p>
+                </li>
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Привлечение аудитории
+                  </p>
+                </li>
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Повышение узнаваемости
+                  </p>
+                </li>
+              </ul>
+              <span class="services-card__price">
+                от 45 000 ₽
+              </span>
+              <a href="#" class="services-card__btn btn-ghost">
+                Заказать услугу
+              </a>
+            </article>
+            <article class="section-services__slide services-card swiper-slide">
+              <div class="services-card__icon-wrap">
+                <img src="img/service-presentationChart.svg" alt="" class="services-card__icon">
+              </div>
+              <h3 class="services-card__title title-3">
+                Сквозная аналитика
+              </h3>
+              <ul class="services-card__work">
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Сбор, анализ и интерпретация данных о ваших маркетинговых кампаниях, чтобы
+                  </p>
+                </li>
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Принятие информированных решений и улучшение эффективности ваших усилий по продвижению
+                  </p>
+                </li>
+              </ul>
+              <span class="services-card__price">
+                от 45 000 ₽
+              </span>
+              <a href="#" class="services-card__btn btn-ghost">
+                Заказать услугу
+              </a>
+            </article>
+            <article class="section-services__slide services-card swiper-slide">
+              <div class="services-card__icon-wrap">
+                <img src="img/service-envelope.svg" alt="" class="services-card__icon">
+              </div>
+              <h3 class="services-card__title title-3">
+                Email-маркетинг
+              </h3>
+              <ul class="services-card__work">
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Создание и отправка электронных писем вашим клиентам и потенциальным клиентам
+                  </p>
+                </li>
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Увеличение продаж
+                  </p>
+                </li>
+                <li class="services-card__work-item">
+                  <p class="services-card__work-text">
+                    Улучшение взаимодействия с аудиторией
+                  </p>
+                </li>
+              </ul>
+              <span class="services-card__price">
+                от 45 990 ₽
+              </span>
+              <a href="#" class="services-card__btn btn-ghost">
+                Заказать услугу
+              </a>
+            </article>
+          </div>
+        </div>
+        <button class="slider-prev-btn slider-btn btn" aria-label="Предыдущий слайд">
+          <img class="slider-prev-btn-icon" src="./img/icons/arrowLeft.svg" alt="">
+        </button>
+        <button class="slider-next-btn slider-btn btn" aria-label="Следующий слайд">
+          <img class="slider-next-btn-icon" src="./img/icons/arrowLeft.svg" alt="">
+        </button>
+      </div>
+      <div class="slider-hint">
+        <span>ЛИСТАЙТЕ ВЛЕВО ВПРАВО</span>
+        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.7603 5.82319C11.5048 5.82319 11.2697 5.9028 11.0724 6.03549C10.904 5.54602 10.4425 5.19514 9.90269 5.19514C9.64728 5.19514 9.41218 5.27475 9.21482 5.40744C9.04647 4.91797 8.58499 4.56708 8.04514 4.56708C7.81875 4.56708 7.60687 4.629 7.42692 4.73515V2.67702C7.42692 1.9841 6.87255 1.41797 6.18758 1.41797C5.5026 1.41797 4.94824 1.98115 4.94824 2.67702V8.02285L3.87143 7.20314C3.2329 6.71662 2.32734 6.78149 1.76136 7.35647C1.39856 7.72504 1.39856 8.32361 1.76136 8.68924L6.17016 13.1682C6.6955 13.7019 7.39789 13.9967 8.14092 13.9967H9.59213C11.47 13.9967 12.9967 12.4458 12.9967 10.538V7.0793C12.9996 6.38637 12.4423 5.82319 11.7603 5.82319ZM12.3785 10.541C12.3785 12.1008 11.1275 13.3716 9.59213 13.3716H8.14092C7.56043 13.3716 7.01767 13.1416 6.60843 12.7259L2.19963 8.24695C2.07773 8.12311 2.07773 7.92555 2.19963 7.80171C2.39119 7.6071 2.6466 7.50685 2.90492 7.50685C3.1139 7.50685 3.32577 7.57172 3.49992 7.70735L5.07014 8.90449C5.16302 8.97525 5.29072 8.98705 5.39521 8.93397C5.4997 8.8809 5.56645 8.7718 5.56645 8.65385V2.67702C5.56645 2.32909 5.84509 2.04897 6.18467 2.04897C6.52426 2.04897 6.80289 2.33204 6.80289 2.67702V7.3948C6.80289 7.56877 6.94221 7.7103 7.11345 7.7103C7.2847 7.7103 7.42401 7.56877 7.42401 7.3948V5.82319C7.42401 5.47525 7.70265 5.19514 8.04223 5.19514C8.38182 5.19514 8.66045 5.4782 8.66045 5.82319V7.3948C8.66045 7.56877 8.79977 7.7103 8.97101 7.7103C9.14226 7.7103 9.28157 7.56877 9.28157 7.3948V6.45124C9.28157 6.10331 9.56021 5.82319 9.89979 5.82319C10.2394 5.82319 10.518 6.10626 10.518 6.45124V7.3948C10.518 7.56877 10.6573 7.7103 10.8286 7.7103C10.9998 7.7103 11.1391 7.56877 11.1391 7.3948V7.0793C11.1391 6.73136 11.4178 6.45124 11.7573 6.45124C12.0969 6.45124 12.3756 6.73431 12.3756 7.0793L12.3785 10.541Z"
+            fill="#1C1C1C" />
+            <path d="M11.3053 2.21146L12.3705 1.10573L11.3053 0L11.1573 0.153328L11.97 0.99663H8.0459V1.21483H11.97L11.1573 2.05813L11.3053 2.21146Z" fill="#31B939" />
+            <path d="M1.06519 0L0 1.10573L1.06519 2.21146L1.21322 2.05813L0.400536 1.21483H4.32463V0.99663H0.400536L1.21322 0.153328L1.06519 0Z" fill="#31B939" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
   </main>
   <footer class="footer">
 
@@ -371,13 +1563,13 @@
 
   <script src="js/polyfill.min.js"></script>
   <script src="js/lazyload.min.js"></script>
-  <script src="js/tiny-ui-toggle.js"></script>
+  <!-- <script src="js/tiny-ui-toggle.js"></script>
   <script src="js/choices.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="https://unpkg.com/tippy.js@6"></script>
   <script src="js/inputmask.min.js"></script>
-  <script src="js/just-validate.production.min.js"></script>
-  <script src="js/app.min.js"></script>
+  <script src="js/just-validate.production.min.js"></script> -->
+  <script src="js/index.js"></script>
 </body>
 </html>

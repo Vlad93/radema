@@ -1,0 +1,35 @@
+.slider {
+  position: relative;
+}
+.slider-hint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.slider-prev-btn {
+  left: 0;
+  transform: translate(-50%, -50%);
+  & &-icon {
+    width: 24px;
+    height: 24px;
+    // transform: rotate(90deg);
+  }
+}
+.slider-next-btn {
+  right: 0;
+  transform: translate(50%, -50%);
+  & &-icon {
+    width: 24px;
+    height: 24px;
+    transform: rotate(180deg);
+  }
+}

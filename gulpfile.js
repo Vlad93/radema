@@ -76,9 +76,15 @@ const styles = () => {
   return src('src/scss/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(bulk())
-		.pipe(sass({
+    .pipe(gulpif(!isDevFlag, sass({
       outputStyle: 'compressed'
-    }).on('error', sass.logError))
+    }).on('error', sass.logError)))
+    .pipe(gulpif(isDevFlag, sass({
+      outputStyle: 'expanded'
+    }).on('error', sass.logError)))
+		// .pipe(sass({
+    //   outputStyle: 'compressed'
+    // }).on('error', sass.logError))
 		.pipe(autoprefixer({
       cascade: false,
       overrideBrowserslist: ['last 8 versions'],
@@ -95,11 +101,13 @@ const styles = () => {
 		.pipe(cleanCSS({
       level: 2
     }))
-		.pipe(concat('style.min.css'))
+    .pipe(gulpif(isDevFlag, concat('style.css')))
+    .pipe(gulpif(!isDevFlag, concat('style.min.css')))
+		// .pipe(concat('style.min.css'))
     .pipe(gulpif(isDevFlag, sourcemaps.write()))
     .pipe(gulpif(isDevFlag, dest('dev/css')))
     .pipe(gulpif(!isDevFlag, dest('dist/css')))
-    // .pipe(gulpif(isDevFlag, browserSync.stream()))
+    .pipe(gulpif(isDevFlag, browserSync.stream()))
     .pipe(browserSync.stream())
 }
 
@@ -183,9 +191,13 @@ const scripts = () => {
     .pipe(babel({
       presets: ['@babel/env'],
     }))
-    .pipe(concat('app.min.js'))
+    // .pipe(gulpif(isDevFlag, concat('index.js')))
+    .pipe(gulpif(!isDevFlag, concat('index.min.js')))
+    // .pipe(concat('app.min.js'))
     // .pipe(gulpif(!isDevFlag, uglify().on('error', notify.onError())))
-    .pipe(uglify().on('error', notify.onError()))
+    // .pipe(gulpif(isDevFlag, concat('index.min.js')))
+    .pipe(gulpif(!isDevFlag, uglify().on('error', notify.onError())))
+    // .pipe(uglify().on('error', notify.onError()))
     .pipe(gulpif(!isDevFlag, dest('dist/js')))
     .pipe(gulpif(isDevFlag, sourcemaps.write()))
     .pipe(gulpif(isDevFlag, dest('dev/js')))

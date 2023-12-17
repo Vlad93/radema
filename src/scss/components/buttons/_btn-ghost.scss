@@ -10,11 +10,12 @@
   outline: none;
   color: $white;
   background: transparent;
-  transition: background .2s ease;
+  transition: background-color .2s ease, border-color .2s ease;
   @include interactive {
     &:hover, &:focus {
       color: $white;
-      background: linear-gradient(132deg, rgba(2, 5, 40, 0.38) -48.79%, #F85E61 57.89%), #EE1A24;;
+      border-color: $red;
+      background: $red;
     }
   }
 }

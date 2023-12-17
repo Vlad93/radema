@@ -1,0 +1,99 @@
+.product-card {
+  &__wrap {
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: $white;
+  &__title {
+    margin-bottom: 0;
+    font-size: 32px;
+  }
+  &__header {
+    padding: 24px 20px;
+    &-wrap {
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+    &-icon {
+      display: block;
+      width: 48px;
+      height: 48px;
+      margin-right: 4px;
+    }
+  }
+  &__info {
+    padding: 16px 0 16px 32px;
+    border-bottom: 1px solid #bdbdc6;
+    background: url('../img/product-info.svg') no-repeat left 16px / 24px 24px;
+    &-text {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.35em;
+    }
+  }
+  &__main {
+    padding: 16px 0;
+  }
+  &__service {
+    margin-bottom: 20px;
+    &-title {
+      margin-bottom: 9px;
+      font-size: 24px;
+      line-height: 1.35em;
+    }
+    &-text {
+      display: flex;
+      line-height: 1.31em;
+      margin-bottom: 8px;
+      &::before {
+        content: '';
+        display: block;
+        margin-right: 8px;
+        flex: 0 0 20px;
+        height: 20px;
+        background: url('../img/checkCircle.svg') no-repeat center / cover;
+      }
+    }
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: auto;
+    padding: 24px 0;
+    border-top: 1px solid #bdbdc6;
+  }
+  &__price {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.14em;
+  }
+  &__btn {
+    padding: 24px;
+    flex-basis: 300px;
+  }
+  &__plus-block {
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #bdbdc6;
+  }
+  &__plus-icon-wrap {
+    padding-top: 14px;
+    display: flex;
+    justify-content: center;
+  }
+  &__plus-icon {
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -10,14 +10,18 @@
 
 @import "components/logo/logo";
 @import "components/messangers";
-@import "components/toggle/toggle-reset";
-@import "components/toggle/toggle-dropdown";
+@import "components/swiper/swiper-container";
+@import "components/swiper/swiper-slide";
+@import "components/swiper/swiper-navigation";
 @import "components/phone";
 @import "components/buttons/btn";
 @import "components/buttons/btn-ghost";
 @import "components/menu/header-menu";
 @import "components/menu/submenu";
 @import "components/project-card";
+@import "components/slider";
+@import "components/product-card";
+@import "components/service-card";
 // @import "components/soc-media";
 // @import "components/titles";
 // @import "components/tooltips";
@@ -30,3 +34,7 @@
 
 @import "pages/home/hero";
 @import "pages/home/projects";
+@import "pages/home/calc";
+@import "pages/home/for-whom";
+@import "pages/home/problem-solution";
+@import "pages/home/product";

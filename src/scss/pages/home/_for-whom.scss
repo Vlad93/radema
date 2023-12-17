@@ -1,0 +1,33 @@
+.section-for-whom {
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__text {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
+.for-whom {
+  margin-bottom: 50px;
+  display: flex;
+  gap: 40px;
+  &__item {
+    padding: 30px;
+    min-height: 270px;
+    flex: 0 1 25%;
+    border-radius: 16px;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__title {
+    margin-bottom: 6px;
+  }
+  &__text {
+    margin-bottom: 0;
+    color: $white;
+  }
+}

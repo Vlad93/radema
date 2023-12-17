@@ -15,9 +15,11 @@
     display: block;
     width: 32px;
     height: 32px;
-    transition: opacity .4s ease;
+    opacity: .8;
+    transition: opacity .4s ease, transform .3s ease;
     &:hover {
-      opacity: .7;
+      opacity: 1;
+      transform: scale(1.02);
     }
   }
   &__text {

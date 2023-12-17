@@ -49,6 +49,7 @@ button {
 }
 
 body {
+  // overflow: hidden;
   min-width: 320px;
   @include font(Gilroy, 400, sans-serif);
   font-size: 16px;
@@ -85,6 +86,46 @@ svg {
 }
 
 p,h1,h2,h3,h4,h5,h6 {
+  margin-bottom: 0;
   margin-top: 0;
+}
+
+.page.no-scroll {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+[onScrollDisplay_JS] {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateY(5.2083333333vw) !important;
+          transform: translateY(5.2083333333vw) !important;
+  opacity: 0 !important;
+}
+[onScrollDisplay_JS].visible {
+  -webkit-transform: translateY(0) !important;
+          transform: translateY(0) !important;
+  opacity: 1 !important;
+}
+
+.validate_error {
+  border-color: red !important;
+  color: red !important;
+}
+.validate_error::-webkit-input-placeholder {
+  color: red !important;
+}
+.validate_error::-moz-placeholder {
+  color: red !important;
+}
+.validate_error:-ms-input-placeholder {
+  color: red !important;
+}
+.validate_error::-ms-input-placeholder {
+  color: red !important;
+}
+.validate_error::placeholder {
+  color: red !important;
 }
 
