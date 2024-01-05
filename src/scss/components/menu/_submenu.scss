@@ -8,10 +8,25 @@
   backdrop-filter: blur(2px);
   transform-origin: 0 0;
   transition: opacity .4s ease, visibility .4s ease, transform .4s ease;
+  @include _992 {
+    padding: 0;
+    position: static;
+    flex-basis: 100%;
+    border-radius: 0;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    display: none;
+  }
   &:where(:not(.is-active)) {
     opacity: .0;
     transform: scaleY(0);
     visibility: hidden;
+    @include _992 {
+      opacity: 1;
+      transform: scaleY(1);
+      visibility: visible;
+    }
   }
   &__item:not(:last-of-type) {
     margin-bottom: 10px;
@@ -24,6 +39,11 @@
       &:hover {
         color: $red;
       }
+    }
+    @include _992 {
+      font-size: 14px;
+      line-height: 1.35em;
+      color: rgba(2, 5, 40, 0.75);
     }
   }
 }

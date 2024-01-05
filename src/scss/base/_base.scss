@@ -62,6 +62,9 @@ body {
     position: fixed;
     overflow-y: scroll;
   }
+  @include _992 {
+    overflow-x: hidden;
+  }
 }
 
 .container {

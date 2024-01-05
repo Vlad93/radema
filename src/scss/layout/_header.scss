@@ -4,10 +4,18 @@
   color: $white;
   &__mob {
     display: none;
+    & .header__logo {
+      z-index: 6;
+      background: url('../img/logo-black.webp') no-repeat center / cover;
+      width: 140px;
+      height: 45px;
+    }
     &-btn {
+      position: relative;
       padding: 0 5px;
       display: flex;
       flex-direction: column;
+      z-index: 1;
       justify-content: center;
       border: none;
       outline: none;
@@ -21,10 +29,10 @@
         display: block;
         width: 34px;
         height: 4px;
-        background-color: $primary;
+        background-color: $white;
         border-radius: 4px;
         transform-origin: 0 0;
-        transition: transform .3s ease;
+        transition: transform .3s ease, background-color .3s ease;
       }
       &::after {
         margin-left: 0;
@@ -33,19 +41,44 @@
       &.active {
         &::after {
           transform: scale(0);
+          background-color: $primary;
         }
         & .header__mob-btn-line {
           transform: translate(4px, 13px) rotate(-45deg);
+          background-color: $primary;
         }
         &::before {
           transform: translate(6px, 0) rotate(45deg);
+          background-color: $primary;
         }
       }
     }
     @include _992 {
+      padding: 20px 0;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);;
+    }
+  }
+  &__mob-wrap {
+    @include _992 {
+      padding: 121px 0 21px 30px;
+      max-height: 100vh;
+      position: fixed;
+      display: flex;
+      flex-direction: column-reverse;
+      overflow-y: auto;
+      top: 0;
+      left: 100%;
+      opacity: 0;
+      width: calc(100vw - 40px);
+      background-color: $white;
+      transition: transform .3s ease, opacity .3s ease;
+      &.open {
+        opacity: 1;
+        transform: translateX(-100%);
+      }
     }
   }
   &-progress {
@@ -61,10 +94,23 @@
     padding: 27px 0 29px;
     border-bottom: 1px solid rgba(255, 255, 255, .15);
     transition: transform .3s ease;
+    @include _992 {
+      padding: 0;
+      padding-top: 40px;
+    }
   }
   &__wrap {
     display: flex;
     align-items: center;
+    @include _992 {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      color: $primary;
+      & .header__logo {
+        display: none;
+      }
+    }
   }
   &__logo {
     margin-right: 20px;
@@ -82,24 +128,45 @@
   }
   &__messangers-wrap {
     margin: 0 auto;
+    @include _992 {
+      margin: 0;
+    }
   }
   &__phone-wrap {
     margin-right: 32px;
     @include _1200 {
       margin-right: 20px;
     }
+    @include _992 {
+      margin: 0;
+      color: $primary;
+    }
   }
   &__cooperation-btn {
     font-size: 14px;
     flex-basis: 240px;
+    @include _992 {
+      max-width: 240px;
+      width: 100%;
+      flex: auto;
+    }
   }
   &-menu__list {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include _992 {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 15px;
+    }
   }
   &__bottom {
     padding: 26px 0 30px;
+    @include _992 {
+      padding: 0;
+    }
   }
   &.fixed {
     & .header-progress {
@@ -124,6 +191,11 @@
       @include _1240 {
         padding: 15px 40px;
       }
+      @include _992 {
+        position: static;
+        padding: 40px 0;
+        background: none;
+      }
       & .phone__working-time-text,
       & .phone__link {
         color: $primary;
@@ -135,6 +207,22 @@
           }
         }
       }
+    }
+    .header__mob {
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 6px 40px;
+      color: $primary;
+      background: url('../img/fixed-bg.webp') no-repeat left bottom / contain,
+                  url('../img/fixed-bg-2.webp') no-repeat 120% center / contain, $white;
+    }
+    .header__mob-btn-line,
+    .header__mob-btn::before,
+    .header__mob-btn::after {
+      background-color: $primary;
     }
   }
 }

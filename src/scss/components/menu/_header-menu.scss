@@ -5,6 +5,9 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    @include _992 {
+      flex-wrap: wrap;
+    }
   }
   &__link {
     font-size: 14px;
@@ -13,6 +16,10 @@
       &:hover {
         color: $red;
       }
+    }
+    @include _992 {
+      font-size: 18px;
+      color: $primary;
     }
   }
   &__dropdown-btn {
@@ -30,15 +37,22 @@
       fill: transparent;
       stroke: $white;
       transition: stroke .3s ease, transform .3s ease;
+      @include _992 {
+        stroke: $primary;
+      }
     }
   }
-  @include interactive {
-    &__item.is-active  &__link {
-      color: $red;
+  &__item.is-active  &__link {
+    color: $red;
+    @include _992 {
+      color: $primary;
     }
-    &__item.is-active &__dropdown-btn-icon {
-      stroke: $red;
-      transform: rotate(180deg);
+  }
+  &__item.is-active &__dropdown-btn-icon {
+    stroke: $red;
+    transform: rotate(180deg);
+    @include _992 {
+      stroke: $primary;
     }
   }
 }
