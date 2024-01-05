@@ -2,7 +2,7 @@
   padding: 16px 20px;
   display: inline-block;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   border: none;
   border-radius: 200px;
@@ -10,10 +10,32 @@
   color: $white;
   background: linear-gradient(132deg, rgba(2, 5, 40, 0.38) -48.79%, #F85E61 57.89%), #EE1A24;
   transition: background .3s ease;
+  &.to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 5;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 50%;
+    transform: rotate(180deg);
+    background: url('../img/caretDown.svg') no-repeat center / auto, linear-gradient(132deg, rgba(2, 5, 40, 0.38) -48.79%, #F85E61 57.89%), #EE1A24;
+    transition: opacity .3s ease, visibility .3s ease;
+    &.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
   @include interactive {
     &:hover {
       color: $white;
       background: $red;
+    }
+    &.to-top:hover {
+      background: url('../img/caretDown.svg') no-repeat center / auto, $red;
     }
   }
 }
@@ -23,3 +45,4 @@
   align-items: center;
   justify-content: center;
 }
+

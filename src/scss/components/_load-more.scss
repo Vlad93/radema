@@ -1,0 +1,27 @@
+.load-more-btn {
+  padding: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.35em;
+  background-color: $white;
+  border-radius: 16px;
+  border: none;
+  transition: box-shadow .3s ease;
+  &::before {
+    content: '';
+    margin-right: 20px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url('../img/icons/plus-black.svg') no-repeat center / cover;
+  }
+  @include interactive {
+    &:hover {
+      box-shadow: 0px 3px 15px rgba(2, 5, 40, 0.25);
+    }
+  }
+}

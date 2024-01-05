@@ -12,24 +12,22 @@
   top: 50%;
   z-index: 1;
   width: 48px;
+  background: url('../img/icons/arrowLeft.svg') no-repeat center / 24px 24px, linear-gradient(132deg,rgba(2,5,40,.38) -48.79%,#f85e61 57.89%),#ee1a24;
   height: 48px;
   border-radius: 50%;
+  transition: background-color .3s ease;
+  @include interactive {
+    &:hover {
+      background: url('../img/icons/arrowLeft.svg') no-repeat center / 24px 24px, $red;
+    }
+  }
 }
+
 .slider-prev-btn {
   left: 0;
   transform: translate(-50%, -50%);
-  & &-icon {
-    width: 24px;
-    height: 24px;
-    // transform: rotate(90deg);
-  }
 }
 .slider-next-btn {
   right: 0;
-  transform: translate(50%, -50%);
-  & &-icon {
-    width: 24px;
-    height: 24px;
-    transform: rotate(180deg);
-  }
+  transform: translate(50%, -50%) rotate(180deg);
 }

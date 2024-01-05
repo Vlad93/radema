@@ -22,14 +22,23 @@
 @import "components/slider";
 @import "components/product-card";
 @import "components/service-card";
-// @import "components/soc-media";
+@import "components/forms/select";
+@import "components/forms/form-bg";
+@import "components/forms/form";
+@import "components/agreement";
+@import "components/team-card";
+@import "components/video-item";
+@import "components/new-card";
+@import "components/load-more";
+@import "components/article-card";
+@import "components/soc-media";
 // @import "components/titles";
 // @import "components/tooltips";
 // @import "components/breadcrumps";
 // @import "components/preloader";
 
 @import "layout/header";
-// @import "layout/footer";
+@import "layout/footer";
 @import "layout/section";
 
 @import "pages/home/hero";
@@ -38,3 +47,10 @@
 @import "pages/home/for-whom";
 @import "pages/home/problem-solution";
 @import "pages/home/product";
+@import "pages/home/get-price";
+@import "pages/home/advantages";
+@import "pages/home/calm";
+@import "pages/home/steps";
+@import "pages/home/videoreviews";
+@import "pages/home/commercial-offer";
+@import "pages/home/about";

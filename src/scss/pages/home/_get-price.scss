@@ -1,0 +1,22 @@
+.section-get-price {
+  &__title-wrap {
+    margin-bottom: 20px;
+  }
+  & .section-title-wrap {
+    margin-bottom: 20px;
+  }
+  &__title {
+    margin-bottom: 0;
+    margin-left: 0;
+    max-width: 580px;
+    color: $white;
+    text-align: left;
+  }
+  &__update {
+    margin-bottom: 20px;
+    color: $white;
+  &-text {
+    font-weight: 600;
+  }
+  }
+}

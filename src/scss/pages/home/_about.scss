@@ -1,0 +1,88 @@
+.section-about {
+  background:  url('../img/tabs-bg.webp') no-repeat right top / 30%;
+  // radial-gradient(50% 50% at 50% 50%, #1CADE4 0%, #27CED7 37.11%, rgba(217, 217, 217, 0.00) 100%) no-repeat -150% 120% / 70%,
+  // radial-gradient(50% 50% at 50% 50%, #1C48E4 0%, #276DD7 37.11%, rgba(217, 217, 217, 0.00) 100%)no-repeat 150% 100% / 70%;
+
+
+  &__title {
+    margin-left: 0;
+    max-width: 800px;
+    text-align: left;
+  }
+  &__subtitle {
+    margin-left: 0;
+    max-width: 640px;
+    text-align: left;
+  }
+  & .section-title-wrap {
+    margin-bottom: 30px;
+  }
+}
+
+.about-tabs {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  &__btn {
+    padding: 12px 24px;
+    display: block;
+    font-weight: 500;
+    line-height: 1.35em;
+    background-color: $white;
+    border: 1px solid rgba(2, 5, 40, 0.25);
+    border-radius: 8px;
+    transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+    @include interactive {
+      &:hover {
+        border-color: $primary;
+        background-color: $primary;
+        color: $white;
+      }
+    }
+    &.active {
+      border-color: $primary;
+      background-color: $primary;
+      color: $white;
+    }
+  }
+}
+
+.about-tabs-content {
+  &__item-wrap {
+    margin-bottom: 30px;
+    display: grid;
+    grid-auto-rows: minmax(300px, auto);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  &__item-btn {
+    padding: 24px 20px;
+    display: block;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+
+.about-tabs-video {
+  height: 100%;
+}
+
+.report {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  &__img-wrap {
+    width: 100%;
+    height: 100%;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  &__link {
+    @extend .article-card__link;
+  }
+}

@@ -7,6 +7,8 @@
   <!-- plagins css  -->
   <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
   <!-- css -->
   <link rel="stylesheet" href="css/style.css">
   <!-- favicon  -->
@@ -16,137 +18,149 @@
 <body>
   <header class="header">
     <div class="header__container container">
-      <div class="header__top">
-        <div class="header__wrap">
-          <a href="/" class="header__logo logo" aria-label="Логотип Radema">
-            <img class="logo__img" src="img/logo.png" alt="Logo">
-          </a>
-          <div class="header__desc">
-            <p class="header__desc-text">
-              Медицинский маркетинг для клиник с 2018 года в Москве и РФ
-            </p>
-          </div>
-          <div class="header__messangers-wrap messangers messangers--header">
-            <ul class="messangers__list">
-              <li class="messangers__item">
-                <a style="background-image: url('./img/icons/whatsApp.svg');" href="" class="messangers__link" aria-label="WhattsApp ссылка" target="_blank"></a>
-              </li>
-              <li class="messangers__item">
-                <a style="background-image: url('./img/icons/telegram.svg');" href="" class="messangers__link" aria-label="Telegram ссылка" target="_blank"></a>
-              </li>
-              <li class="messangers__item">
-                <a style="background-image: url('./img/icons/mail.svg');" href="" class="messangers__link" aria-label="Почта ссылка" target="_blank"></a>
-              </li>
-            </ul>
-            <p class="messangers__text">
-              Задайте вопрос, <span class="messangers__text-accent">мы онлайн</span>
-            </p>
-          </div>
-          <div class="header__phone-wrap phone">
-            <div class="phone__working-time">
-              <span class="phone__working-time-text">
-                Звоните ПН-ПТ с 9:00 до 19:00
-              </span>
-            </div>
-            <a style="background-image:url('./img/icons/phone.svg');" href="tel:88005458225" class="phone__link">8 800 545 82 25</a>
-          </div>
-          <button type="button" class="header__cooperation-btn btn">
-            Обсудить сотрудничество
-          </button>
-        </div>
+      <div class="header__mob">
+        <a href="/" class="header__logo logo" aria-label="Логотип Radema">
+          <img class="logo__img" src="img/logo.png" alt="Logo">
+        </a>
+        <button class="header__mob-btn menu-btn" headerBtn_JS>
+          <span class="header__mob-btn-line"></span>
+        </button>
+        <div class="header-progress"></div>
       </div>
-      <div class="header__bottom">
-        <nav class="header__nav header-menu">
-          <ul class="header-menu__list menu" aria-label="Главное меню">
-            <li class="menu__item">
-              <a href="#" class="menu__link">
-                Услуги
-              </a>
-              <button type="button" class="menu__dropdown-btn" aria-label="Открыть подменю">
-                <svg class="menu__dropdown-btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-              </button>
-              <ul class="menu__submenu submenu">
-                <li class="submenu__item">
-                  <a href="#" class="submenu__link">
-                    Разработка сайта
-                  </a>
+      <div class="header__mob-wrap">
+        <div class="header__top">
+          <div class="header__wrap">
+            <a href="/" class="header__logo logo" aria-label="Логотип Radema">
+              <img class="logo__img" src="img/logo.png" alt="Logo">
+            </a>
+            <div class="header__desc">
+              <p class="header__desc-text">
+                Медицинский маркетинг для клиник с 2018 года в Москве и РФ
+              </p>
+            </div>
+            <div class="header__messangers-wrap messangers messangers--header">
+              <ul class="messangers__list">
+                <li class="messangers__item">
+                  <a style="background-image: url('./img/icons/whatsApp.svg');" href="" class="messangers__link" aria-label="WhattsApp ссылка" target="_blank"></a>
                 </li>
-                <li class="submenu__item">
-                  <a href="#" class="submenu__link">
-                    Контекстная реклама
-                  </a>
+                <li class="messangers__item">
+                  <a style="background-image: url('./img/icons/telegram.svg');" href="" class="messangers__link" aria-label="Telegram ссылка" target="_blank"></a>
                 </li>
-                <li class="submenu__item">
-                  <a href="#" class="submenu__link">
-                    SEO-продвижение сайта
-                  </a>
-                </li>
-                <li class="submenu__item">
-                  <a href="#" class="submenu__link">
-                    SERM—работа с репутацией
-                  </a>
-                </li>
-                <li class="submenu__item">
-                  <a href="#" class="submenu__link">
-                    SMM — ведение социальных сетей
-                  </a>
-                </li>
-                <li class="submenu__item">
-                  <a href="#" class="submenu__link">
-                    Таргетированная реклама
-                  </a>
-                </li>
-                <li class="submenu__item">
-                  <a href="#" class="submenu__link">
-                    Продвижение в Telegram
-                  </a>
-                </li>
-                <li class="submenu__item">
-                  <a href="#" class="submenu__link">
-                    Email-маркетинг
-                  </a>
-                </li>
-                <li class="submenu__item">
-                  <a href="#" class="submenu__link">
-                    Сквозная аналитика
-                  </a>
-                </li>
-                <li class="submenu__item">
-                  <a href="#" class="submenu__link">
-                    Интеграция CRM-систем
-                  </a>
+                <li class="messangers__item">
+                  <a style="background-image: url('./img/icons/mail.svg');" href="" class="messangers__link" aria-label="Почта ссылка" target="_blank"></a>
                 </li>
               </ul>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">
-                Акции
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">
-                Калькулятор стоимости
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">
-                Кейсы
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">
-                О компании
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">
-                Отзывы
-              </a>
-            </li>
-          </ul>
-        </nav>
+              <p class="messangers__text">
+                Задайте вопрос, <span class="messangers__text-accent">мы онлайн</span>
+              </p>
+            </div>
+            <div class="header__phone-wrap phone">
+              <div class="phone__working-time">
+                <span class="phone__working-time-text">
+                  Звоните ПН-ПТ с 9:00 до 19:00
+                </span>
+              </div>
+              <a style="background-image:url('./img/icons/phone.svg');" href="tel:88005458225" class="phone__link">8 800 545 82 25</a>
+            </div>
+            <button type="button" class="header__cooperation-btn btn">
+              Обсудить сотрудничество
+            </button>
+          </div>
+          <div class="header-progress"></div>
+        </div>
+        <div class="header__bottom">
+          <nav class="header__nav header-menu">
+            <ul class="header-menu__list menu" aria-label="Главное меню">
+              <li class="menu__item dropdown">
+                <a href="#" class="menu__link">
+                  Услуги
+                </a>
+                <button type="button" class="menu__dropdown-btn" aria-label="Открыть подменю">
+                  <svg class="menu__dropdown-btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <ul class="menu__submenu submenu">
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Разработка сайта
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Контекстная реклама
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      SEO-продвижение сайта
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      SERM—работа с репутацией
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      SMM — ведение социальных сетей
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Таргетированная реклама
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Продвижение в Telegram
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Email-маркетинг
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Сквозная аналитика
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Интеграция CRM-систем
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  Акции
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  Калькулятор стоимости
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  Кейсы
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  О компании
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  Отзывы
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
   </header>
@@ -1535,12 +1549,8 @@
             </article>
           </div>
         </div>
-        <button class="slider-prev-btn slider-btn btn" aria-label="Предыдущий слайд">
-          <img class="slider-prev-btn-icon" src="./img/icons/arrowLeft.svg" alt="">
-        </button>
-        <button class="slider-next-btn slider-btn btn" aria-label="Следующий слайд">
-          <img class="slider-next-btn-icon" src="./img/icons/arrowLeft.svg" alt="">
-        </button>
+        <button class="slider-prev-btn slider-btn btn" aria-label="Предыдущий слайд"></button>
+        <button class="slider-next-btn slider-btn btn" aria-label="Следующий слайд"></button>
       </div>
       <div class="slider-hint">
         <span>ЛИСТАЙТЕ ВЛЕВО ВПРАВО</span>
@@ -1553,13 +1563,1096 @@
       </div>
     </div>
   </section>
-
+  <section class="section-get-price section-form section">
+    <div class="section-get-price__bg-large form-bg-large">
+      <img src="./img/form-main-bg.png" alt="">
+      <div class="section-get-price__bg-small form-bg-small">
+        <img src="./img/price-list.png" alt="">
+    </div>
+    </div>
+    <!-- <div class="section-get-price__bg-small form-bg-small">
+        <img src="./img/price-list.png" alt="">
+    </div> -->
+    <div class="container">
+      <div class="section__content">
+        <div class="section-get-price__update section-form__top">
+          <span class="section-get-price__update-text section-form__top-text" style="background-image: url('./img/ClockCounterClockwise.svg');">
+            Прайс обновлён:
+          </span>
+          <span class="section-get-price__update-value section-form__top-value">15 сентября 2023 года</span>
+        </div>
+        <div class="section-title-wrap">
+          <h2 class="section-get-price__title section-title title title-form" onscrolldisplay_js>
+            Получите <span class="title title-accent">прайс на все услуги</span> агентства медицинского маркетинга RADEMA
+          </h2>
+        </div>
+        <form method="POST" class="section-get-price__form standart-form" data-file="" data-thx="" formValidate_JS>
+          <input type="hidden" name="action" value="request">
+          <input type="hidden" name="form" value="Баннер получить прайс">
+          <p class="form-text">Выберите куда вам отправить?</p>
+          <div class="form-container">
+            <select name="social_type" class="form-select">
+                <option value="WhatsApp">Получить в WhatsApp</option>
+                <option value="Telegram">Получить в Telegram</option>
+            </select>
+            <label for="phone" class="form-label">
+              <input type="text" name="phone" class="form-input"  phoneMask_JS required>
+            </label>
+            <button class="form-btn btn" agreementControlBtn_JS>
+                <span>Получить прайс (PDF 2.3 MB)</span>
+            </button>
+          </div>
+          <div class="form-checkbox">
+              <div agreementControl_JS class="checked">
+                  <label for="agreement"></label>
+                  <input type="checkbox" name="agreement" agreementControlCheckbox_JS checked>
+              </div>
+              <p>
+                Даю согласие на обработку моих <a href="" class="agreement-link" target="_blank">персональных данных</a>
+              </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="section-advantages section">
+    <div class="container">
+      <div class="section-advantages__photo-wrap">
+        <picture>
+          <source type="image/webp" srcset="img/adv-photo.webp">
+          <img src="img/adv-photo.png" alt="Докмед" class="section-advantages__photo-img">
+        </picture>
+        <span class="section-advantages__photo-name">
+          Вячеслав Радецкий
+        </span>
+        <span class="section-advantages__photo-job">
+          Руководитель компании RADEMA
+        </span>
+      </div>
+      <div class="section-title-wrap">
+        <h2 class="section-advantages__title section-title title" onscrolldisplay_js>
+          4 года — средний срок сотрудничества<br> с медицинскими центрами
+        </h2>
+        <p class="section-advantages__subtitle section-subtitle">
+          Каждый 2-ой клиент приходит к нам по рекомендации
+        </p>
+      </div>
+      <div class="section-advantages__list">
+        <div class="section-advantages__item">
+          <p class="section-advantages__item-text">
+            Работаем комплексно и проявляем инициативу для улучшения эффективности всех этапов пути пациента
+          </p>
+        </div>
+        <div class="section-advantages__item">
+          <p class="section-advantages__item-text">
+            Не просто говорим о проблемах, а предлагаем их решения
+          </p>
+        </div>
+        <div class="section-advantages__item">
+          <p class="section-advantages__item-text">
+            Выстраиваем прозрачную систему отчетности от денег до денег
+          </p>
+        </div>
+        <div class="section-advantages__item">
+          <p class="section-advantages__item-text">
+            Делимся экспертизой и знаниями на понятном для вас языке
+          </p>
+        </div>
+      </div>
+      <div class="advantages-bottom">
+        <div class="advantages-bottom__wrap-left">
+          <p class="advantages-bottom__citate">
+            «Не боимся тратить время на анализ пути пациента и уделять внимание каждому потенциальному клиенту»
+          </p>
+          <p class="advantages-bottom__approach-text">
+            Знаем, что именно такой подход<br> приносит результат
+          </p>
+          <div class="advantages-bottom__approach-wrap">
+            <button href="https://www.youtube.com/watch?v=M62kyPOocEA" class="advantages-bottom__approach-btn video btn" data-fancybox></button>
+            <span class="advantages-bottom__approach-separator"></span>
+            <p class="advantages-bottom__approach-video-text">
+              Узнайте всё о нашем подходе <span class="text-medium">за 3 мин</span>
+            </p>
+          </div>
+        </div>
+        <div class="advantages-bottom__wrap-right">
+          <h3 class="advantages-bottom__title title-3 title-black">
+            Подписывайтесь на мой телеграм-канал, в котором делюсь:
+          </h3>
+          <ul class="advantages-bottom__info">
+            <li class="advantages-bottom__info-item">
+              <p class="advantages-bottom__info-text">
+                Кейсами
+              </p>
+            </li>
+            <li class="advantages-bottom__info-item">
+              <p class="advantages-bottom__info-text">
+                Рабочими маркетинговыми связками
+              </p>
+            </li>
+            <li class="advantages-bottom__info-item">
+              <p class="advantages-bottom__info-text">
+                Лайфками и советами
+              </p>
+            </li>
+          </ul>
+          <a href="" class="advantages-bottom__info-link btn">
+            Перейти на канал
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-calm section">
+    <div class="section-calm__container container">
+      <div class="section-calm__img-wrap">
+        <img src="./img/calm-photo.webp" alt="">
+      </div>
+      <div class="section-calm__content">
+        <div class="section-calm__title-wrap section-title-wrap">
+          <h2 class="section-calm__title section-title title" onscrolldisplay_js>
+            Вы можете быть <span class="title title-accent">спокойны за каждый рубль</span>
+          </h2>
+        </div>
+        <div class="section-calm__work-list calm-work-list">
+          <div class="calm-work-list__item">
+            <img class="calm-work-list__item-img" src="./img/icons/file-icon.svg" alt="">
+            <p class="calm-work-list__item-text">
+              Делаем ежедневные, еженедельные, ежемесячные отчёты в Google-документах
+            </p>
+          </div>
+          <div class="calm-work-list__item">
+            <img class="calm-work-list__item-img" src="./img/icons/note-pencil.svg" alt="">
+            <p class="calm-work-list__item-text">
+              В договоре прописываем сроки и время отведённое на каждый этап, результат
+            </p>
+          </div>
+        </div>
+        <div class="section-calm__links">
+          <a href="" class="section-calm__link watch-link">
+            Смотреть пример отчёта
+            <span class="section-calm__link-size">
+              0.5 MB
+            </span>
+          </a>
+          <a href="" class="section-calm__link watch-link">
+            Смотреть шаблон договора
+            <span class="section-calm__link-size">
+              0.7 MB
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-steps section">
+    <div class="section-steps__container container">
+      <div class="section-steps__title-wrap section-title-wrap">
+        <h2 class="section-steps__title section-title title" onscrolldisplay_js>
+          <span class="title title-accent">5 шагов</span> до привлечения<br> пациентов в вашу клинику
+        </h2>
+      </div>
+      <div class="section-steps__wrap">
+        <ul class="section-steps__steps section-steps__steps-left">
+          <li class="section-steps__steps-item">
+            <span class="section-steps__steps-item-num">
+              1
+            </span>
+            <div class="section-steps__steps-card step-card">
+              <h3 class="step-card__title title-3 title-black">
+                Обсуждаем <span class=" step-card__title title-3 title-accent">цели и задачи</span>
+              </h3>
+              <p class="step-card__text">
+                Знакомимся с вашим бизнесом и его особенностями, уточняем с какими сложностями продвижения вы сталкивались ранее, определяем текущие цели  и желаемые результаты
+              </p>
+            </div>
+          </li>
+          <li class="section-steps__steps-item">
+            <span class="section-steps__steps-item-num">
+              3
+            </span>
+            <div class="section-steps__steps-card step-card">
+              <h3 class="step-card__title title-3 title-black">
+               Составляем <span class="step-card__title title-3 title-accent">КП</span>
+              </h3>
+              <p class="step-card__text">
+                На основании проведенного аудита и желаемых результатов подготавливаем персональное коммерческое предложение, в которое включаем только те услуги, которые необходимы конкретно в вашем случае
+              </p>
+              <a href="" class="step-card__link watch-link">
+                Смотреть пример КП
+                <span class="step-card__link-size">
+                  0.5 MB
+                </span>
+              </a>
+              <button class="step-card__btn btn">
+                Получить персональное КП
+              </button>
+            </div>
+          </li>
+        </ul>
+        <ul class="section-steps__steps section-steps__steps-right">
+          <li class="section-steps__steps-item">
+            <span class="section-steps__steps-item-num">
+              2
+            </span>
+            <div class="section-steps__steps-card step-card">
+              <h3 class="step-card__title title-3 title-black">
+                Проводим <span class="step-card__title title-3 title-accent">бесплатно аудит</span> сайта, текущего маркетинга и продаж
+              </h3>
+              <p class="step-card__text">
+                Мы проведем аудит сайта, рекламных кампаний, сервиса, репутации, определим сильные и слабые стороны вашего бизнеса.
+                Подготовим и вышлем вам отчет с результатами аудита
+              </p>
+              <a href="" class="step-card__link watch-link">
+                Смотреть пример аудита
+                <span class="step-card__link-size">
+                  0.5 MB
+                </span>
+              </a>
+            </div>
+          </li>
+          <li class="section-steps__steps-item">
+            <span class="section-steps__steps-item-num">
+              4
+            </span>
+            <div class="section-steps__steps-card step-card">
+              <h3 class="step-card__title title-3 title-black">
+                Заключаем <span class="step-card__title title-3 title-accent">договор</span>
+              </h3>
+              <p class="step-card__text">
+                Согласовываем и подписываем официальный договор о сотрудничестве, в котором прописываем состав работ, сроки выполнения, условия оплаты и гарантии
+              </p>
+            </div>
+          </li>
+          <li class="section-steps__steps-item">
+            <span class="section-steps__steps-item-num">
+              5
+            </span>
+            <div class="section-steps__steps-card step-card">
+              <h3 class="step-card__title title-3 title-black">
+                Получаем <span class="step-card__title title-3 title-accent">оплату</span> и приступаем к работе
+              </h3>
+              <p class="step-card__text">
+                Разрабатываем и утверждаем стратегию продвижения и бюджеты. Предоставляем периодические отчеты. Проводим регулярные встречи для синхронизации команды и оптимизации стратегии.
+              </p>
+            </div>
+          </li>
+        </ul>
+        <!-- <ul class="section-steps__steps">
+          <li class="section-steps__steps-item">
+            <span class="section-steps__steps-item-num">
+              1
+            </span>
+            <div class="section-steps__steps-card step-card">
+              <h3 class="step-card__title title-3 title-black">
+                Обсуждаем <span class=" step-card__title title-3 title-accent">цели и задачи</span>
+              </h3>
+              <p class="step-card__text">
+                Знакомимся с вашим бизнесом и его особенностями, уточняем с какими сложностями продвижения вы сталкивались ранее, определяем текущие цели  и желаемые результаты
+              </p>
+            </div>
+          </li>
+          <li class="section-steps__steps-item">
+            <span class="section-steps__steps-item-num">
+              2
+            </span>
+            <div class="section-steps__steps-card step-card">
+              <h3 class="step-card__title title-3 title-black">
+                Проводим <span class="step-card__title title-3 title-accent">бесплатно аудит</span> сайта, текущего маркетинга и продаж
+              </h3>
+              <p class="step-card__text">
+                Мы проведем аудит сайта, рекламных кампаний, сервиса, репутации, определим сильные и слабые стороны вашего бизнеса.
+                Подготовим и вышлем вам отчет с результатами аудита
+              </p>
+              <a href="" class="step-card__link watch-link">
+                Смотреть пример аудита
+                <span class="step-card__link-size">
+                  0.5 MB
+                </span>
+              </a>
+            </div>
+          </li>
+          <li class="section-steps__steps-item">
+            <span class="section-steps__steps-item-num">
+              3
+            </span>
+            <div class="section-steps__steps-card step-card">
+              <h3 class="step-card__title title-3 title-black">
+               Составляем <span class="step-card__title title-3 title-accent">КП</span>
+              </h3>
+              <p class="step-card__text">
+                На основании проведенного аудита и желаемых результатов подготавливаем персональное коммерческое предложение, в которое включаем только те услуги, которые необходимы конкретно в вашем случае
+              </p>
+              <a href="" class="step-card__link watch-link">
+                Смотреть пример КП
+                <span class="step-card__link-size">
+                  0.5 MB
+                </span>
+              </a>
+              <button class="step-card__btn btn">
+                Получить персональное КП
+              </button>
+            </div>
+          </li>
+          <li class="section-steps__steps-item">
+            <span class="section-steps__steps-item-num">
+              4
+            </span>
+            <div class="section-steps__steps-card step-card">
+              <h3 class="step-card__title title-3 title-black">
+                Заключаем <span class="step-card__title title-3 title-accent">договор</span>
+              </h3>
+              <p class="step-card__text">
+                Согласовываем и подписываем официальный договор о сотрудничестве, в котором прописываем состав работ, сроки выполнения, условия оплаты и гарантии
+              </p>
+            </div>
+          </li>
+          <li class="section-steps__steps-item" style="display: none;"></li>
+          <li class="section-steps__steps-item">
+            <span class="section-steps__steps-item-num">
+              5
+            </span>
+            <div class="section-steps__steps-card step-card">
+              <h3 class="step-card__title title-3 title-black">
+                Получаем <span class="step-card__title title-3 title-accent">оплату</span> и приступаем к работе
+              </h3>
+              <p class="step-card__text">
+                Разрабатываем и утверждаем стратегию продвижения и бюджеты. Предоставляем периодические отчеты. Проводим регулярные встречи для синхронизации команды и оптимизации стратегии.
+              </p>
+            </div>
+          </li>
+        </ul> -->
+      </div>
+    </div>
+  </section>
+  <section class="section-check-list section-form section">
+    <div class="section-check-list__bg-large form-bg-large">
+      <img src="./img/form-main-bg.png" alt="">
+      <div class="section-check-list__bg-small form-bg-small">
+        <img src="./img/check-list.png" alt="">
+      </div>
+    </div>
+    <div class="container">
+      <div class="section__content">
+        <div class="section-check-list__update section-form__top">
+          <span class="section-check-list__update-text section-form__top-text" style="background-image: url('./img/icons/download-icon.svg');">
+            Скачайте бесплатно чек-лист
+          </span>
+        </div>
+        <div class="section-title-wrap">
+          <h2 class="section-check-list__title section-title title title-form" onscrolldisplay_js>
+            Как увеличить выручку клиники на 50% за 3-6 месяцев
+          </h2>
+          <p class="section-check-list__subtitle section-subtitle subtitle-form">
+            Внедряем этот чек-лист в каждом своём проекте
+          </p>
+        </div>
+        <form method="POST" class="section-check-list__form standart-form" data-file="" data-thx="" formValidate_JS>
+          <input type="hidden" name="action" value="request">
+          <input type="hidden" name="form" value="Баннер получить чек-лист">
+          <p class="form-text">Выберите куда вам отправить?</p>
+          <div class="form-container">
+            <select name="social_type" class="form-select">
+                <option value="WhatsApp">Получить в WhatsApp</option>
+                <option value="Telegram">Получить в Telegram</option>
+            </select>
+            <label for="phone" class="form-label">
+              <input type="text" name="phone" class="form-input"  phoneMask_JS required>
+            </label>
+            <button class="form-btn btn" agreementControlBtn_JS>
+                <span>Получить чек-лист (PDF 2.3 MB)</span>
+            </button>
+          </div>
+          <div class="form-checkbox">
+              <div agreementControl_JS class="checked">
+                  <label for="agreement"></label>
+                  <input type="checkbox" name="agreement" agreementControlCheckbox_JS checked>
+              </div>
+              <p>
+                Даю согласие на обработку моих <a href="" class="agreement-link" target="_blank">персональных данных</a>
+              </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="section-team section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <h2 class="section-team__title section-title title" onscrolldisplay_js>
+          Сформируем команду под конкретную<br> задачу вашего бизнеса
+        </h2>
+        <p class="section-team__subtitle section-subtitle">
+          У каждого нашего специалиста есть опыт в медицинском маркетинге
+        </p>
+      </div>
+      <div class="section-team__list services-slider slider" teamSlider_JS>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <article class="section-team__slide team-card swiper-slide">
+              <button class="team-card__info-btn btn">
+                i
+              </button>
+              <div class="team-card__photo-wrap">
+                <img src="img/v-krasnoy.webp" alt="Фото сотрудника" class="team-card__photo">
+              </div>
+              <div class="team-card__content">
+                <h3 class="team-card__title title-3">
+                  Вячеслав Радецкий
+                </h3>
+                <span class="team-card__job-title">
+                  Маркетолог, руководитель компании
+                </span>
+              </div>
+              <div class="team-card__about" style="display: none;">
+                <div class="team-card__about-wrap">
+                  <h4 class="team-card__about-title title title-black">
+                    Вячеслав Радецкий
+                  </h4>
+                  <span class="team-card__about-job-title">
+                    Маркетолог, руководитель компании
+                  </span>
+                </div>
+                <p class="team-card__about-text">
+                  Является ценным членом нашей команды. Он обладает обширным опытом работы в своей области и проявляет высокую профессиональную компетентность
+                </p>
+              </div>
+            </article>
+            <article class="section-team__slide team-card swiper-slide">
+              <button class="team-card__info-btn btn">
+                i
+              </button>
+              <div class="team-card__photo-wrap">
+                <img src="img/v-krasnoy.webp" alt="Фото сотрудника" class="team-card__photo">
+              </div>
+              <div class="team-card__content">
+                <h3 class="team-card__title title-3">
+                  Вячеслав Радецкий
+                </h3>
+                <span class="team-card__job-title">
+                  Маркетолог, руководитель компании
+                </span>
+              </div>
+              <div class="team-card__about" style="display: none;">
+                <div class="team-card__about-wrap">
+                  <h4 class="team-card__about-title title title-black">
+                    Вячеслав Радецкий
+                  </h4>
+                  <span class="team-card__about-job-title">
+                    Маркетолог, руководитель компании
+                  </span>
+                </div>
+                <p class="team-card__about-text">
+                  Является ценным членом нашей команды. Он обладает обширным опытом работы в своей области и проявляет высокую профессиональную компетентность
+                </p>
+              </div>
+            </article>
+            <article class="section-team__slide team-card swiper-slide">
+              <button class="team-card__info-btn btn">
+                i
+              </button>
+              <div class="team-card__photo-wrap">
+                <img src="img/v-krasnoy.webp" alt="Фото сотрудника" class="team-card__photo">
+              </div>
+              <div class="team-card__content">
+                <h3 class="team-card__title title-3">
+                  Вячеслав Радецкий
+                </h3>
+                <span class="team-card__job-title">
+                  Маркетолог, руководитель компании
+                </span>
+              </div>
+              <div class="team-card__about" style="display: none;">
+                <div class="team-card__about-wrap">
+                  <h4 class="team-card__about-title title title-black">
+                    Вячеслав Радецкий
+                  </h4>
+                  <span class="team-card__about-job-title">
+                    Маркетолог, руководитель компании
+                  </span>
+                </div>
+                <p class="team-card__about-text">
+                  Является ценным членом нашей команды. Он обладает обширным опытом работы в своей области и проявляет высокую профессиональную компетентность
+                </p>
+              </div>
+            </article>
+            <article class="section-team__slide team-card swiper-slide">
+              <button class="team-card__info-btn btn">
+                i
+              </button>
+              <div class="team-card__photo-wrap">
+                <img src="img/v-krasnoy.webp" alt="Фото сотрудника" class="team-card__photo">
+              </div>
+              <div class="team-card__content">
+                <h3 class="team-card__title title-3">
+                  Вячеслав Радецкий
+                </h3>
+                <span class="team-card__job-title">
+                  Маркетолог, руководитель компании
+                </span>
+              </div>
+              <div class="team-card__about" style="display: none;">
+                <div class="team-card__about-wrap">
+                  <h4 class="team-card__about-title title title-black">
+                    Вячеслав Радецкий
+                  </h4>
+                  <span class="team-card__about-job-title">
+                    Маркетолог, руководитель компании
+                  </span>
+                </div>
+                <p class="team-card__about-text">
+                  Является ценным членом нашей команды. Он обладает обширным опытом работы в своей области и проявляет высокую профессиональную компетентность
+                </p>
+              </div>
+            </article>
+            <article class="section-team__slide team-card swiper-slide">
+              <button class="team-card__info-btn btn">
+                i
+              </button>
+              <div class="team-card__photo-wrap">
+                <img src="img/v-krasnoy.webp" alt="Фото сотрудника" class="team-card__photo">
+              </div>
+              <div class="team-card__content">
+                <h3 class="team-card__title title-3">
+                  Вячеслав Радецкий
+                </h3>
+                <span class="team-card__job-title">
+                  Маркетолог, руководитель компании
+                </span>
+              </div>
+              <div class="team-card__about" style="display: none;">
+                <div class="team-card__about-wrap">
+                  <h4 class="team-card__about-title title title-black">
+                    Вячеслав Радецкий
+                  </h4>
+                  <span class="team-card__about-job-title">
+                    Маркетолог, руководитель компании
+                  </span>
+                </div>
+                <p class="team-card__about-text">
+                  Является ценным членом нашей команды. Он обладает обширным опытом работы в своей области и проявляет высокую профессиональную компетентность
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <button class="slider-prev-btn slider-btn btn" aria-label="Предыдущий слайд"></button>
+        <button class="slider-next-btn slider-btn btn" aria-label="Следующий слайд"></button>
+      </div>
+    </div>
+  </section>
+  <section class="section-videoreviews section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <h2 class="section-team__title section-title title" onscrolldisplay_js>
+          «Спасибо, что <span class="title title-accent">снизили стоимость записи</span><br> на имплантацию в Москве <span class="title title-accent">до 2 076 ₽</span>»
+        </h2>
+        <p class="section-team__subtitle section-subtitle">
+          И другие отзывы наших клиентов
+        </p>
+      </div>
+      <ul class="section-videoreviews__list videoreviews">
+        <li class="videoreviews__item">
+          <div class="videoreview video-item">
+            <img src="/img/videoreview1.webp" alt="Преврью видеоотзыва" class="videoreview__preview video-item__preview">
+            <a href="https://www.youtube.com/watch?v=M62kyPOocEA" class="videoreview__link video-item__link" data-fancybox></a>
+          </div>
+        </li>
+        <li class="videoreviews__item">
+          <div class="videoreview video-item">
+            <img src="/img/videoreview2.webp" alt="Преврью видеоотзыва" class="videoreview__preview video-item__preview">
+            <a href="https://www.youtube.com/watch?v=M62kyPOocEA" class="videoreview__link video-item__link" data-fancybox></a>
+          </div>
+        </li>
+        <li class="videoreviews__item">
+          <div class="videoreview video-item">
+            <img src="/img/videoreview3.webp" alt="Преврью видеоотзыва" class="videoreview__preview video-item__preview">
+            <a href="https://www.youtube.com/watch?v=M62kyPOocEA" class="videoreview__link video-item__link" data-fancybox></a>
+          </div>
+        </li>
+      </ul>
+      <div class="section-videoreviews__side-reviews side-reviews">
+        <div class="side-reviews__card">
+          <div class="side-reviews__card-wrap">
+            <div class="side-reviews__card-img">
+              <img width="96" height="53" src="/img/yandex.png" alt="Логотип Яндекс">
+            </div>
+            <div class="side-reviews__card-rating">
+              <img width="20" height="20" src="/img/star.svg" alt="Звезда рейтинга">
+              <img width="20" height="20" src="/img/star.svg" alt="Звезда рейтинга">
+              <img width="20" height="20" src="/img/star.svg" alt="Звезда рейтинга">
+              <img width="20" height="20" src="/img/star.svg" alt="Звезда рейтинга">
+              <img width="20" height="20" src="/img/star-half.svg" alt="Звезда рейтинга">
+            </div>
+          </div>
+          <a href="" class="side-reviews__link">Смотреть оценки в Яндексе</a>
+        </div>
+        <div class="side-reviews__card">
+          <div class="side-reviews__card-wrap">
+            <div class="side-reviews__card-img">
+              <img width="96" height="53" src="/img/google.png" alt="Логотип Google">
+            </div>
+            <div class="side-reviews__card-rating">
+              <img width="20" height="20" src="/img/star.svg" alt="Звезда рейтинга">
+              <img width="20" height="20" src="/img/star.svg" alt="Звезда рейтинга">
+              <img width="20" height="20" src="/img/star.svg" alt="Звезда рейтинга">
+              <img width="20" height="20" src="/img/star.svg" alt="Звезда рейтинга">
+              <img width="20" height="20" src="/img/star-half.svg" alt="Звезда рейтинга">
+            </div>
+          </div>
+          <a href="" class="side-reviews__link">Смотреть оценки в Google</a>
+        </div>
+      </div>
+      <a href="" class="section-videoreviews__btn btn">Смотреть больше отзывов</a>
+    </div>
+  </section>
+  <section class="section-commercial-offer section-form section">
+    <div class="section-commercial-offer__bg-large form-bg-large">
+      <img src="./img/form-bg-right.png" alt="">
+      <div class="section-commercial-offer__bg-small form-bg-small">
+        <img src="/img/cp-form.webp" alt="">
+      </div>
+    </div>
+    <div class="container">
+      <div class="section__content">
+        <div class="section-title-wrap">
+          <h2 class="section-commercial-offer__title section-title title title-form" onscrolldisplay_js>
+            Нужны первичные пациенты и рост вашего бизнеса?
+          </h2>
+          <p class="section-commercial-offer__subtitle section-subtitle subtitle-form">
+            Оставьте заявку и получите персональное КП с ценами и кейсами в течение дня
+          </p>
+        </div>
+        <form method="POST" class="section-commercial-offer__form standart-form" data-file="" data-thx="" formValidate_JS>
+          <input type="hidden" name="action" value="request">
+          <input type="hidden" name="form" value="Баннер получить коммерческое предложение">
+          <div class="form-container">
+            <div class="input-wrap">
+              <label for="job" class="form-label">
+                <p class="form-text">
+                  Чем вы занимаетесь (можно ссылку на сайт)
+                </p>
+              </label>
+              <input type="text" name="job" class="form-input" required placeholder="Руководитель медцентра">
+            </div>
+            <div class="input-wrap">
+              <label for="phone" class="form-label">
+                <p class="form-text">Ваш телефон</p>
+                <input type="text" name="phone" class="form-input"  phoneMask_JS required>
+            </label>
+            </div>
+            <div class="input-wrap">
+              <label for="social_type">
+                <p class="form-text">
+                  Выберите куда вам отправить?
+                </p>
+              </label>
+              <select name="social_type" class="form-select">
+                <option value="WhatsApp">Получить в WhatsApp</option>
+                <option value="Telegram">Получить в Telegram</option>
+              </select>
+            </div>
+            <button class="input-wrap form-btn btn" agreementControlBtn_JS>
+                <span>Получить предложение</span>
+            </button>
+          </div>
+          <div class="form-checkbox">
+              <div agreementControl_JS class="checked">
+                  <label for="agreement"></label>
+                  <input type="checkbox" name="agreement" agreementControlCheckbox_JS checked>
+              </div>
+              <p>
+                Даю согласие на обработку моих <a href="" class="agreement-link" target="_blank">персональных данных</a>
+              </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="section-about section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <h2 class="section-about__title section-title title" onscrolldisplay_js>
+          Заказывайте продвижение вашей клиники <span class="title title-accent">в агентстве с глубокой экспертизой</span>
+        </h2>
+        <p class="section-about__subtitle section-subtitle">
+          Постоянно повышаем свою квалификацию и делимся наработанным опытом в профессиональных изданиях
+        </p>
+      </div>
+      <div class="section-about__tabs about-tabs">
+        <button class="about-tabs__btn about-tab active" data-path="news">
+          О нас пишут
+        </button>
+        <button class="about-tabs__btn about-tab" data-path="articles">
+          Статьи
+        </button>
+        <button class="about-tabs__btn about-tab" data-path="reports">
+          Отчёты о мероприятиях
+        </button>
+        <button class="about-tabs__btn about-tab" data-path="video">
+          Видео
+        </button>
+      </div>
+      <div class="section-about__tabs-content about-tabs-content">
+        <div class="about-tabs-content__item active" data-target="news">
+          <div class="about-tabs-content__item-wrap">
+            <article class="new-card" style="background-image: url(/img/tabs-img.webp);">
+              <span class="new-card__title">
+                Инновационные подходы в медицинском маркетинге: как достичь успеха
+              </span>
+              <div class="new-card__logo">
+                <img src="/img/new-logo.svg" alt="">
+              </div>
+              <a href="" class="new-card__link" aria-label="Ссылка на новость"></a>
+            </article>
+            <article class="new-card" style="background-image: url(/img/tabs-img.webp);">
+              <span class="new-card__title">
+                Эффективные стратегии привлечения пациентов для медицинских учреждений
+              </span>
+              <div class="new-card__logo">
+                <img src="/img/new-logo.svg" alt="">
+              </div>
+              <a href="" class="new-card__link" aria-label="Ссылка на новость"></a>
+            </article>
+            <article class="new-card" style="background-image: url(/img/tabs-img.webp);">
+              <span class="new-card__title">
+                Использование цифрового маркетинга в медицинской отрасли: новые возможности и вызовы
+              </span>
+              <div class="new-card__logo">
+                <img src="/img/new-logo.svg" alt="">
+              </div>
+              <a href="" class="new-card__link" aria-label="Ссылка на новость"></a>
+            </article>
+          </div>
+          <button class="load-more-btn">
+            Загрузить еще
+          </button>
+        </div>
+        <div class="about-tabs-content__item" data-target="articles" style="display: none;">
+          <div class="about-tabs-content__item-wrap">
+            <article class="about-tabs-content__article article-card">
+              <div class="article-card__img-wrap">
+                <img class="article-card__img" src="./img/seo.webp" alt="">
+              </div>
+              <div class="article-card__content-wrap">
+                <div class="article-card__info">
+                  <span class="article-card__category">
+                    #seo продвижение
+                  </span>
+                  <span class="article-card__date">
+                    28.02.2023
+                  </span>
+                </div>
+                <h3 class="article-card__title title-black title-3">
+                  Что такое ключевые слова и как с ними работать: ликбез от SEO-специалистов
+                </h3>
+                <p class="article-card__desc">
+                  Вводный гайд по использованию одного из основных инструментов SEO.
+                </p>
+                <a href="" class="article-card__link"></a>
+              </div>
+            </article>
+            <article class="about-tabs-content__article article-card">
+              <div class="article-card__img-wrap">
+                <img class="article-card__img" src="./img/seo.webp" alt="">
+              </div>
+              <div class="article-card__content-wrap">
+                <div class="article-card__info">
+                  <span class="article-card__category">
+                    #seo продвижение
+                  </span>
+                  <span class="article-card__date">
+                    28.02.2023
+                  </span>
+                </div>
+                <h3 class="article-card__title title-black title-3">
+                  Что такое ключевые слова и как с ними работать: ликбез от SEO-специалистов
+                </h3>
+                <p class="article-card__desc">
+                  Вводный гайд по использованию одного из основных инструментов SEO.
+                </p>
+                <a href="" class="article-card__link"></a>
+              </div>
+            </article>
+            <article class="about-tabs-content__article article-card">
+              <div class="article-card__img-wrap">
+                <img class="article-card__img" src="./img/seo.webp" alt="">
+              </div>
+              <div class="article-card__content-wrap">
+                <div class="article-card__info">
+                  <span class="article-card__category">
+                    #seo продвижение
+                  </span>
+                  <span class="article-card__date">
+                    28.02.2023
+                  </span>
+                </div>
+                <h3 class="article-card__title title-black title-3">
+                  Что такое ключевые слова и как с ними работать: ликбез от SEO-специалистов
+                </h3>
+                <p class="article-card__desc">
+                  Вводный гайд по использованию одного из основных инструментов SEO.
+                </p>
+                <a href="" class="article-card__link"></a>
+              </div>
+            </article>
+          </div>
+          <a href="" class="about-tabs-content__item-btn btn">
+            Смотреть больше статей
+          </a>
+        </div>
+        <div class="about-tabs-content__item" data-target="reports" style="display: none;">
+          <div class="about-tabs-content__item-wrap">
+            <article class="report">
+              <div class="report__img-wrap">
+                <img class="report__img" src="./img/tabs-img.webp" alt="">
+              </div>
+              <a href="" class="report__link" aria-label="Ссылка на новость"></a>
+            </article>
+          </div>
+          <button class="load-more-btn">
+            Загрузить еще
+          </button>
+        </div>
+        <div class="about-tabs-content__item" data-target="video" style="display: none;">
+          <div class="about-tabs-content__item-wrap">
+            <div class="about-tabs-video video-item video-item-tab">
+              <img src="/img/videoreview3.webp" alt="Преврью видео" class="video-item__preview">
+              <a href="https://www.youtube.com/watch?v=M62kyPOocEA" class="video-item__link" data-fancybox></a>
+            </div>
+            <div class="about-tabs-video video-item video-item-tab">
+              <img src="/img/videoreview3.webp" alt="Преврью видео" class="video-item__preview">
+              <a href="https://www.youtube.com/watch?v=M62kyPOocEA" class="video-item__link" data-fancybox></a>
+            </div>
+            <div class="about-tabs-video video-item video-item-tab">
+              <img src="/img/videoreview3.webp" alt="Преврью видео" class="video-item__preview">
+              <a href="https://www.youtube.com/watch?v=M62kyPOocEA" class="video-item__link" data-fancybox></a>
+            </div>
+          </div>
+          <button class="load-more-btn">
+            Загрузить еще
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
   </main>
   <footer class="footer">
+    <div class="container">
+      <div class="footer__content-wrap">
+        <div class="footer__main-info">
+          <a href="/" class="footer__logo logo" aria-label="Логотип Radema">
+            <img class="logo__img" src="img/logo.png" alt="Logo">
+          </a>
+          <div class="footer__desc">
+            <p class="footer__desc-text">
+              Медицинский маркетинг для клиник с 2018 года в Москве и РФ
+            </p>
+          </div>
+          <div class="footer__soc-media soc-media">
+            <h3 class="soc-media__title title title-3">
+              мы в соцсетях
+            </h3>
+            <ul class="soc-media__list">
+              <li class="soc-media__item">
+                <a href="" class="soc-media__link" aria-label="VK" style="background-image: url('../img/icons/vk.svg');"></a>
+              </li>
+              <li class="soc-media__item">
+                <a href="" class="soc-media__link" aria-label="Youtube" style="background-image: url('../img/icons/youtube.svg');"></a>
+              </li>
+              <li class="soc-media__item">
+                <a href="" class="soc-media__link" aria-label="Telegram" style="background-image: url('../img/icons/telegram.svg');"></a>
+              </li>
+            </ul>
+          </div>
+          <ul class="">
 
+          </ul>
+        </div>
+        <div class="footer__nav footer-column">
+          <h3 class="footer__title title title-3">
+            НАВИГАЦИЯ
+          </h3>
+          <nav class="footer-nav">
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">
+                  Услуги
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">
+                  Акции
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">
+                  Калькулятор стоимости
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">
+                  Кейсы
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">
+                  О компании
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">
+                  Отзывы
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">
+                  Вакансии
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">
+                  Статьи
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">
+                  FAQ
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__services footer-column">
+          <h3 class="footer__title title title-3">
+            УСЛУГИ
+          </h3>
+          <nav class="footer-nav">
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">
+                  Разработка сайта
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">
+                  Контекстная реклама
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">
+                  SEO-продвижение сайта
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">
+                  SERM — работа с репутацией
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">
+                  SMM — ведение социальных сетей
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">
+                  Таргетированная реклама
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">
+                  Продвижение в Telegram
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">
+                  Email-маркетинг
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">
+                  Сквозная аналитика
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">
+                  Интеграция CRM-систем
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__contacts">
+          <h3 class="footer__title footer__title_contacts title title-3">
+            КОНТАКТЫ
+          </h3>
+          <a href="mailto:info@radema.ru" class="footer__email">
+            info@radema.ru
+          </a>
+          <div class="footer__phone-wrap phone">
+            <div class="phone__working-time">
+              <span class="phone__working-time-text">
+                Звоните ПН-ПТ с 9:00 до 19:00
+              </span>
+            </div>
+            <a style="background-image:url('./img/icons/phone.svg');" href="tel:88005458225" class="phone__link">8 800 545 82 25</a>
+          </div>
+          <button type="button" class="footer__cooperation-btn btn">
+            Обсудить сотрудничество
+          </button>
+          <div class="footer__messangers-wrap messangers messangers--footer">
+            <ul class="messangers__list">
+              <li class="messangers__item">
+                <a style="background-image: url('./img/icons/whatsApp.svg');" href="" class="messangers__link" aria-label="WhattsApp ссылка" target="_blank"></a>
+              </li>
+              <li class="messangers__item">
+                <a style="background-image: url('./img/icons/telegram.svg');" href="" class="messangers__link" aria-label="Telegram ссылка" target="_blank"></a>
+              </li>
+              <li class="messangers__item">
+                <a style="background-image: url('./img/icons/mail.svg');" href="" class="messangers__link" aria-label="Почта ссылка" target="_blank"></a>
+              </li>
+            </ul>
+            <p class="messangers__text">
+              Задайте вопрос, <span class="messangers__text-accent">мы онлайн</span>
+            </p>
+          </div>
+          <img src="./img/arda.webp" alt="" class="footer__arda-logo">
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-wrap">
+          <p class="footer__bottom-year">
+            2022-2023 © Маркетинговое агентство
+          </p>
+          <p class="footer__bottom-info">
+            RADEMA | Radetsky Marketing ИНН 410506402431
+          </p>
+        </div>
+        <a href="" class="footer__bottom-link">
+          Политика конфиденциальности
+        </a>
+        <a href="" class="footer__bottom-link">
+          Партнёрская программа
+        </a>
+        <div class="footer__bottom-copyrights">
+          <span class="footer__bottom-copyrights-text">
+            Copyright 2023
+          </span>
+          <span class="footer__bottom-copyrights-desc">
+            Все права защищены
+          </span>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <div class="preloader"></div>
+  <button class="to-top btn" toTop_JS></button>
 
   <script src="js/polyfill.min.js"></script>
   <script src="js/lazyload.min.js"></script>
@@ -1571,5 +2664,51 @@
   <script src="js/inputmask.min.js"></script>
   <script src="js/just-validate.production.min.js"></script> -->
   <script src="js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+		$('[phoneMask_JS]').mask('+7(999)999-99-99');
+    $('[phoneMask_JS]').attr('placeholder', '+7(___)___-__-__');
+    // $("#model").mask("9999_999",{placeholder:"-"});
+//     $('form').on('submit', function(e){
+//                 e.preventDefault();
+//                 let thanks = '<?php echo get_page_link(10) ?>';
+//       if($(this).data('thanks')){
+//         thanks = $(this).data('thanks')
+//       }
+//       let inputPhone = $(this).find('input[name="phone"]')
+//       if(inputPhone.val().length >= 15){
+//           let formData = new FormData(this);
+//           formData.append('url', document.location.href);
+//           let file = $(this).data('file');
+//           let btn = $(this).find('.form-btn');
+// // 							btn.find('p').text('Загрузка...');
+//           btn.find('span').text('Загрузка...');
+//           btn.text('Загрузка...');
+//           $.ajax({
+//             url: '<?php echo admin_url('admin-ajax.php') ?>',
+//             data: formData,
+//             processData: false,
+//             contentType: false,
+//             type: 'POST',
+//             success: function (response) {
+//               if (file){
+//                 let link = document.createElement('a');
+//                 link.setAttribute('href', file);
+//                 link.setAttribute('target', '_blank');
+//                 link.setAttribute('download','download');
+//                 link.click();
+//               }
+//               location.href = thanks;
+//             }
+//           });
+//       } else {
+//         inputPhone.addClass('validate_error')
+//         setTimeout(function(){
+//           inputPhone.removeClass('validate_error')
+//         }, 2000);
+//       }
+//     })
+  </script>
 </body>
 </html>

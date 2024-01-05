@@ -121,13 +121,11 @@
 }
 @keyframes pulse_2_small {
   0% {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-    opacity: 0.8;
+    transform: scale(1);
+    opacity: 0.7;
   }
   100% {
-    -webkit-transform: scale(1.7);
-            transform: scale(1.7);
+    transform: scale(1.6);
     opacity: 0;
   }
 }

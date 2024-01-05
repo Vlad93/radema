@@ -1,0 +1,27 @@
+.section-commercial-offer {
+  &.section-form {
+    padding-top: 290px;
+    padding-bottom: 65px;
+  }
+  &__subtitle {
+    margin-bottom: 70px;
+    margin-left: 0;
+    line-height: 1.3em;
+    max-width: 45%;
+  }
+  &__bg-large {
+    top: 190px;
+    height: calc(100% - 190px);
+    clip-path: none;
+    & img {
+      object-fit: cover;
+    }
+  }
+  &__bg-small {
+    height: auto;
+    width: 50%;
+    left: auto;
+    right: 0;
+    bottom: 60px;
+  }
+}

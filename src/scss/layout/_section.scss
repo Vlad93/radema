@@ -1,4 +1,10 @@
 .section {
   padding-top: 100px;
-  background-color: #fbfbfb;
+  &:last-of-type {
+    margin-bottom: 100px;
+  }
+  &__content {
+    position: relative;
+    z-index: 1;
+  }
 }

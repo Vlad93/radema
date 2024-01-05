@@ -992,175 +992,12 @@ $(document).ready(function () {
         });
     });
 
-    $('[promotionsSlider_JS]').each(function () {
-        var $container = $(this).find('.swiper-container'),
-            $prevBtn = $(this).find('.slider-prev-btn'),
-            $nextBtn = $(this).find('.slider-next-btn'),
-            $pagination = $(this).find('.slider-pagination');
-
-        var space = $(window).innerWidth();
-        space = (space / 100) * 1.8392012611665;
-
-        new Swiper($container, {
-            direction: 'horizontal',
-            slidesPerView: 1,
-            speed: 500,
-            loop: true,
-            spaceBetween: 10,
-            navigation: {
-                nextEl: $nextBtn,
-                prevEl: $prevBtn,
-            },
-            pagination: {
-                el: $pagination,
-                type: 'bullets',
-            },
-            breakpoints: {
-                769: {
-                    slidesPerView: 3,
-                    spaceBetween: space
-                }
-            }
-        });
-    });
-
-    $('[singleSlider_JS]').each(function () {
-        var $container = $(this).find('.swiper-container'),
-            $prevBtn = $(this).find('.slider-prev-btn'),
-            $nextBtn = $(this).find('.slider-next-btn'),
-            $pagination = $(this).find('.slider-pagination');
-
-        new Swiper($container, {
-            direction: 'horizontal',
-            slidesPerView: 1,
-            speed: 500,
-            loop: true,
-            observer: true,
-            observeParents: true,
-            spaceBetween: 10,
-            navigation: {
-                nextEl: $nextBtn,
-                prevEl: $prevBtn,
-            },
-            pagination: {
-                el: $pagination,
-                type: 'bullets',
-            }
-        });
-    });
-
-	$('[singleSliderNoLoop_JS]').each(function () {
-        var $container = $(this).find('.swiper-container'),
-            $prevBtn = $(this).find('.slider-prev-btn'),
-            $nextBtn = $(this).find('.slider-next-btn'),
-            $pagination = $(this).find('.slider-pagination');
-
-        new Swiper($container, {
-            direction: 'horizontal',
-            slidesPerView: 1,
-            speed: 500,
-            observer: true,
-            observeParents: true,
-            spaceBetween: 10,
-            navigation: {
-                nextEl: $nextBtn,
-                prevEl: $prevBtn,
-            },
-            pagination: {
-                el: $pagination,
-                type: 'bullets',
-            }
-        });
-    });
-
-    $('[filtersSlider_JS]').each(function () {
-        var $container = $(this).find('.swiper-container'),
-            $prevBtn = $(this).find('.slider-prev-btn'),
-            $nextBtn = $(this).find('.slider-next-btn');
-
-        if ($(window).innerWidth() < 769) {
-            var space = $(window).innerWidth();
-            space = (space / 100) * 1.875;
-        } else {
-            var space = $(window).innerWidth();
-            space = (space / 100) * 2.2070415133998;
-        }
-
-        new Swiper($container, {
-            direction: 'horizontal',
-            slidesPerView: 3,
-            speed: 500,
-            spaceBetween: space,
-            navigation: {
-                nextEl: $nextBtn,
-                prevEl: $prevBtn,
-            },
-            breakpoints: {
-                769: {
-                    slidesPerView: 5,
-                    spaceBetween: space
-                }
-            }
-        });
-    });
-
-    $('[partnersSlider_JS]').each(function () {
-        var $container = $(this).find('.swiper-container'),
-            $prevBtn = $(this).find('.slider-prev-btn'),
-            $nextBtn = $(this).find('.slider-next-btn'),
-            $pagination = $(this).find('.slider-pagination');
-
-        new Swiper($container, {
-            direction: 'horizontal',
-            slidesPerView: 2,
-            speed: 500,
-            loop: true,
-            navigation: {
-                nextEl: $nextBtn,
-                prevEl: $prevBtn,
-            },
-            pagination: {
-                el: $pagination,
-                type: 'bullets',
-            },
-            breakpoints: {
-                769: {
-                    slidesPerView: 8,
-                }
-            }
-        });
-    });
-
-    $('[beforeAfterSlider_JS]').each(function () {
-        var $container = $(this).find('.swiper-container'),
-            $prevBtn = $(this).find('.slider-prev-btn'),
-            $nextBtn = $(this).find('.slider-next-btn'),
-            $pagination = $(this).find('.slider-pagination');
-
-        new Swiper($container, {
-            direction: 'horizontal',
-            slidesPerView: 1,
-            speed: 500,
-            loop: true,
-            spaceBetween: 10,
-            noSwipingClass: 'twentytwenty-handle',
-            navigation: {
-                nextEl: $nextBtn,
-                prevEl: $prevBtn,
-            },
-            pagination: {
-                el: $pagination,
-                type: 'bullets',
-            }
-        });
-    });
-
     $('[projectsSlider_JS]').each(function () {
         var $container = $(this).find('.swiper-container'),
             $prevBtn = $(this).find('.slider-prev-btn'),
             $nextBtn = $(this).find('.slider-next-btn');
 
-        new Swiper($container, {
+        var $swiper = new Swiper($container, {
             direction: 'horizontal',
             slidesPerView: 1,
             speed: 500,
@@ -1180,10 +1017,11 @@ $(document).ready(function () {
               init: function () {
                 const countSlides = $container.find('.swiper-slide:not(.swiper-slide-duplicate)').length;
                 if(countSlides <= this.params.slidesPerView) {
-                  // this.destroy();
+                  // this.el.disable();
                   $nextBtn.addClass('swiper-button-disabled');
                   $prevBtn.addClass('swiper-button-disabled');
                 } else {
+                  // this.enable();
                   $nextBtn.removeClass('swiper-button-disabled');
                   $prevBtn.removeClass('swiper-button-disabled');
                 }
@@ -1228,52 +1066,19 @@ $(document).ready(function () {
             direction: 'horizontal',
             slidesPerView: 1,
             speed: 500,
-            loop: true,
             spaceBetween: 10,
             navigation: {
                 nextEl: $nextBtn,
                 prevEl: $prevBtn,
             },
-            pagination: {
-                el: $pagination,
-                type: 'bullets',
-            },
+            // pagination: {
+            //     el: $pagination,
+            //     type: 'bullets',
+            // },
             breakpoints: {
                 769: {
                     slidesPerView: 4,
-                    spaceBetween: space,
-                }
-            }
-        });
-    });
-
-    $('[workStepsSlider_JS]').each(function () {
-        var $container = $(this).find('.swiper-container'),
-            $prevBtn = $(this).find('.slider-prev-btn'),
-            $nextBtn = $(this).find('.slider-next-btn'),
-            $pagination = $(this).find('.slider-pagination');
-
-        var space = $(window).innerWidth();
-        space = (space / 100) * 4.203888596952180767209668943773;
-
-        new Swiper($container, {
-            direction: 'horizontal',
-            slidesPerView: 1,
-            speed: 500,
-            loop: true,
-            spaceBetween: 10,
-            navigation: {
-                nextEl: $nextBtn,
-                prevEl: $prevBtn,
-            },
-            pagination: {
-                el: $pagination,
-                type: 'bullets',
-            },
-            breakpoints: {
-                769: {
-                    slidesPerView: 3,
-                    spaceBetween: space,
+                    spaceBetween: 40,
                 }
             }
         });
@@ -1294,17 +1099,6 @@ $(document).ready(function () {
             $input.attr('checked', '');
             $btn.removeClass('disabled');
         }
-    });
-
-    $('body [videoBtn_JS]').hover(function () {
-        var $parent = $(this).closest('[videoContainer_JS]');
-
-        $parent.addClass('hovered');
-
-    }, function () {
-        var $parent = $(this).closest('[videoContainer_JS]');
-
-        $parent.removeClass('hovered');
     });
 
     $('body').on('click', '[readMoreBtn_JS]', function () {
@@ -1713,7 +1507,7 @@ $(document).ready(function () {
            $('[headerFixed_JS]').removeClass('fixed');
         };
 
-        if (scroll > 500) {
+        if (scroll >=  $(document).height() / 3) {
             $('[toTop_JS]').addClass('visible');
         } else {
             $('[toTop_JS]').removeClass('visible');
@@ -1738,16 +1532,6 @@ $(document).ready(function () {
 
     $(window).on('load', function () {
         var scroll = $(window).scrollTop();
-
-        var header = $(window).innerWidth();
-        header = (header / 100) * 7, 8822911192853389385181292695744;
-
-//         if (scroll > header) {
-//             $('[headerFixed_JS]').addClass('fixed');
-//         } else {
-//             $('[headerFixed_JS]').removeClass('fixed');
-//         };
-
         if (scroll > 500) {
             $('[toTop_JS]').addClass('visible');
         } else {
@@ -1761,28 +1545,65 @@ $(document).ready(function () {
                 el.addClass('visible');
             };
         });
+        if (scroll > $('.header').innerHeight() + 50) {
+          var headerTopHeight = $('.header__top').innerHeight();
+          $('header').addClass('fixed');
+          $('body').css('padding-top', `${headerTopHeight}px`);
+        } else {
+            $('header').removeClass('fixed');
+            $('body').css('padding-top', '0');
+        };
+    });
 
-        if ($(window).innerWidth() < 769) {
-            if (scroll > 0) {
-                $('header').addClass('fixed');
-            } else {
-                $('header').removeClass('fixed');
-            };
-        }
+    $(window).on('scroll', function () {
+      var scroll = $(window).scrollTop();
+      var headerTopHeight = $('.header__top').innerHeight();
+      var ratio = $(document).scrollTop() / (($(document).height() - $(window).height()) / 100);
+      $('.header-progress').width(ratio + "%");
+      if (scroll > $('.header').innerHeight() + 50) {
+        $('header').addClass('fixed');
+        $('body').css('padding-top', `${headerTopHeight}px`);
+      } else {
+          $('header').removeClass('fixed');
+          $('body').css('padding-top', '0');
+      };
     });
 
     $('[headerBtn_JS]').on('click', function () {
-        if ($(this).hasClass('open')) {
-            menuClose();
+        if ($(this).hasClass('active')) {
+          menuClose();
         } else {
-            menuOpen();
+          menuOpen();
         }
     });
 
 	$('.header__nav a').on('click', function () {
-        if ($('[headerBtn_JS]').hasClass('open')) {
-            menuClose();
+    if ($('[headerBtn_JS]').hasClass('open')) {
+      menuClose();
 		}
+  });
+
+    if ($(window).innerWidth() > 992) {
+      $('.menu__item.dropdown').each(function () {
+        var $submenu = $(this).find('.submenu');
+        var $offsetToLeft = $submenu.offset().left + $submenu.innerWidth();
+        if($offsetToLeft > $(window).innerWidth()) {
+          $submenu.css('transform', `translateX(-${$offsetToLeft - $(window).innerWidth() + 15}px)`);
+        }
+      });
+    };
+
+    $('.menu__item.dropdown').on('mouseenter', function () {
+      if ($(window).innerWidth() > 992) {
+        $(this).addClass('is-active');
+        $(this).find('.submenu').addClass('is-active');
+      }
+    });
+    $('.menu__item.dropdown').on('mouseleave', function () {
+      if ($(window).innerWidth() > 992) {
+        $(this).removeClass('is-active');
+        $(this).find('.submenu').removeClass('is-active');
+      }
     });
 
     $('.nav-item.dropdown-item').on('click', function () {
@@ -2015,14 +1836,14 @@ $(document).ready(function () {
 
 function menuOpen() {
     $('html').css('overflow', 'hidden');
-    $('[headerBtn_JS]').addClass('open');
-    $('[headerBtn_JS]').closest('header').addClass('open');
+    $('[headerBtn_JS]').addClass('active');
+    $('[headerBtn_JS]').closest('header').find('.header__mob-wrap').addClass('open');
 }
 
 function menuClose() {
     $('html').removeAttr('style');
-    $('[headerBtn_JS]').removeClass('open');
-    $('[headerBtn_JS]').closest('header').removeClass('open');
+    $('[headerBtn_JS]').removeClass('active');
+    $('[headerBtn_JS]').closest('header').find('.header__mob-wrap').removeClass('open');
 }
 
 function come(elem) {
@@ -2035,6 +1856,7 @@ function come(elem) {
 }
 
 $(document).ready(function () {
+
   // Accordion
   if ($(window).innerWidth() > 768) {
     $('.problem-solution-accordion__btn').hover(function (e) {
@@ -2049,7 +1871,13 @@ $(document).ready(function () {
         $(this).removeClass('active');
       });
       $parent.addClass('active');
-      $content.fadeIn(300);
+      $content.show();
+      // $('html, body').animate({
+      //   scrollTop: $accContainer.offset().top
+      // }, {
+      //     duration: 300,   // по умолчанию «400»
+      //     easing: "linear" // по умолчанию «swing»
+      // });
     });
   } else {
     $('body').on('click', '.problem-solution-accordion__btn', function (e) {
@@ -2072,6 +1900,33 @@ $(document).ready(function () {
 });
 
 
+$('.team-card__info-btn').each(function () {
+  $(this).on('click', function() {
+    var $teamCard = $(this).parents('.team-card');
+    $.fancybox.open($teamCard.find('.team-card__about'), {
+      type: 'inline',
+    });
+  })
+});
+
+$('.about-tab').each(function () {
+  $(this).on('click', function() {
+    $('.about-tab').each(function () {
+      $(this).removeClass('active');
+    });
+    $('.about-tabs-content__item').each(function () {
+      $(this).removeClass('active');
+      $(this).hide();
+    });
+    var $path = $(this).attr('data-path');
+    $(this).addClass('active');
+    var $curTabContent = $(`.about-tabs-content__item[data-target=${$path}]`);
+    $curTabContent.show();
+    // $('html, body').animate({
+    //   scrollTop: $curTabContent.offset().top
+    // }, 300);
+  })
+})
 
 
 

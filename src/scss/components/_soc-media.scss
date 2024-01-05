@@ -1,57 +1,32 @@
 .soc-media {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  @include _576 {
-    max-width: 50%;
+  &__title {
+    margin-bottom: 10px;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: $white;
   }
-  @include _992 {
-    max-width: 100%;
-  }
-  &__item:not(:last-of-type) {
-    margin-right: 20px;
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
   }
   &__link {
     display: block;
-    width: 30px;
-    height: 30px;
-    outline: 3px solid transparent;
-    outline-offset: -1px;
-    transition: outline-color .3s ease, background-color .3s ease;
-  }
-  &__icon {
-    fill: $grey;
-    transition: fill .3s ease;
-  }
-  &__link:focus-visible {
-    outline-color: $primary_light;
-    background-color: $primary_light;
-    .soc-media__icon {
-      position: relative;
-      fill: $white;
-    }
-  }
-  &__link:active {
-    outline-color: transparent;
-    .soc-media__icon {
-      fill: $primary_shade;
-      stroke: transparent;
-    }
-  }
-  @include _767 {
-    &__link:hover {
-      outline-color: transparent;
-      background-color: transparent;
-      .soc-media__icon {
-        fill: $primary;
-      }
-    }
-    &__link:active {
-      outline-color: transparent;
-      .soc-media__icon {
-        fill: $primary_shade;
-        stroke: transparent;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .8;
+    transition: opacity .3s ease;
+    @include interactive {
+      &:hover {
+        opacity: 1;
       }
     }
   }
+
 }

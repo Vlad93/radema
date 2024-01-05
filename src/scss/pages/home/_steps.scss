@@ -1,0 +1,95 @@
+.section-steps {
+  padding-bottom: 50px;
+  background: url('../img/conus-steps.png') no-repeat 93% 2% / 32%,
+              url('../img/tablet-steps.png') no-repeat 27% 110% / 32%;
+  &__container {
+    position: relative;
+  }
+  &__title {
+    margin-bottom: 90px;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    background: url('../img/dashed-steps.svg') no-repeat center 50px / auto calc(75% + 25px);
+  }
+  &__steps {
+    flex-basis: calc(50% - 83px);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    &-item {
+      position: relative;
+      width: 100%;
+      &-num {
+        position: absolute;
+        top: 46px;
+        left: calc(100% + 53px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: $primary_blue;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1em;
+        color: $white;
+      }
+    }
+    &-right {
+      padding-top: 130px;
+      gap: 30px;
+      & .section-steps__steps-item-num {
+        left: -113px
+      }
+
+    }
+    &-right .step-card {
+      &::after {
+        left: auto;
+        right: calc(100% - 4px);
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.step-card {
+  padding: 50px;
+  position: relative;
+  max-width: 100%;
+  border-radius: 16px;
+  border: 1px solid rgba(2, 5, 40, 0.25);
+  &::after {
+    content: '';
+    position: absolute;
+    left: calc(100% - 4px);
+    top: 50px;
+    display: block;
+    width: 43px;
+    height: 51px;
+    background: url('../img/step-ukazatel.svg') no-repeat center / cover, #fbfbfb;
+  }
+  &__title {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.62em;
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+  &__link {
+    &:not(:last-child) {
+      margin-bottom: 42px;
+    }
+  }
+  &__btn {
+    width: 100%;
+    padding: 24px 0;
+  }
+}

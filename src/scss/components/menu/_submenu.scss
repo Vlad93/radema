@@ -1,8 +1,12 @@
 .submenu {
+  padding: 30px;
   position: absolute;
+  top: 98%;
+  width: max-content;
   border-radius: 16px;
   background: rgba(2, 5, 40, 0.95);
   backdrop-filter: blur(2px);
+  transform-origin: 0 0;
   transition: opacity .4s ease, visibility .4s ease, transform .4s ease;
   &:where(:not(.is-active)) {
     opacity: .0;

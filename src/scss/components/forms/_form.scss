@@ -1,0 +1,96 @@
+.section-form.section{
+  position: relative;
+  padding-top: 179px;
+  padding-bottom: 100px;
+  & .section-title-wrap {
+    margin-bottom: 20px;
+  }
+}
+.section-form {
+  &__top-text {
+    color: $white;
+    font-weight: 600;
+  }
+}
+.section-form__top-text {
+  padding-left: 34px;
+  line-height: 24px;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: left center;
+}
+
+.title-form {
+  margin-bottom: 0;
+  margin-left: 0;
+  max-width: 580px;
+  color: #fff;
+  text-align: left;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+.subtitle-form {
+  font-weight: 500;
+  font-size: 24px;
+  color: $white;
+  text-align: left;
+}
+
+.form-text {
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.35em;
+  color: $white;
+}
+
+.form-container {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.form-input {
+  position: relative;
+  flex-basis: 300px;
+  padding: 22px 30px;
+  font-weight: 500;
+  color: $primary;
+  border-radius: 300px;
+  background-color: $white;
+  &::placeholder {
+    color: $primary;
+  }
+  &[name="phone"] {
+    padding-left: 64px;
+  }
+}
+
+.form-label[for="phone"] {
+  display: block;
+  position: relative;
+  &::before {
+    content: '';
+    z-index: 1;
+    left: 30px;
+    bottom: 20px;
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('../img/russia.png') no-repeat center / cover;
+  }
+}
+
+.form-btn {
+  flex-basis: 300px;
+  padding: 22px 30px;
+}
+
+.input-wrap {
+  flex-basis: 25%;
+  & .form-input {
+    width: 100%;
+  }
+}

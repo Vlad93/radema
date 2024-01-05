@@ -1,3 +1,4 @@
 .slider-btn.swiper-button-disabled {
-  display: none;
+  background: url('../img/icons/arrowLeft-black.svg') no-repeat center / 24px 24px, $white;
+  pointer-events: none;
 }

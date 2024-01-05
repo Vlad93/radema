@@ -1,0 +1,26 @@
+.form-bg-large, .form-bg-small {
+  position: absolute;
+  z-index: 0;
+}
+.form-bg-large img, .form-bg-small img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+// clip-path: polygon(59% 99%, 0 100%, 0 0, 100% 0, 100% 94%, 88% 97%);
+.form-bg-large {
+  clip-path: polygon(0% 95%,0 100%,0 0,100% 0,100% 90%,57% 94%);
+  left: 0;
+  top: 100px;
+  width: 100%;
+  height: calc(100% - 100px);
+}
+
+.form-bg-small {
+  left: 9%;
+  bottom: 5%;
+  height: auto;
+  width: 100%;
+  height: 90%;
+}

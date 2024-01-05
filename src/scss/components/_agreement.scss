@@ -1,0 +1,69 @@
+.form-checkbox {
+  padding-left: 26px;
+  display: inline-block;
+  position: relative;
+  & div[agreementControl_JS] {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    & label {
+      cursor: pointer;
+      position: relative;
+      width: 16px;
+      height: 16px;
+      border-radius: 4px;
+      background-color: $white;
+      &::after {
+        cursor: pointer;
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 4px;
+        background-color: transparent;
+        transition: background-color .3s ease;
+      }
+    }
+    &.checked {
+      & label::after {
+        background-color: $primary-blue;
+      }
+    }
+    & input {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  color: $white;
+  & .agreement-link {
+    position: relative;
+    z-index: 1;
+    color: $primary-blue;
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      left: 0;
+      top: calc(100% + 1px);
+      width: 100%;
+      height: 1px;
+      background-color: $primary-blue;
+      transform-origin: 0 0;
+      transition: transform .3s ease;
+    }
+    @include interactive {
+      &:hover::after {
+        transform: scale(0.85);
+      }
+    }
+  }
+}

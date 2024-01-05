@@ -2,9 +2,65 @@
   position: relative;
   z-index: 1;
   color: $white;
+  &__mob {
+    display: none;
+    &-btn {
+      padding: 0 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: none;
+      outline: none;
+      gap: 7px;
+      width: 44px;
+      height: 44px;
+      &-line,
+      &::before,
+      &::after  {
+        content: '';
+        display: block;
+        width: 34px;
+        height: 4px;
+        background-color: $primary;
+        border-radius: 4px;
+        transform-origin: 0 0;
+        transition: transform .3s ease;
+      }
+      &::after {
+        margin-left: 0;
+        width: 20px;
+      }
+      &.active {
+        &::after {
+          transform: scale(0);
+        }
+        & .header__mob-btn-line {
+          transform: translate(4px, 13px) rotate(-45deg);
+        }
+        &::before {
+          transform: translate(6px, 0) rotate(45deg);
+        }
+      }
+    }
+    @include _992 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &-progress {
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $primary-blue;
+    display: none;
+  }
   &__top {
     padding: 27px 0 29px;
     border-bottom: 1px solid rgba(255, 255, 255, .15);
+    transition: transform .3s ease;
   }
   &__wrap {
     display: flex;
@@ -20,14 +76,21 @@
       font-size: 14px;
       line-height: 1.48em;
     }
+    @include _1200 {
+      display: none;
+    }
   }
   &__messangers-wrap {
     margin: 0 auto;
   }
   &__phone-wrap {
     margin-right: 32px;
+    @include _1200 {
+      margin-right: 20px;
+    }
   }
   &__cooperation-btn {
+    font-size: 14px;
     flex-basis: 240px;
   }
   &-menu__list {
@@ -37,5 +100,41 @@
   }
   &__bottom {
     padding: 26px 0 30px;
+  }
+  &.fixed {
+    & .header-progress {
+      display: block;
+    }
+    & .header__logo {
+      background: url('../img/logo-black.webp') no-repeat center / 100%;
+      & .logo__img {
+        display: none;
+      }
+    }
+    z-index: 16;
+    .header__top {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 15px calc((100% - 1240px + 80px) / 2);
+      color: $primary;
+      background: url('../img/fixed-bg.webp') no-repeat left bottom / contain,
+                  url('../img/fixed-bg-2.webp') no-repeat 120% center / contain, $white;
+      @include _1240 {
+        padding: 15px 40px;
+      }
+      & .phone__working-time-text,
+      & .phone__link {
+        color: $primary;
+      }
+      & .phone__link {
+        @include interactive {
+          &:hover {
+            color: $red;
+          }
+        }
+      }
+    }
   }
 }

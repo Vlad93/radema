@@ -1,12 +1,14 @@
 .menu {
-  &__item.dropdown-wrap {
+  &__item.dropdown {
+    cursor: pointer;
     position: relative;
     display: flex;
     align-items: center;
+    gap: 5px;
   }
   &__link {
     font-size: 14px;
-    transition: color .4s ease;
+    transition: color .3s ease;
     @include interactive {
       &:hover {
         color: $red;
@@ -17,24 +19,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 28px;
+    width: 20px;
     height: 20px;
     border: none;
     outline: none;
     background-color: transparent;
     &-icon {
-      width: 20px;
-      height: 20px;
+      width: 16px;
+      height: 16px;
       fill: transparent;
       stroke: $white;
-      transition: stroke .4s ease, transform .4s ease;
+      transition: stroke .3s ease, transform .3s ease;
     }
   }
   @include interactive {
-    &__item.toggle.is-active  &__link {
+    &__item.is-active  &__link {
       color: $red;
     }
-    &__item.toggle.is-active &__dropdown-btn-icon {
+    &__item.is-active &__dropdown-btn-icon {
       stroke: $red;
       transform: rotate(180deg);
     }
