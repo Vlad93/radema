@@ -12,6 +12,9 @@
   line-height: 1.35em;
   font-size: 38px;
   color: $white;
+  @include _767 {
+    font-size: 28px;
+  }
 }
 
 .title-black {

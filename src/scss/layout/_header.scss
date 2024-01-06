@@ -4,12 +4,6 @@
   color: $white;
   &__mob {
     display: none;
-    & .header__logo {
-      z-index: 6;
-      background: url('../img/logo-black.webp') no-repeat center / cover;
-      width: 140px;
-      height: 45px;
-    }
     &-btn {
       position: relative;
       padding: 0 5px;
@@ -63,7 +57,7 @@
   }
   &__mob-wrap {
     @include _992 {
-      padding: 121px 0 21px 30px;
+      padding: 20px 0 21px 30px;
       max-height: 100vh;
       position: fixed;
       display: flex;
@@ -114,6 +108,15 @@
   }
   &__logo {
     margin-right: 20px;
+    &-mob {
+      display: none;
+      @include _992 {
+        margin-bottom: 36px;
+        display: block;
+        width: 140px;
+        height: 45px;
+      }
+    }
   }
   &__desc {
     flex: 0 0 165px;
@@ -172,13 +175,23 @@
     & .header-progress {
       display: block;
     }
-    & .header__logo {
-      background: url('../img/logo-black.webp') no-repeat center / 100%;
-      & .logo__img {
+    & .header__top .header-progress {
+      @include _992 {
         display: none;
       }
     }
     z-index: 16;
+    & .header__mob-wrap {
+      top: 45px;
+    }
+    & .header__logo {
+      width: 140px;
+      height: 45px;
+      background: url('../img/logo-black.webp') no-repeat center / cover;
+      & .logo__img {
+        display: none;
+      }
+    }
     .header__top {
       position: fixed;
       top: 0;
@@ -216,8 +229,7 @@
       width: 100%;
       padding: 6px 40px;
       color: $primary;
-      background: url('../img/fixed-bg.webp') no-repeat left bottom / contain,
-                  url('../img/fixed-bg-2.webp') no-repeat 120% center / contain, $white;
+      background: $white;
     }
     .header__mob-btn-line,
     .header__mob-btn::before,
