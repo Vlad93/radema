@@ -11,4 +11,7 @@
 .projects-slider {
   margin-bottom: 25px;
   position: relative;
+  @include _767 {
+    margin-bottom: 20px;
+  }
 }

@@ -4,6 +4,13 @@
   padding-top: 55px;
   @include _992 {
     padding-top: 32px;
+    clip-path: circle(calc(100% + 315px) at 50% 0);
+  }
+  @include _767 {
+    clip-path: circle(calc(100% + 295px) at 50% 0);
+  }
+  @include _576 {
+    clip-path: circle(calc(100% + 280px) at 50% 0);
   }
   &__container {
     padding-bottom: 92px;
@@ -33,9 +40,6 @@
       flex-direction: column;
       gap: 30px;
     }
-    @include _992 {
-      align-items: center;
-    }
   }
   &__title {
     margin-bottom: 33px;
@@ -52,7 +56,6 @@
       width: 100%;
       @include _992 {
         display: block;
-        margin: 0 auto;
       }
     }
   }
@@ -99,7 +102,7 @@
       left: 20%;
     }
     @include _576 {
-      top: 75%;
+      top: 65%;
       left: 0;
     }
   }

@@ -1,12 +1,15 @@
 .slider {
   position: relative;
+  &-pagination {
+
+  }
 }
-.slider-hint {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: none;
-}
+// .slider-hint {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   display: none;
+// }
 .slider-btn {
   position: absolute;
   top: 50%;
@@ -21,13 +24,22 @@
       background: url('../img/icons/arrowLeft.svg') no-repeat center / 24px 24px, $red;
     }
   }
+  @include _767 {
+    width: 36px;
+    height: 36px;
+  }
 }
-
 .slider-prev-btn {
   left: 0;
   transform: translate(-50%, -50%);
+  @include _767 {
+    transform: translate(-15px, -50%);
+  }
 }
 .slider-next-btn {
   right: 0;
   transform: translate(50%, -50%) rotate(180deg);
+  @include _767 {
+    transform: translate(15px, -50%) rotate(180deg);
+  }
 }

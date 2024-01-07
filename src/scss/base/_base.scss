@@ -68,6 +68,12 @@ body {
   padding: 0 40px;
   max-width: $containerMaxWidth;
   margin: 0 auto;
+  @include _992 {
+    padding: 0 30px;
+  }
+  @include _767 {
+    padding: 0 15px;
+  }
 }
 
 img {

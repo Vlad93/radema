@@ -995,7 +995,8 @@ $(document).ready(function () {
     $('[projectsSlider_JS]').each(function () {
         var $container = $(this).find('.swiper-container'),
             $prevBtn = $(this).find('.slider-prev-btn'),
-            $nextBtn = $(this).find('.slider-next-btn');
+            $nextBtn = $(this).find('.slider-next-btn'),
+            $pagination = $(this).find('.slider-pagination');
 
         var $swiper = new Swiper($container, {
             direction: 'horizontal',
@@ -1007,23 +1008,39 @@ $(document).ready(function () {
                 nextEl: $nextBtn,
                 prevEl: $prevBtn,
             },
+            pagination: {
+                el: $pagination,
+                type: 'bullets',
+            },
             breakpoints: {
-                769: {
-                    slidesPerView: 3,
+                767: {
+                    slidesPerView: 2,
                     spaceBetween: 40,
+                },
+                1200: {
+                  slidesPerView: 3,
+                  spaceBetween: 40,
                 }
             },
             on: {
               init: function () {
                 const countSlides = $container.find('.swiper-slide:not(.swiper-slide-duplicate)').length;
                 if(countSlides <= this.params.slidesPerView) {
-                  // this.el.disable();
-                  $nextBtn.addClass('swiper-button-disabled');
-                  $prevBtn.addClass('swiper-button-disabled');
+                  $nextBtn.css('display', 'none');
+                  $prevBtn.css('display', 'none');
                 } else {
-                  // this.enable();
-                  $nextBtn.removeClass('swiper-button-disabled');
-                  $prevBtn.removeClass('swiper-button-disabled');
+                  $nextBtn.removeAttr('style');
+                  $prevBtn.removeAttr('style');
+                }
+              },
+              resize: function () {
+                const countSlides = $container.find('.swiper-slide:not(.swiper-slide-duplicate)').length;
+                if(countSlides <= this.params.slidesPerView) {
+                  $nextBtn.css('display', 'none');
+                  $prevBtn.css('display', 'none');
+                } else {
+                  $nextBtn.removeAttr('style');
+                  $prevBtn.removeAttr('style');
                 }
               },
             }

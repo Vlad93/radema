@@ -32,19 +32,29 @@
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
-  // max-width: 900px;
   color: $primary;
   text-align: center;
+  @include _767 {
+    font-size: 24px;
+    & .title-accent {
+      font-size: 24px;
+    }
+  }
 }
 
 .section-subtitle {
   @extend .section-title;
   margin-bottom: 0;
-  // max-width: 350px;
+  @include _767 {
+    font-size: 16px;
+  }
 }
 
 .section-title-wrap {
   margin-bottom: 50px;
+  @include _992 {
+    margin-bottom: 30px;
+  }
 }
 
 .title-accent {

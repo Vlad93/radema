@@ -236,12 +236,6 @@
                 Руководитель компании RADEMA
               </span>
             </div>
-            <!-- <span class="section-hero__photo-name">
-              Вячеслав Радецкий
-            </span>
-            <span class="section-hero__photo-job">
-              Руководитель компании RADEMA
-            </span> -->
           </div>
         </div>
       </div>
@@ -414,21 +408,9 @@
               </article> -->
             </div>
           </div>
-          <button class="slider-prev-btn slider-btn btn" aria-label="Предыдущий слайд">
-            <img class="slider-prev-btn-icon" src="./img/icons/arrowLeft.svg" alt="">
-          </button>
-          <button class="slider-next-btn slider-btn btn" aria-label="Следующий слайд">
-            <img class="slider-next-btn-icon" src="./img/icons/arrowLeft.svg" alt="">
-          </button>
-        </div>
-        <div class="slider-hint">
-          <span>ЛИСТАЙТЕ ВЛЕВО ВПРАВО</span>
-          <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.7603 5.82319C11.5048 5.82319 11.2697 5.9028 11.0724 6.03549C10.904 5.54602 10.4425 5.19514 9.90269 5.19514C9.64728 5.19514 9.41218 5.27475 9.21482 5.40744C9.04647 4.91797 8.58499 4.56708 8.04514 4.56708C7.81875 4.56708 7.60687 4.629 7.42692 4.73515V2.67702C7.42692 1.9841 6.87255 1.41797 6.18758 1.41797C5.5026 1.41797 4.94824 1.98115 4.94824 2.67702V8.02285L3.87143 7.20314C3.2329 6.71662 2.32734 6.78149 1.76136 7.35647C1.39856 7.72504 1.39856 8.32361 1.76136 8.68924L6.17016 13.1682C6.6955 13.7019 7.39789 13.9967 8.14092 13.9967H9.59213C11.47 13.9967 12.9967 12.4458 12.9967 10.538V7.0793C12.9996 6.38637 12.4423 5.82319 11.7603 5.82319ZM12.3785 10.541C12.3785 12.1008 11.1275 13.3716 9.59213 13.3716H8.14092C7.56043 13.3716 7.01767 13.1416 6.60843 12.7259L2.19963 8.24695C2.07773 8.12311 2.07773 7.92555 2.19963 7.80171C2.39119 7.6071 2.6466 7.50685 2.90492 7.50685C3.1139 7.50685 3.32577 7.57172 3.49992 7.70735L5.07014 8.90449C5.16302 8.97525 5.29072 8.98705 5.39521 8.93397C5.4997 8.8809 5.56645 8.7718 5.56645 8.65385V2.67702C5.56645 2.32909 5.84509 2.04897 6.18467 2.04897C6.52426 2.04897 6.80289 2.33204 6.80289 2.67702V7.3948C6.80289 7.56877 6.94221 7.7103 7.11345 7.7103C7.2847 7.7103 7.42401 7.56877 7.42401 7.3948V5.82319C7.42401 5.47525 7.70265 5.19514 8.04223 5.19514C8.38182 5.19514 8.66045 5.4782 8.66045 5.82319V7.3948C8.66045 7.56877 8.79977 7.7103 8.97101 7.7103C9.14226 7.7103 9.28157 7.56877 9.28157 7.3948V6.45124C9.28157 6.10331 9.56021 5.82319 9.89979 5.82319C10.2394 5.82319 10.518 6.10626 10.518 6.45124V7.3948C10.518 7.56877 10.6573 7.7103 10.8286 7.7103C10.9998 7.7103 11.1391 7.56877 11.1391 7.3948V7.0793C11.1391 6.73136 11.4178 6.45124 11.7573 6.45124C12.0969 6.45124 12.3756 6.73431 12.3756 7.0793L12.3785 10.541Z"
-              fill="#1C1C1C" />
-              <path d="M11.3053 2.21146L12.3705 1.10573L11.3053 0L11.1573 0.153328L11.97 0.99663H8.0459V1.21483H11.97L11.1573 2.05813L11.3053 2.21146Z" fill="#31B939" />
-              <path d="M1.06519 0L0 1.10573L1.06519 2.21146L1.21322 2.05813L0.400536 1.21483H4.32463V0.99663H0.400536L1.21322 0.153328L1.06519 0Z" fill="#31B939" />
-          </svg>
+          <button class="slider-prev-btn slider-btn btn" aria-label="Предыдущий слайд"></button>
+          <button class="slider-next-btn slider-btn btn" aria-label="Следующий слайд"></button>
+          <div class="slider-pagination"></div>
         </div>
         <a href="#" class="section-projects__btn btn">
           Смотреть больше кейсов
@@ -445,366 +427,366 @@
             Ответьте всего на 8 вопросов за 1 минуту
           </p>
         </div>
+        <div class="calc-price__container" data-questions-count="8">
+          <form action="#" method="POST" class="calc-price__quiz" id="quiz" formValidate_JS data-thanks="">
+            <input type="hidden" name="action" value="quiz">
+              <div class="quiz-progress">
+                  <div class="progress-bar">
+                    <div class="progress-text">Шаг <span>1</span> из <span>8</span></div>
+                  </div>
+              </div>
+              <div class="quiz-questions-container">
+                  <!-- quizSingleAnswer_JS="1" ведет на вопрос с data-question-id="1" -->
+                  <!-- data-question-step="1" нужен для вычислления прогресса, для data-question-id="1-1" или data-question-id="1-2" будет равен data-question-step="1" т.е. это номер вопроса без учета вариативности -->
+
+                <div class="quiz-question active" data-question-id="1" data-question-step="1">
+                  <div class="question-title">
+                      <span>Вопрос 1</span>
+                      <p>Какое направление у вашей клиники?</p>
+                  </div>
+                  <input type="hidden" name="title_1" value="Какое направление у вашей клиники?">
+                  <div class="answers-container">
+                    <div class="container-flex">
+                      <div class="answers-wrap">
+                        <div class="answers-item" quizSingleAnswer_JS="1">
+                          <input type="radio" name="quetion_1" value="Стоматология">
+                          <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
+                              <img src="img/stomatology.jpg" alt="">
+                          </div>
+                          <span class="answers-item__icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
+                              <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
+                              </svg>
+                          </span>
+                          <p class="answers-item__text">Стоматология</p>
+                        </div>
+                      </div>
+                      <div class="answers-wrap">
+                        <div class="answers-item" quizSingleAnswer_JS="2">
+                          <input type="radio" name="quetion_2" value="Медицинский центр">
+                          <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
+                              <img src="img/med-center.jpg" alt="">
+                          </div>
+                          <span class="answers-item__icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
+                              <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
+                              </svg>
+                          </span>
+                          <p class="answers-item__text">Медицинский центр</p>
+                        </div>
+                      </div>
+                      <div class="answers-wrap">
+                        <div class="answers-item" quizSingleAnswer_JS="3">
+                          <input type="radio" name="quetion_3" value="Центр эстетической медицины">
+                          <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
+                              <img src="img/esteticmed.jpg" alt="">
+                          </div>
+                          <span class="answers-item__icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
+                              <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
+                              </svg>
+                          </span>
+                          <p class="answers-item__text">Центр эстетической медицины</p>
+                        </div>
+                      </div>
+                      <div class="answers-wrap">
+                        <div class="answers-item" quizSingleAnswer_JS="4">
+                          <input type="radio" name="quetion_4" value="Косметология">
+                          <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
+                              <img src="img/cosmetology.jpg" alt="">
+                          </div>
+                          <span class="answers-item__icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
+                              <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
+                              </svg>
+                          </span>
+                          <p class="answers-item__text">Косметология</p>
+                        </div>
+                      </div>
+                      <div class="answers-wrap">
+                        <div class="answers-item" quizSingleAnswer_JS="5">
+                          <input type="radio" name="quetion_5" value="Компания-производитель ">
+                          <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
+                              <img src="img/company.jpg" alt="">
+                          </div>
+                          <span class="answers-item__icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
+                              <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
+                              </svg>
+                          </span>
+                          <p class="answers-item__text">Компания-производитель</p>
+                        </div>
+                      </div>
+                      <div class="answers-wrap">
+                        <div class="answers-item" quizSingleAnswer_JS="6">
+                          <input type="radio" name="quetion_6" value="Другое">
+                          <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
+                              <img src="img/other.jpg" alt="">
+                          </div>
+                          <span class="answers-item__icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
+                              <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
+                              </svg>
+                          </span>
+                          <p class="answers-item__text">Другое</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="question-control">
+                    <div class="btn-wrap">
+                        <div class="question-control__btn prev-btn" data-target-question="1"><span>Назад</span>
+                        </div>
+                    </div>
+                    <div class="btn-wrap active">
+                        <div class="question-control__btn next-btn md-main-color-btn disabled" data-target-question=""><span>Далее</span>
+                        </div>
+                        <div class="btn-wrap__hint">Чтобы продолжить ответьте на вопрос выше</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="quiz-question" data-question-id="2" data-question-step="2">
+                  <div class="question-title">
+                      <span>Вопрос 2</span>
+                      <p>Какое направление у вашей клиники?</p>
+                  </div>
+                  <input type="hidden" name="title_2" value="Какое направление у вашей клиники?">
+                  <div class="answers-container">
+                    <div class="container-flex">
+                      <div class="answers-wrap">
+                        <div class="answers-item" quizSingleAnswer_JS="1">
+                          <input type="radio" name="quetion_1" value="Стоматология">
+                          <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
+                              <img src="img/stomatology.jpg" alt="">
+                          </div>
+                          <span class="answers-item__icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
+                              <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
+                              </svg>
+                          </span>
+                          <p class="answers-item__text">Стоматология</p>
+                        </div>
+                      </div>
+                      <div class="answers-wrap">
+                        <div class="answers-item" quizSingleAnswer_JS="2">
+                          <input type="radio" name="quetion_2" value="Медицинский центр">
+                          <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
+                              <img src="img/med-center.jpg" alt="">
+                          </div>
+                          <span class="answers-item__icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
+                              <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
+                              </svg>
+                          </span>
+                          <p class="answers-item__text">Медицинский центр</p>
+                        </div>
+                      </div>
+                      <div class="answers-wrap">
+                        <div class="answers-item" quizSingleAnswer_JS="3">
+                          <input type="radio" name="quetion_3" value="Центр эстетической медицины">
+                          <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
+                              <img src="img/esteticmed.jpg" alt="">
+                          </div>
+                          <span class="answers-item__icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
+                              <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
+                              </svg>
+                          </span>
+                          <p class="answers-item__text">Центр эстетической медицины</p>
+                        </div>
+                      </div>
+                      <div class="answers-wrap">
+                        <div class="answers-item" quizSingleAnswer_JS="4">
+                          <input type="radio" name="quetion_4" value="Косметология">
+                          <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
+                              <img src="img/cosmetology.jpg" alt="">
+                          </div>
+                          <span class="answers-item__icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
+                              <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
+                              </svg>
+                          </span>
+                          <p class="answers-item__text">Косметология</p>
+                        </div>
+                      </div>
+                      <div class="answers-wrap">
+                        <div class="answers-item" quizSingleAnswer_JS="5">
+                          <input type="radio" name="quetion_5" value="Компания-производитель ">
+                          <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
+                              <img src="img/company.jpg" alt="">
+                          </div>
+                          <span class="answers-item__icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
+                              <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
+                              </svg>
+                          </span>
+                          <p class="answers-item__text">Компания-производитель</p>
+                        </div>
+                      </div>
+                      <div class="answers-wrap">
+                        <div class="answers-item" quizSingleAnswer_JS="6">
+                          <input type="radio" name="quetion_6" value="Другое">
+                          <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
+                              <img src="img/other.jpg" alt="">
+                          </div>
+                          <span class="answers-item__icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
+                              <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
+                              </svg>
+                          </span>
+                          <p class="answers-item__text">Другое</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="question-control">
+                    <div class="btn-wrap">
+                        <div class="question-control__btn prev-btn" data-target-question=""><span>Назад</span>
+                        </div>
+                    </div>
+                    <div class="btn-wrap active">
+                        <div class="question-control__btn next-btn md-main-color-btn disabled" data-target-question=""><span>Далее</span>
+                        </div>
+                        <div class="btn-wrap__hint">Чтобы продолжить ответьте на вопрос выше</div>
+                    </div>
+                  </div>
+                </div>
+                <input type="hidden" name="total" value="8">
+
+                <!-- Финал -->
+                <div class="quiz-question" data-question-id="9" data-question-step="9">
+                  <div class="quiz-final">
+                    <div class="quiz-final__content">
+                      <div class="quiz-final__text"><?php echo $final['up'];?></div>
+                      <div class="quiz-final__title"><?php echo $final['header'];?></div>
+                      <div class="quiz-final__form  md-standart-form" quizSocialContainer_JS>
+                        <div class="form-top">
+                          <label class="form-top__item active" quizSocialSelect_JS>
+                            <input type="radio" name="social" value="WhatsApp" checked="checked">
+                              <span class="WhatsApp">
+                                  <img src="./img/icons/whatsApp.svg" alt="">
+                              </span>
+                            <p>WhatsApp</p>
+                          </label>
+                          <label class="form-top__item" quizSocialSelect_JS>
+                            <input type="radio" name="social" value="Viber">
+                              <span class="viber">
+                                  <img src="<?php echo get_template_directory_uri();?>/assets/img/general/viber.svg" alt="">
+                              </span>
+                            <p>Viber</p>
+                          </label>
+                          <label class="form-top__item" quizSocialSelect_JS>
+                            <input type="radio" name="social" value="Telegram">
+                              <span class="telegram">
+                                  <img src="<?php echo get_template_directory_uri();?>/assets/img/general/telegram.svg" alt="">
+                              </span>
+                            <p>Telegram</p>
+                          </label>
+                          <label class="form-top__item" quizSocialSelect_JS quizSocialEmailSelect_JS>
+                            <input type="radio" name="social" value="E-mail">
+                              <span>
+                                  <img src="<?php echo get_template_directory_uri();?>/assets/img/general/@.svg" alt="">
+                              </span>
+                            <p>E-mail</p>
+                          </label>
+                          <label class="form-top__item" quizSocialSelect_JS>
+                            <input type="radio" name="social" value="телефона">
+                              <span class="zvonok">
+                                  <img src="<?php echo get_template_directory_uri();?>/assets/img/general/phone.svg" alt="">
+                              </span>
+                            <p>Позвонить</p>
+                          </label>
+                        </div>
+                        <div class="form-container">
+                            <input type="text" name="name" class="form-input" placeholder="Ваше имя" required>
+                            <input type="email" name="email" class="form-input" placeholder="Ваш e-mail" required>
+                            <input type="text" name="phone" class="form-input" placeholder="Ваш номер WhatsApp" phoneMask_JS required quizSocialInput_JS>
+                            <input type="email" name="email" class="form-input hidden" placeholder="Ваш e-mail" quizSocialEmailInput_JS>
+                            <button class="form-btn md-main-color-btn" agreementControlBtn_JS>
+                                <span>Получить расчет</span>
+                            </button>
+                        </div>
+                        <div class="form-checkbox">
+                            <div agreementControl_JS class="checked">
+                                <input type="checkbox" name="agreement" agreementControlCheckbox_JS checked>
+                                <img src="" alt="">
+                            </div>
+                            <p>
+                                Cогласен с условиями <span popupOpen="politika-popup">политики
+                                конфиденциальности данных</span>
+                            </p>
+                        </div>
+                        <div class="form-bottom">
+                          <div class="form-bottom__title">Вы также получите:</div>
+                          <div class="form-bottom__item">
+                            <div class="item-img">
+                                <img src="<?php echo $gifts['img'] ?>" alt="">
+                            </div>
+                            <div class="item-text"><?php echo $gifts['text'] ?></div>
+                            <div class="item-icon">
+                                <img src="<?php echo get_template_directory_uri();?>/assets/img/general/locker-open.svg" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        </div>
+                    </div>
+                    <div class="quiz-final__img">
+                        <img src="<?php echo $final['hand'];?>" alt="">
+              <?php if($final['circle']):?>
+                        <div class="circle">
+                            <img src="<?php echo get_template_directory_uri();?>/assets/img/general/pdf-circle.svg" alt="">
+                            <p><?php echo $final['circle'];?></p>
+                        </div>
+              <?php endif;?>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </form>
+          <aside class="calc-price__info">
+                <div class="info-person">
+                  <div class="info-person__img">
+                      <img src="./img/v-krasnoy-rubashke-quiz.webp" alt="">
+                  </div>
+                  <div class="info-person__name"><span>Вячеслав Радецкий</span></div>
+              </div>
+              <div class="info-text">
+                  <p data-question-hint="1" class="active"></p>
+              </div>
+              <div class="info-bottom">
+                  <div class="info-bottom__text">В конце получите:</div>
+                  <div class="info-bottom__container">
+                    <div class="info-bottom__item">
+                      <div class="item-img">
+                          <img src="<?php echo $gifts['img'] ?>" alt="">
+                      </div>
+                      <div class="item-text"><?php echo $gifts['text'] ?></div>
+                      <div class="item-icon">
+                          <img src="<?php echo get_template_directory_uri();?>/assets/img/general/locker.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </aside>
+          <div class="calc-price__preloader">
+              <div class="circle"></div>
+              <p>Обработка данных</p>
+          </div>
+          </div>
       </div>
-      <div class="calc-price__container" data-questions-count="8">
-      <form action="#" method="POST" class="calc-price__quiz" id="quiz" formValidate_JS data-thanks="">
-        <input type="hidden" name="action" value="quiz">
-          <div class="quiz-progress">
-              <div class="progress-bar">
-                <div class="progress-text">Шаг <span>1</span> из <span>8</span></div>
-              </div>
-          </div>
-          <div class="quiz-questions-container">
-              <!-- quizSingleAnswer_JS="1" ведет на вопрос с data-question-id="1" -->
-              <!-- data-question-step="1" нужен для вычислления прогресса, для data-question-id="1-1" или data-question-id="1-2" будет равен data-question-step="1" т.е. это номер вопроса без учета вариативности -->
-
-            <div class="quiz-question active" data-question-id="1" data-question-step="1">
-              <div class="question-title">
-                  <span>Вопрос 1</span>
-                  <p>Какое направление у вашей клиники?</p>
-              </div>
-              <input type="hidden" name="title_1" value="Какое направление у вашей клиники?">
-              <div class="answers-container">
-                <div class="container-flex">
-                  <div class="answers-wrap">
-                    <div class="answers-item" quizSingleAnswer_JS="1">
-                      <input type="radio" name="quetion_1" value="Стоматология">
-                      <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
-                          <img src="img/stomatology.jpg" alt="">
-                      </div>
-                      <span class="answers-item__icon">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
-                          <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
-                          </svg>
-                      </span>
-                      <p class="answers-item__text">Стоматология</p>
-                    </div>
-                  </div>
-                  <div class="answers-wrap">
-                    <div class="answers-item" quizSingleAnswer_JS="2">
-                      <input type="radio" name="quetion_2" value="Медицинский центр">
-                      <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
-                          <img src="img/med-center.jpg" alt="">
-                      </div>
-                      <span class="answers-item__icon">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
-                          <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
-                          </svg>
-                      </span>
-                      <p class="answers-item__text">Медицинский центр</p>
-                    </div>
-                  </div>
-                  <div class="answers-wrap">
-                    <div class="answers-item" quizSingleAnswer_JS="3">
-                      <input type="radio" name="quetion_3" value="Центр эстетической медицины">
-                      <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
-                          <img src="img/esteticmed.jpg" alt="">
-                      </div>
-                      <span class="answers-item__icon">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
-                          <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
-                          </svg>
-                      </span>
-                      <p class="answers-item__text">Центр эстетической медицины</p>
-                    </div>
-                  </div>
-                  <div class="answers-wrap">
-                    <div class="answers-item" quizSingleAnswer_JS="4">
-                      <input type="radio" name="quetion_4" value="Косметология">
-                      <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
-                          <img src="img/cosmetology.jpg" alt="">
-                      </div>
-                      <span class="answers-item__icon">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
-                          <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
-                          </svg>
-                      </span>
-                      <p class="answers-item__text">Косметология</p>
-                    </div>
-                  </div>
-                  <div class="answers-wrap">
-                    <div class="answers-item" quizSingleAnswer_JS="5">
-                      <input type="radio" name="quetion_5" value="Компания-производитель ">
-                      <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
-                          <img src="img/company.jpg" alt="">
-                      </div>
-                      <span class="answers-item__icon">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
-                          <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
-                          </svg>
-                      </span>
-                      <p class="answers-item__text">Компания-производитель</p>
-                    </div>
-                  </div>
-                  <div class="answers-wrap">
-                    <div class="answers-item" quizSingleAnswer_JS="6">
-                      <input type="radio" name="quetion_6" value="Другое">
-                      <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
-                          <img src="img/other.jpg" alt="">
-                      </div>
-                      <span class="answers-item__icon">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
-                          <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
-                          </svg>
-                      </span>
-                      <p class="answers-item__text">Другое</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="question-control">
-                <div class="btn-wrap">
-                    <div class="question-control__btn prev-btn" data-target-question="1"><span>Назад</span>
-                    </div>
-                </div>
-                <div class="btn-wrap active">
-                    <div class="question-control__btn next-btn md-main-color-btn disabled" data-target-question=""><span>Далее</span>
-                    </div>
-                    <div class="btn-wrap__hint">Чтобы продолжить ответьте на вопрос выше</div>
-                </div>
-              </div>
-            </div>
-            <div class="quiz-question" data-question-id="2" data-question-step="2">
-              <div class="question-title">
-                  <span>Вопрос 2</span>
-                  <p>Какое направление у вашей клиники?</p>
-              </div>
-              <input type="hidden" name="title_2" value="Какое направление у вашей клиники?">
-              <div class="answers-container">
-                <div class="container-flex">
-                  <div class="answers-wrap">
-                    <div class="answers-item" quizSingleAnswer_JS="1">
-                      <input type="radio" name="quetion_1" value="Стоматология">
-                      <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
-                          <img src="img/stomatology.jpg" alt="">
-                      </div>
-                      <span class="answers-item__icon">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
-                          <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
-                          </svg>
-                      </span>
-                      <p class="answers-item__text">Стоматология</p>
-                    </div>
-                  </div>
-                  <div class="answers-wrap">
-                    <div class="answers-item" quizSingleAnswer_JS="2">
-                      <input type="radio" name="quetion_2" value="Медицинский центр">
-                      <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
-                          <img src="img/med-center.jpg" alt="">
-                      </div>
-                      <span class="answers-item__icon">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
-                          <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
-                          </svg>
-                      </span>
-                      <p class="answers-item__text">Медицинский центр</p>
-                    </div>
-                  </div>
-                  <div class="answers-wrap">
-                    <div class="answers-item" quizSingleAnswer_JS="3">
-                      <input type="radio" name="quetion_3" value="Центр эстетической медицины">
-                      <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
-                          <img src="img/esteticmed.jpg" alt="">
-                      </div>
-                      <span class="answers-item__icon">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
-                          <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
-                          </svg>
-                      </span>
-                      <p class="answers-item__text">Центр эстетической медицины</p>
-                    </div>
-                  </div>
-                  <div class="answers-wrap">
-                    <div class="answers-item" quizSingleAnswer_JS="4">
-                      <input type="radio" name="quetion_4" value="Косметология">
-                      <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
-                          <img src="img/cosmetology.jpg" alt="">
-                      </div>
-                      <span class="answers-item__icon">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
-                          <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
-                          </svg>
-                      </span>
-                      <p class="answers-item__text">Косметология</p>
-                    </div>
-                  </div>
-                  <div class="answers-wrap">
-                    <div class="answers-item" quizSingleAnswer_JS="5">
-                      <input type="radio" name="quetion_5" value="Компания-производитель ">
-                      <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
-                          <img src="img/company.jpg" alt="">
-                      </div>
-                      <span class="answers-item__icon">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
-                          <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
-                          </svg>
-                      </span>
-                      <p class="answers-item__text">Компания-производитель</p>
-                    </div>
-                  </div>
-                  <div class="answers-wrap">
-                    <div class="answers-item" quizSingleAnswer_JS="6">
-                      <input type="radio" name="quetion_6" value="Другое">
-                      <div class="answers-item__img" style="background-image: url('img/quiz-bg.jpg');">
-                          <img src="img/other.jpg" alt="">
-                      </div>
-                      <span class="answers-item__icon">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10Z" fill="white"/>
-                          <path d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96452 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25V0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272V8.29272Z" fill="#27CED7"/>
-                          </svg>
-                      </span>
-                      <p class="answers-item__text">Другое</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="question-control">
-                <div class="btn-wrap">
-                    <div class="question-control__btn prev-btn" data-target-question=""><span>Назад</span>
-                    </div>
-                </div>
-                <div class="btn-wrap active">
-                    <div class="question-control__btn next-btn md-main-color-btn disabled" data-target-question=""><span>Далее</span>
-                    </div>
-                    <div class="btn-wrap__hint">Чтобы продолжить ответьте на вопрос выше</div>
-                </div>
-              </div>
-            </div>
-            <input type="hidden" name="total" value="8">
-
-            <!-- Финал -->
-            <div class="quiz-question" data-question-id="9" data-question-step="9">
-              <div class="quiz-final">
-                <div class="quiz-final__content">
-                  <div class="quiz-final__text"><?php echo $final['up'];?></div>
-                  <div class="quiz-final__title"><?php echo $final['header'];?></div>
-                  <div class="quiz-final__form  md-standart-form" quizSocialContainer_JS>
-                    <div class="form-top">
-                      <label class="form-top__item active" quizSocialSelect_JS>
-                        <input type="radio" name="social" value="WhatsApp" checked="checked">
-                          <span class="WhatsApp">
-                              <img src="./img/icons/whatsApp.svg" alt="">
-                          </span>
-                        <p>WhatsApp</p>
-                      </label>
-                      <label class="form-top__item" quizSocialSelect_JS>
-                        <input type="radio" name="social" value="Viber">
-                          <span class="viber">
-                              <img src="<?php echo get_template_directory_uri();?>/assets/img/general/viber.svg" alt="">
-                          </span>
-                        <p>Viber</p>
-                      </label>
-                      <label class="form-top__item" quizSocialSelect_JS>
-                        <input type="radio" name="social" value="Telegram">
-                          <span class="telegram">
-                              <img src="<?php echo get_template_directory_uri();?>/assets/img/general/telegram.svg" alt="">
-                          </span>
-                        <p>Telegram</p>
-                      </label>
-                      <label class="form-top__item" quizSocialSelect_JS quizSocialEmailSelect_JS>
-                        <input type="radio" name="social" value="E-mail">
-                          <span>
-                              <img src="<?php echo get_template_directory_uri();?>/assets/img/general/@.svg" alt="">
-                          </span>
-                        <p>E-mail</p>
-                      </label>
-                      <label class="form-top__item" quizSocialSelect_JS>
-                        <input type="radio" name="social" value="телефона">
-                          <span class="zvonok">
-                              <img src="<?php echo get_template_directory_uri();?>/assets/img/general/phone.svg" alt="">
-                          </span>
-                        <p>Позвонить</p>
-                      </label>
-                    </div>
-                    <div class="form-container">
-                        <input type="text" name="name" class="form-input" placeholder="Ваше имя" required>
-                        <input type="email" name="email" class="form-input" placeholder="Ваш e-mail" required>
-                        <input type="text" name="phone" class="form-input" placeholder="Ваш номер WhatsApp" phoneMask_JS required quizSocialInput_JS>
-                        <input type="email" name="email" class="form-input hidden" placeholder="Ваш e-mail" quizSocialEmailInput_JS>
-                        <button class="form-btn md-main-color-btn" agreementControlBtn_JS>
-                            <span>Получить расчет</span>
-                        </button>
-                    </div>
-                    <div class="form-checkbox">
-                        <div agreementControl_JS class="checked">
-                            <input type="checkbox" name="agreement" agreementControlCheckbox_JS checked>
-                            <img src="" alt="">
-                        </div>
-                        <p>
-                            Cогласен с условиями <span popupOpen="politika-popup">политики
-                            конфиденциальности данных</span>
-                        </p>
-                    </div>
-                    <div class="form-bottom">
-                      <div class="form-bottom__title">Вы также получите:</div>
-                      <div class="form-bottom__item">
-                        <div class="item-img">
-                            <img src="<?php echo $gifts['img'] ?>" alt="">
-                        </div>
-                        <div class="item-text"><?php echo $gifts['text'] ?></div>
-                        <div class="item-icon">
-                            <img src="<?php echo get_template_directory_uri();?>/assets/img/general/locker-open.svg" alt="">
-                        </div>
-                      </div>
-                    </div>
-
-                    </div>
-                </div>
-                <div class="quiz-final__img">
-                    <img src="<?php echo $final['hand'];?>" alt="">
-          <?php if($final['circle']):?>
-                    <div class="circle">
-                        <img src="<?php echo get_template_directory_uri();?>/assets/img/general/pdf-circle.svg" alt="">
-                        <p><?php echo $final['circle'];?></p>
-                    </div>
-          <?php endif;?>
-                </div>
-              </div>
-            </div>
-          </div>
-      </form>
-      <aside class="calc-price__info">
-            <div class="info-person">
-              <div class="info-person__img">
-                  <img src="./img/v-krasnoy-rubashke-quiz.webp" alt="">
-              </div>
-              <div class="info-person__name"><span>Вячеслав Радецкий</span></div>
-          </div>
-          <div class="info-text">
-              <p data-question-hint="1" class="active"></p>
-          </div>
-          <div class="info-bottom">
-              <div class="info-bottom__text">В конце получите:</div>
-              <div class="info-bottom__container">
-                <div class="info-bottom__item">
-                  <div class="item-img">
-                      <img src="<?php echo $gifts['img'] ?>" alt="">
-                  </div>
-                  <div class="item-text"><?php echo $gifts['text'] ?></div>
-                  <div class="item-icon">
-                      <img src="<?php echo get_template_directory_uri();?>/assets/img/general/locker.svg" alt="">
-                  </div>
-                </div>
-              </div>
-          </div>
-      </aside>
-      <div class="calc-price__preloader">
-          <div class="circle"></div>
-          <p>Обработка данных</p>
-      </div>
-    </div>
   </section>
   <!-- <section class="section-for-whom section">
     <div class="container">
