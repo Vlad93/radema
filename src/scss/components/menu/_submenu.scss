@@ -20,7 +20,6 @@
   }
   &:where(:not(.is-active)) {
     opacity: .0;
-    transform: scaleY(0);
     visibility: hidden;
     @include _992 {
       opacity: 1;

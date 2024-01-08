@@ -1605,6 +1605,94 @@ $(document).ready(function () {
 		}
   });
 
+  function slideToggleSection() {
+    $('[toggleItem_JS]').each(function() {
+      $(this).removeClass('open');
+      $(this).siblings().each(function() {
+        if ($(window).outerWidth() < 992) {
+          $(this).css('display', 'none');
+        } else {
+          $(this).removeAttr('style');
+        }
+      });
+    });
+    return;
+  }
+
+  $('[toggleItem_JS]').each(function() {
+    $(this).on('click', function() {
+      if ($(window).outerWidth() < 992) {
+        $(this).toggleClass('open');
+        $(this).siblings().slideToggle();
+      }
+    });
+  });
+  slideToggleSection();
+
+  // $('[toggleitem_js]').each(function() {
+  //   if ($(window).outerWidth() > 992)
+  //   on('click', function () {
+  //     if ($(this).hasClass('active')) {
+  //       menuClose();
+  //     } else {
+  //       menuOpen();
+  //     }
+  //   });
+  // })
+
+  // Accordion
+  function hoverHandler() {
+    var $this = $(this),
+        $accContainer = $this.closest('.problem-solution-accordion__wrap'),
+        $content = $this.closest('.problem-solution-accordion__content'),
+        $parent = $this.closest('.problem-solution-accordion__item'),
+        $isOpen = $parent.hasClass('active');
+    $('.problem-solution-accordion__item').each(function() {
+      $(this).find('.problem-solution-accordion__content').removeAttr('style');
+      $(this).removeClass('active');
+      $(this).removeClass('active');
+    });
+    if($isOpen) {
+      return;
+    }
+    $parent.addClass('active');
+  }
+  function clickHendler() {
+    var $accContainer = $(this).closest('.problem-solution-accordion__wrap'),
+        $parent = $(this).closest('.problem-solution-accordion__item'),
+        $isOpen = $parent.hasClass('active'),
+        $target = $parent.find('.problem-solution-accordion__content');
+    $accContainer.find('.problem-solution-accordion__item').each(function () {
+      $('.problem-solution-accordion__content').slideUp();
+      $('.problem-solution-accordion__item').removeClass('active');
+    });
+    if ($isOpen) {
+      return;
+    }
+    $parent.addClass('active');
+    $target.slideDown();
+  }
+  function problemsAccordionInit() {
+    if ($(window).outerWidth() > 992) {
+      $('.problem-solution-accordion__item.active').find('.problem-solution-accordion__content').show();
+      $('.problem-solution-accordion__btn').each(function() {
+        $(this).on('mouseenter', hoverHandler);
+      });
+    } else {
+      $('.problem-solution-accordion__item.active').find('.problem-solution-accordion__content').slideDown();
+      $('body').on('click', '.problem-solution-accordion__btn', clickHendler);
+    }
+  };
+  function problemsAccordionDestroy() {
+    $('.problem-solution-accordion__btn').each(function() {
+      $(this).off('mouseenter', hoverHandler);
+    });
+    $('body').off('click', '.problem-solution-accordion__btn', clickHendler);
+  }
+
+  problemsAccordionInit();
+
+  // Dropdown
   function rightDropdown() {
     $('.menu__item.dropdown').each(function () {
       var $submenu = $(this).find('.submenu');
@@ -1619,8 +1707,12 @@ $(document).ready(function () {
     });
   }
   rightDropdown();
+
   $(window).on('resize', function() {
     rightDropdown();
+    slideToggleSection();
+    problemsAccordionDestroy();
+    problemsAccordionInit();
   });
 
 
@@ -1912,51 +2004,6 @@ function come(elem) {
 
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
-
-$(document).ready(function () {
-
-  // Accordion
-  if ($(window).innerWidth() > 768) {
-    $('.problem-solution-accordion__btn').hover(function (e) {
-      e.preventDefault();
-      var $this = $(this),
-          $accContainer = $this.closest('.problem-solution-accordion__wrap'),
-          $content = $this.closest('.problem-solution-accordion__content'),
-          $parent = $this.closest('.problem-solution-accordion__item');
-
-      $('.problem-solution-accordion__item').each(function() {
-        $(this).removeClass('active');
-        $(this).removeClass('active');
-      });
-      $parent.addClass('active');
-      $content.show();
-      // $('html, body').animate({
-      //   scrollTop: $accContainer.offset().top
-      // }, {
-      //     duration: 300,   // по умолчанию «400»
-      //     easing: "linear" // по умолчанию «swing»
-      // });
-    });
-  } else {
-    $('body').on('click', '.problem-solution-accordion__btn', function (e) {
-      e.preventDefault();
-      var $accContainer = $(this).closest('.problem-solution-accordion__wrap'),
-          $parent = $(this).closest('.problem-solution-accordion__item'),
-          $target = $parent.find('.problem-solution-accordion__content');
-
-      $accContainer.find('.problem-solution-accordion__item').each(function () {
-        if (!$this.hasClass("active")) {
-          $('.problem-solution-accordion__content').slideUp(300);
-          $('.problem-solution-accordion__item').removeClass('active');
-        }
-        $this.toggleClass("active");
-        $this.next().slideToggle(300);
-      });
-    });
-  }
-
-});
-
 
 $('.team-card__info-btn').each(function () {
   $(this).on('click', function() {

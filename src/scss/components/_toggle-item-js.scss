@@ -1,0 +1,16 @@
+[toggleItem_JS] {
+  @include _992 {
+    &::after {
+      content: '';
+      display: block;
+      margin-left: auto;
+      flex: 0 0 24px;
+      height: 24px;
+      background: url('../img/caretDown.svg') no-repeat center / cover;
+      transition: transform .3s ease;
+    }
+    &.open::after {
+      transform: rotate(180deg);
+    }
+  }
+}
