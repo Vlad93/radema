@@ -1,26 +1,19 @@
-.form-bg-large, .form-bg-small {
+.form-bg {
   position: absolute;
   z-index: 0;
+  right: -8%;
+  bottom: 0;
+  width: 100%;
+  height: 105%;
+  z-index: 0;
 }
-.form-bg-large img, .form-bg-small img{
+.form-bg img {
+  position: absolute;
   display: block;
+  bottom: 0;
   width: 100%;
   height: 100%;
+  object-position: center bottom;
   object-fit: contain;
 }
-// clip-path: polygon(59% 99%, 0 100%, 0 0, 100% 0, 100% 94%, 88% 97%);
-.form-bg-large {
-  clip-path: polygon(0% 95%,0 100%,0 0,100% 0,100% 90%,57% 94%);
-  left: 0;
-  top: 100px;
-  width: 100%;
-  height: calc(100% - 100px);
-}
 
-.form-bg-small {
-  left: 9%;
-  bottom: 5%;
-  height: auto;
-  width: 100%;
-  height: 90%;
-}

@@ -1049,6 +1049,7 @@ $(document).ready(function () {
     $('[servicesSlider_JS]').each(function () {
       var $container = $(this).find('.swiper-container'),
           $prevBtn = $(this).find('.slider-prev-btn'),
+          $pagination = $(this).find('.slider-pagination'),
           $nextBtn = $(this).find('.slider-next-btn');
 
       new Swiper($container, {
@@ -1061,10 +1062,22 @@ $(document).ready(function () {
               nextEl: $nextBtn,
               prevEl: $prevBtn,
           },
+          pagination: {
+            el: $pagination,
+            type: 'bullets',
+          },
           breakpoints: {
-              769: {
-                  slidesPerView: 3,
-                  spaceBetween: 40,
+              767: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              992: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+              },
+              1200: {
+                slidesPerView: 3,
+                spaceBetween: 40,
               }
           },
       });
@@ -1616,6 +1629,10 @@ $(document).ready(function () {
         }
       });
     });
+    if($(window).outerWidth() < 992) {
+      $('.product-card [toggleItem_JS]').first().addClass('open');
+      $('.product-card [toggleItem_JS]').first().siblings().removeAttr('style');
+    }
     return;
   }
 

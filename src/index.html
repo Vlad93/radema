@@ -1054,7 +1054,7 @@
       </div>
       <div class="section-product__wrap">
         <div class="section-product__item product-card">
-          <div class="product-card__header" style="background: linear-gradient(180deg, rgba(28, 173, 228, 0.80) 0%, rgba(39, 206, 215, 0.80) 100%)">
+          <div class="product-card__header" style="background: linear-gradient(180deg, rgba(28, 173, 228, 0.80) 0%, rgba(39, 206, 215, 0.80) 100%)" toggleItem_JS>
             <div class="product-card__header-wrap">
               <img class="product-card__header-icon" src="./img/rocket.webp" alt="">
               <h3 class="product-card__title title">
@@ -1070,9 +1070,15 @@
             </div>
             <div class="product-card__main">
               <div class="product-card__service">
-                <h4 class="product-card__service-title title-black">
-                  Сайт
-                </h4>
+                <div class="product-card__service-title-wrap">
+                  <h4 class="product-card__service-title title-black">
+                    Лендинг стоимостью 79 000 ₽
+                  </h4>
+                  <span class="product-card__service-gift">
+                    В подарок
+                    <img class="product-card__service-gift-img" src="./img/product-gift.webp" alt="">
+                  </span>
+                </div>
                 <ul class="product-card__service-list">
                   <li class="product-card__service-item">
                     <p class="product-card__service-text">
@@ -1134,9 +1140,14 @@
               </div>
             </div>
             <div class="product-card__footer">
-              <span class="product-card__price">
-                79 000 ₽
-              </span>
+              <div class="product-card__price">
+                <span class="product-card__price-active">
+                  79 000 ₽
+                </span>
+                <span class="product-card__price-old">
+                  148 000 ₽
+                </span>
+              </div>
               <button class="product-card__btn btn">
                 Обсудить детали
               </button>
@@ -1144,7 +1155,7 @@
           </div>
         </div>
         <div class="section-product__item product-card">
-          <div class="product-card__header" style="background: radial-gradient(237.79% 329.81% at 24.02% 0%, rgba(28, 173, 228, 0.40) 0%, rgba(0, 0, 0, 0.00) 100%), #040B2D;">
+          <div class="product-card__header" style="background: radial-gradient(237.79% 329.81% at 24.02% 0%, rgba(28, 173, 228, 0.40) 0%, rgba(0, 0, 0, 0.00) 100%), #040B2D;" toggleItem_JS>
             <div class="product-card__header-wrap">
               <img class="product-card__header-icon" src="./img/fire.webp" alt="">
               <h3 class="product-card__title title">
@@ -1224,9 +1235,14 @@
               </div>
             </div>
             <div class="product-card__footer">
-              <span class="product-card__price">
-                129 000 ₽
-              </span>
+              <div class="product-card__price">
+                <span class="product-card__price-active">
+                  129 000 ₽
+                </span>
+                <span class="product-card__price-old">
+                  228 000 ₽
+                </span>
+              </div>
               <button class="product-card__btn btn">
                 Обсудить детали
               </button>
@@ -1548,8 +1564,9 @@
         </div>
         <button class="slider-prev-btn slider-btn btn" aria-label="Предыдущий слайд"></button>
         <button class="slider-next-btn slider-btn btn" aria-label="Следующий слайд"></button>
+        <div class="slider-pagination"></div>
       </div>
-      <div class="slider-hint">
+      <!-- <div class="slider-hint">
         <span>ЛИСТАЙТЕ ВЛЕВО ВПРАВО</span>
         <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M11.7603 5.82319C11.5048 5.82319 11.2697 5.9028 11.0724 6.03549C10.904 5.54602 10.4425 5.19514 9.90269 5.19514C9.64728 5.19514 9.41218 5.27475 9.21482 5.40744C9.04647 4.91797 8.58499 4.56708 8.04514 4.56708C7.81875 4.56708 7.60687 4.629 7.42692 4.73515V2.67702C7.42692 1.9841 6.87255 1.41797 6.18758 1.41797C5.5026 1.41797 4.94824 1.98115 4.94824 2.67702V8.02285L3.87143 7.20314C3.2329 6.71662 2.32734 6.78149 1.76136 7.35647C1.39856 7.72504 1.39856 8.32361 1.76136 8.68924L6.17016 13.1682C6.6955 13.7019 7.39789 13.9967 8.14092 13.9967H9.59213C11.47 13.9967 12.9967 12.4458 12.9967 10.538V7.0793C12.9996 6.38637 12.4423 5.82319 11.7603 5.82319ZM12.3785 10.541C12.3785 12.1008 11.1275 13.3716 9.59213 13.3716H8.14092C7.56043 13.3716 7.01767 13.1416 6.60843 12.7259L2.19963 8.24695C2.07773 8.12311 2.07773 7.92555 2.19963 7.80171C2.39119 7.6071 2.6466 7.50685 2.90492 7.50685C3.1139 7.50685 3.32577 7.57172 3.49992 7.70735L5.07014 8.90449C5.16302 8.97525 5.29072 8.98705 5.39521 8.93397C5.4997 8.8809 5.56645 8.7718 5.56645 8.65385V2.67702C5.56645 2.32909 5.84509 2.04897 6.18467 2.04897C6.52426 2.04897 6.80289 2.33204 6.80289 2.67702V7.3948C6.80289 7.56877 6.94221 7.7103 7.11345 7.7103C7.2847 7.7103 7.42401 7.56877 7.42401 7.3948V5.82319C7.42401 5.47525 7.70265 5.19514 8.04223 5.19514C8.38182 5.19514 8.66045 5.4782 8.66045 5.82319V7.3948C8.66045 7.56877 8.79977 7.7103 8.97101 7.7103C9.14226 7.7103 9.28157 7.56877 9.28157 7.3948V6.45124C9.28157 6.10331 9.56021 5.82319 9.89979 5.82319C10.2394 5.82319 10.518 6.10626 10.518 6.45124V7.3948C10.518 7.56877 10.6573 7.7103 10.8286 7.7103C10.9998 7.7103 11.1391 7.56877 11.1391 7.3948V7.0793C11.1391 6.73136 11.4178 6.45124 11.7573 6.45124C12.0969 6.45124 12.3756 6.73431 12.3756 7.0793L12.3785 10.541Z"
@@ -1557,15 +1574,12 @@
             <path d="M11.3053 2.21146L12.3705 1.10573L11.3053 0L11.1573 0.153328L11.97 0.99663H8.0459V1.21483H11.97L11.1573 2.05813L11.3053 2.21146Z" fill="#31B939" />
             <path d="M1.06519 0L0 1.10573L1.06519 2.21146L1.21322 2.05813L0.400536 1.21483H4.32463V0.99663H0.400536L1.21322 0.153328L1.06519 0Z" fill="#31B939" />
         </svg>
-      </div>
+      </div> -->
     </div>
   </section>
-  <section class="section-get-price section-form section">
-    <div class="section-get-price__bg-large form-bg-large">
-      <img src="./img/form-main-bg.png" alt="">
-      <div class="section-get-price__bg-small form-bg-small">
-        <img src="./img/price-list.png" alt="">
-    </div>
+  <section class="section-get-price section-form section circle" style="background-image: url('./img/form-main-bg.webp');">
+    <div class="section-get-price__bg form-bg">
+      <img class="form-bg__img" src="./img/price-list.webp" alt="">
     </div>
     <!-- <div class="section-get-price__bg-small form-bg-small">
         <img src="./img/price-list.png" alt="">

@@ -3,9 +3,16 @@
     display: flex;
     gap: 40px;
     justify-content: space-between;
+    @include _992 {
+      flex-direction: column;
+    }
   }
   &__item {
     height: auto;
     flex: 0 1 50%;
+    @include _992 {
+      flex: none;
+    }
   }
+
 }

@@ -197,17 +197,24 @@
       content: 'Как мы решим вашу проблему';
       display: none;
       max-width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(calc(-100% - 10px));
       @extend .title-3;
       @extend .problem-solution-accordion__title;
-      margin-bottom: 10px;
+      @include _992 {
+        display: block;
+      }
     }
+
     @include _1200 {
       padding: 50px 40px;
       left: calc(60% + 20px);
       max-width: 40%;
     }
     @include _992 {
-      margin-top: 30px;
+      margin-top: 60px;
       padding: 30px;
       position: static;
       width: 100%;
