@@ -6,7 +6,10 @@
   text-align: left;
   background-color: $white;
   border-radius: 300px;
-
+  @include _992 {
+    width: 100%;
+    flex: none;
+  }
 }
 .standart-form .form-select::after {
     content: '';

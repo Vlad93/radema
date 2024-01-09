@@ -1,9 +1,38 @@
 .section-steps {
-  padding-bottom: 50px;
-  background: url('../img/conus-steps.png') no-repeat 93% 2% / 32%,
-              url('../img/tablet-steps.png') no-repeat 27% 110% / 32%;
+  position: relative;
+  &::before, &::after {
+    content: '';
+    display: block;
+    width: 50vw;
+    height: 50vw;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.25;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, #1C48E4 0%, #276DD7 37.11%, rgba(217, 217, 217, 0.00) 100%);
+    filter: blur(150px);
+  }
+  &::before {
+    left: 0;
+    top: 0;
+    transform: translate(-72%, -50%);
+  }
+  &::after {
+    bottom: 0;
+    right: 0;
+    transform: translate(73%, 50%);
+  }
   &__container {
     position: relative;
+    background: url('../img/conus-steps.webp') no-repeat 93% -8% / 32%,
+                url('../img/tablet-steps.webp') no-repeat 26% 110% / 32%;
+    @include _992 {
+      background: url('../img/conus-steps.webp') no-repeat 93% 5% / 32%,
+      url('../img/tablet-steps.webp') no-repeat 26% 100% / 32%;
+    }
+    @include _767 {
+      background: none;
+    }
   }
   &__title {
     margin-bottom: 90px;
@@ -12,15 +41,33 @@
     display: flex;
     justify-content: space-between;
     background: url('../img/dashed-steps.svg') no-repeat center 50px / auto calc(75% + 25px);
+    @include _767 {
+      background: url('../img/dashed-steps.svg') no-repeat 29px 20px / auto 87%;
+    }
   }
   &__steps {
     flex-basis: calc(50% - 83px);
     display: flex;
     flex-direction: column;
     gap: 50px;
+    &_mob {
+      display: none;
+    }
+    @include _767 {
+      display: none;
+      &_mob {
+        display: flex;
+        gap: 70px;
+        flex-basis: 100%;
+      }
+    }
     &-item {
       position: relative;
       width: 100%;
+      @include _767 {
+        display: flex;
+        gap: 20px;
+      }
       &-num {
         position: absolute;
         top: 46px;
@@ -36,6 +83,10 @@
         font-size: 32px;
         line-height: 1em;
         color: $white;
+        @include _767 {
+          position: static;
+          flex: 0 0 60px;
+        }
       }
     }
     &-right {
@@ -61,7 +112,16 @@
   position: relative;
   max-width: 100%;
   border-radius: 16px;
+  background-color: #fbfbfb;
   border: 1px solid rgba(2, 5, 40, 0.25);
+  @include _992 {
+    padding: 30px 25px;
+  }
+  @include _767 {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+  }
   &::after {
     content: '';
     position: absolute;
@@ -71,16 +131,29 @@
     width: 43px;
     height: 51px;
     background: url('../img/step-ukazatel.svg') no-repeat center / cover, #fbfbfb;
+    @include _767 {
+      display: none;
+    }
   }
   &__title {
     margin-bottom: 10px;
     font-size: 24px;
+    @include _767 {
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
   }
   &__text {
     font-size: 14px;
     line-height: 1.62em;
     &:not(:last-child) {
       margin-bottom: 25px;
+    }
+    @include _767 {
+      font-size: 12px;
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
     }
   }
   &__link {
@@ -91,5 +164,8 @@
   &__btn {
     width: 100%;
     padding: 24px 0;
+    @include _767 {
+      font-size: 12px;
+    }
   }
 }

@@ -1,7 +1,28 @@
 .section-videoreviews {
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    filter: blur(150px);
+    width: 60vw;
+    height: 60vw;
+    background: radial-gradient(50% 50% at 50% 50%, #1CADE4 0%, #27CED7 37.11%, rgba(217, 217, 217, 0.00) 100%) no-repeat -50% -50%;
+    opacity: 0.15;
+  }
   &__side-reviews {
     display: flex;
     gap: 40px;
+    @include _992 {
+      flex-wrap: wrap;
+    }
+    @include _767 {
+      gap: 10px;
+    }
   }
   &__btn {
     display: block;
@@ -19,10 +40,22 @@
   &__item {
     flex-basis: calc(100% / 3);
   }
+  @include _992 {
+    gap: 30px;
+  }
+  @include _767 {
+    margin-bottom: 20px;
+    flex: none;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 .side-reviews {
   margin-bottom: 30px;
+  @include _767 {
+    margin-bottom: 20px;
+  }
   &__card {
     display: flex;
     align-items: center;
@@ -32,11 +65,23 @@
     flex-basis: 50%;
     border-radius: 16px;
     border: 1px solid rgba(2, 5, 40, 0.25);
+    @include _992 {
+      flex: none;
+      width: 100%;
+    }
+    @include _576 {
+      flex-direction: column;
+      gap: 10px;
+    }
   }
   &__card-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include _576 {
+      flex-direction: row;
+      gap: 17px;
+    }
   }
   &__card-rating {
     display: flex;

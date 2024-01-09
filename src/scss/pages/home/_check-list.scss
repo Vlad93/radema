@@ -1,0 +1,32 @@
+.section-check-list {
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    width: 50vw;
+    height: 50vw;
+    position: absolute;
+    transform: translate(-70%, -70%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.15;
+    background: radial-gradient(50% 50% at 50% 50%, #1CADE4 0%, #27CED7 37.11%, rgba(217, 217, 217, 0.00) 100%);
+    border-radius: 50%;
+    filter: blur(150px);
+  }
+  &__update {
+    margin-bottom: 36px;
+  }
+  &__bg {
+    width: 70%;
+    transform: translateX(20%);
+    right: 0;
+    @include _992 {
+      width: 60%;
+    }
+    @include _767 {
+      width: 100%;
+    }
+  }
+}
