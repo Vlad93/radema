@@ -4,7 +4,7 @@
 node_modules
 
 #ignore develop catalog
-dev
+# dev
 
 #ignore dist catalog
 dist
