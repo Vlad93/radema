@@ -1,27 +1,32 @@
 .section-commercial-offer {
-  &.section-form {
-    padding-top: 290px;
-    padding-bottom: 65px;
+  clip-path: none;
+  @include _767 {
+    clip-path: ellipse(100% 57% at 50% 43%);
   }
   &__subtitle {
     margin-bottom: 70px;
     margin-left: 0;
     line-height: 1.3em;
     max-width: 45%;
-  }
-  &__bg-large {
-    top: 190px;
-    height: calc(100% - 190px);
-    clip-path: none;
-    & img {
-      object-fit: cover;
+    @include _767 {
+      margin-bottom: 30px;
+    }
+    @include _576 {
+      max-width: 100%;
     }
   }
-  &__bg-small {
-    height: auto;
+  &__bg {
     width: 50%;
-    left: auto;
     right: 0;
-    bottom: 60px;
+    & img {
+      object-position: right;
+    }
+    @include _767 {
+      width: 100%;
+      & img {
+        left: 0;
+      }
+    }
   }
+
 }

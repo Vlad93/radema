@@ -4,6 +4,9 @@
   height: 250px;
   border-radius: 8px;
   overflow: hidden;
+  @include _767 {
+    height: 70vw;
+  }
   &__preview {
     display: block;
     width: 100%;

@@ -1,9 +1,37 @@
 .section-about {
+  position: relative;
   background:  url('../img/tabs-bg.webp') no-repeat right top / 30%;
-  // radial-gradient(50% 50% at 50% 50%, #1CADE4 0%, #27CED7 37.11%, rgba(217, 217, 217, 0.00) 100%) no-repeat -150% 120% / 70%,
-  // radial-gradient(50% 50% at 50% 50%, #1C48E4 0%, #276DD7 37.11%, rgba(217, 217, 217, 0.00) 100%)no-repeat 150% 100% / 70%;
-
-
+  @include _767 {
+    background: none;
+  }
+  &::after {
+    content: '';
+    display: block;
+    width: 70vw;
+    height: 70vw;
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    transform: translate(-45%, 0);
+    z-index: -1;
+    opacity: 0.15;
+    background: radial-gradient(50% 50% at 50% 50%, #1C48E4 0%, #276DD7 37.11%, rgba(217, 217, 217, 0.00) 100%);
+    filter: blur(150px);
+  }
+  &::before {
+    content: '';
+    display: block;
+    width: 70vw;
+    height: 70vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-65%, 38%);
+    z-index: -1;
+    opacity: 0.15;
+    background: radial-gradient(50% 50% at 50% 50%, #1CADE4 0%, #27CED7 37.11%, rgba(217, 217, 217, 0.00) 100%);
+    filter: blur(150px);
+  }
   &__title {
     margin-left: 0;
     max-width: 800px;
@@ -21,9 +49,12 @@
 
 .about-tabs {
   margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  // display: flex;
+  // align-items: center;
+  // gap: 10px;
+  &__slide {
+    width: auto;
+  }
   &__btn {
     padding: 12px 24px;
     display: block;
@@ -55,12 +86,23 @@
     grid-auto-rows: minmax(300px, auto);
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
+    @include _992 {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    @include _767 {
+      grid-template-columns: repeat(1, 1fr);
+      grid-auto-rows: minmax(60vw, auto);
+    }
   }
   &__item-btn {
     padding: 24px 20px;
     display: block;
     max-width: 360px;
     margin: 0 auto;
+    @include _576 {
+      max-width: 100%;
+    }
   }
 }
 

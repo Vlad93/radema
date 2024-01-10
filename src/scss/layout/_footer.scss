@@ -1,17 +1,44 @@
 .footer {
   padding: 40px 0;
   background-color: $primary;
+  &__main-info {
+    @include _767 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 25px;
+    }
+  }
   &__content-wrap {
     padding-bottom: 60px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    @include _992 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: flex-start;
+      gap: 40px;
+    }
+    @include _767 {
+      display: flex;
+      flex-direction: column
+    }
   }
   &__logo {
     margin-bottom: 25px;
+    @include _767 {
+      margin-bottom: 0;
+    }
   }
   &__desc {
     margin-bottom: 65px;
     max-width: 150px;
+    @include _767 {
+      margin-bottom: 0;
+      max-width: 210px;
+    }
   }
   &__desc-text {
     font-size: 12px;
@@ -25,6 +52,9 @@
     font-size: 18px;
     &_contacts {
       margin-bottom: 35px;
+    }
+    @include _767 {
+      padding-top: 0;
     }
   }
   &__email {
@@ -57,12 +87,23 @@
     width: 100%;
     line-height: 1.35em;
     font-size: 14px;
+    @include _767 {
+      margin-bottom: 30px;
+    }
   }
   &__messangers-wrap {
     margin-bottom: 47px;
     color: $white;
     justify-content: space-between;
     flex-direction: row-reverse;
+    @include _767 {
+      margin-bottom: 30px;
+      justify-content: flex-end;
+      gap: 20px;
+    }
+    @include _576 {
+      justify-content: space-between;
+    }
   }
   &__arda-logo {
     max-width: 260px;
@@ -74,6 +115,18 @@
     justify-content: space-between;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     color: rgba(255, 255, 255, 0.75);
+    @include _992 {
+      padding-top: 30px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    @include _576 {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;
+    }
     &-year {
       margin-bottom: 2px;
       font-size: 14px;
@@ -91,6 +144,9 @@
       @extend .footer__bottom-info;
       position: relative;
       z-index: 1;
+      @include _992 {
+        order: 3;
+      }
       &::after {
         content: '';
         position: absolute;
@@ -112,6 +168,13 @@
     &-copyrights {
       display: flex;
       flex-direction: column;
+      @include _992 {
+        order: 2;
+        margin-left: 15%;
+      }
+      @include _576 {
+        margin-left: 0;
+      }
       &-text {
         @extend .footer__bottom-year;
         display: block;
@@ -132,6 +195,16 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    @include _992 {
+      display: block;
+      column-count: 2;
+      column-gap: 20px;
+    }
+  }
+  &__item {
+    @include _992 {
+      margin-bottom: 10px;
+    }
   }
   &__link {
     line-height: 1.48em;

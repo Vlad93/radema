@@ -9,9 +9,22 @@
   & .section-title-wrap {
     margin-bottom: 20px;
   }
+  & .container {
+    @include _767 {
+      margin-bottom: 30px;
+    }
+  }
   &.circle {
-    clip-path: circle(calc(100% + 315px) at 50% 0);
-    clip-path:ellipse(100% 57% at 50% 43%);
+    // clip-path: circle(calc(100% + 315px) at 50% 0);
+    clip-path: ellipse(100% 57% at 50% 43%);
+  }
+  @include _992 {
+    padding-top: 60px;
+  }
+  @include _767 {
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 .section-form {
@@ -43,6 +56,9 @@
   font-size: 24px;
   color: $white;
   text-align: left;
+  @include _767 {
+    font-size: 18px;
+  }
 }
 
 .form-text {
@@ -57,6 +73,14 @@
   display: flex;
   align-items: flex-end;
   gap: 20px;
+  @include _992 {
+    flex-direction: column;
+    align-items: start;
+    max-width: 400px;
+  }
+  @include _767 {
+    gap: 10px;
+  }
 }
 
 .form-input {
@@ -72,6 +96,10 @@
   }
   &[name="phone"] {
     padding-left: 64px;
+  }
+  @include _992 {
+    flex: none;
+    width: 100%;
   }
 }
 
@@ -89,16 +117,27 @@
     height: 24px;
     background: url('../img/russia.png') no-repeat center / cover;
   }
+  @include _992 {
+    width: 100%;
+  }
 }
 
 .form-btn {
   flex-basis: 300px;
   padding: 22px 30px;
+  @include _992 {
+    flex: none;
+    width: 100%;
+  }
 }
 
 .input-wrap {
   flex-basis: 25%;
   & .form-input {
+    width: 100%;
+  }
+  @include _992 {
+    flex: none;
     width: 100%;
   }
 }

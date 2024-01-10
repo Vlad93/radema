@@ -1101,18 +1101,37 @@ $(document).ready(function () {
                 nextEl: $nextBtn,
                 prevEl: $prevBtn,
             },
-            // pagination: {
-            //     el: $pagination,
-            //     type: 'bullets',
-            // },
+            pagination: {
+                el: $pagination,
+                type: 'bullets',
+            },
             breakpoints: {
-                769: {
-                    slidesPerView: 4,
+                576: {
+                    slidesPerView: 2,
                     spaceBetween: 40,
+                },
+                767: {
+                  slidesPerView: 3,
+                  spaceBetween: 40,
+                },
+                1100: {
+                  slidesPerView: 4,
+                  spaceBetween: 40,
                 }
             }
         });
     });
+
+    $('.tabs-slider').each(function () {
+      var $container = $(this).find('.swiper-container');
+      var swiperTabs = new Swiper($container, {
+        direction: 'horizontal',
+        freeMode: true,
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        touchStartForcePreventDefault: true,
+      }) ;
+    })
 
     $('body').on('click', '[agreementControl_JS]', function () {
         var $this = $(this),

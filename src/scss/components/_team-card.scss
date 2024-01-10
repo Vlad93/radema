@@ -19,7 +19,7 @@
     justify-content: center;
     font-size: 16px;
     font-weight: 400;
-    background-color: $red;
+    background: url('../img/icons/team-info.svg') no-repeat center / cover;
     &::after {
       content: "";
       position: absolute;
@@ -31,12 +31,20 @@
       background-color: $red;
       animation: pulse_2_small 2s linear infinite;
       z-index: -1;
+      transition: opacity .3s ease, visibility .3s ease;
+    }
+    @include interactive {
+      &:hover {
+        background: url('../img/icons/team-info.svg') no-repeat center / cover;
+      }
     }
   }
   &__photo-wrap {
     width: 100%;
     height: 260px;
-
+    @include _576 {
+      height: 81vw;
+    }
   }
   &__photo {
     width: 100%;
@@ -45,11 +53,15 @@
     object-position: center;
   }
   &__content {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 30px 30px 26px 30px;
     background: linear-gradient(180deg, #1CADE4 0%, #27CED7 100%);
+    @include _767 {
+      padding-top: 20px;
+    }
   }
   &__title {
     margin-bottom: 10px;

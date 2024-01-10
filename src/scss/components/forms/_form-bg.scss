@@ -6,6 +6,9 @@
   width: 100%;
   height: 105%;
   z-index: 0;
+  @include _767 {
+    position: static;
+  }
 }
 .form-bg img {
   position: absolute;
@@ -15,5 +18,9 @@
   height: 100%;
   object-position: center bottom;
   object-fit: contain;
+  @include _767 {
+    position: relative;
+    left: -14%;
+  }
 }
 
