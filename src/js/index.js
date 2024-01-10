@@ -1122,8 +1122,6 @@ $(document).ready(function () {
         });
     });
 
-
-
     $('.tabs-slider').each(function () {
       var $container = $(this).find('.swiper-container');
       var swiperTabs = new Swiper($container, {
@@ -1131,8 +1129,7 @@ $(document).ready(function () {
         freeMode: true,
         slidesPerView: 'auto',
         spaceBetween: 10,
-        allowTouchMove: true,
-        preventTouchPropagation: false,
+        touchStartForcePreventDefault: true,
       }) ;
     })
 
