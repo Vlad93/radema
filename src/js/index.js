@@ -1122,6 +1122,20 @@ $(document).ready(function () {
         });
     });
 
+
+
+    $('.tabs-slider').each(function () {
+      var $container = $(this).find('.swiper-container');
+      var swiperTabs = new Swiper($container, {
+        direction: 'horizontal',
+        freeMode: true,
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        allowTouchMove: true,
+        preventTouchPropagation: false,
+      }) ;
+    })
+
     $('body').on('click', '[agreementControl_JS]', function () {
         var $this = $(this),
             $form = $this.closest('form'),
