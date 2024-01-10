@@ -1,4 +1,13 @@
 .section-get-price {
+  &__bg {
+    right: -24%;
+    bottom: -25%;
+    width: 100%;
+    height: 155%;
+    & img {
+      object-fit: cover;
+    }
+  }
   &__title-wrap {
     margin-bottom: 20px;
   }
