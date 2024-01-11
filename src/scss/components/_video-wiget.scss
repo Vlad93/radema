@@ -7,6 +7,10 @@
   height: 240px;
   z-index: 2;
   transition: transform .3s ease;
+  @include _767 {
+    width: 60vw;
+    height: auto;
+  }
   &.close {
     transform: translateX(-101%);
     & .videowidget__btn-close {
@@ -45,6 +49,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    @include _767 {
+      object-fit: fill;
+    }
   }
   &__btn {
     position: absolute;
@@ -58,6 +65,10 @@
     border: none;
     outline: none;
     border-radius: 50%;
+    @include _767 {
+      width: 48px;
+      height: 48px;
+    }
     &::after {
       content: '';
       position: absolute;
