@@ -1,7 +1,18 @@
 .section-commercial-offer {
   clip-path: none;
+  @include _1200 {
+    & .form-container {
+      flex-wrap: wrap;
+    }
+    & .input-wrap {
+      flex-basis: 30%;
+    }
+  }
   @include _767 {
     clip-path: ellipse(100% 57% at 50% 43%);
+    &.section-form.section {
+      padding-bottom: 0;
+    }
   }
   &__subtitle {
     margin-bottom: 70px;
@@ -16,17 +27,28 @@
     }
   }
   &__bg {
-    width: 50%;
-    right: 0;
     & img {
+      left: auto;
+      height: 102%;
+      width: 50%;
+      right: 0;
+      bottom: 0;
       object-position: right;
-    }
-    @include _767 {
-      width: 100%;
-      & img {
-        left: 0;
+      @include _992 {
+        bottom: -15%;
+      }
+      @include _767 {
+        position: relative;
+        width: 100%;
+        bottom: 0;
+        object-position: center top;
       }
     }
+    // @include _767 {
+    //   // position: relative;
+    //   width: 100%;
+    //   // bottom: -30vw;
+    // }
   }
 
 }
