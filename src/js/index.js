@@ -2067,6 +2067,14 @@ $('.about-tab').each(function () {
     //   scrollTop: $curTabContent.offset().top
     // }, 300);
   })
+});
+
+// Video-widget
+$('body').on('click', '.videowidget__btn-close', function(e) {
+  $(e.currentTarget).closest('.videowidget').addClass('close');
+});
+$('body').on('click', '.videowidget.close .videowidget__btn-close', function(e) {
+  $(e.currentTarget).closest('.videowidget').removeClass('close');
 })
 
 

@@ -19,14 +19,16 @@
     margin-bottom: 36px;
   }
   &__bg {
-    width: 70%;
-    transform: translateX(20%);
-    right: 0;
-    @include _992 {
-      width: 60%;
-    }
-    @include _767 {
-      width: 100%;
+    & img {
+      left: 50%;
+      bottom: -15%;
+      @include _992 {
+        bottom: -20%;
+      }
+      @include _767 {
+        bottom: -30vw;
+        left: 0;
+      }
     }
   }
 }
