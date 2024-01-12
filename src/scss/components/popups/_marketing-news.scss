@@ -1,0 +1,14 @@
+.marketing-news {
+  &__content {
+    max-width: 70%;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 32px;
+  }
+  &__item-text {
+    @extend .solution-list__text;
+  }
+}
