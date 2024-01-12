@@ -2106,6 +2106,13 @@ $(document).ready(function () {
         popupOpen(target);
     });
 
+    setTimeout(function() {
+      popupOpen('marketing-news');
+    }, 30000);
+    setTimeout(function() {
+      popupOpen('after-sixty');
+    }, 60000);
+
 
     $('body').on('click', '[popupClose_JS]', function () {
         popupClose();
@@ -2128,8 +2135,8 @@ if (localStorage.getItem('downloadPopupState') === null) {
 }
 
 var popupClose = function () {
-    $('.popup.open').find('input').val("");
-    $('.popup.open').find('textarea').val("");
+    $('.popup.open').find('input').val('');
+    $('.popup.open').find('textarea').val('');
     $('.popup.open').find('.form-file').each(function(){
         var text = $(this).attr('data-text');
 
