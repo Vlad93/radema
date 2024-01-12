@@ -1,0 +1,8 @@
+.exit {
+  background-position: 170% 295%;
+  background-size: auto 90%;
+  @include _767 {
+    background-image: none!important;
+  }
+
+}

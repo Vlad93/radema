@@ -56,12 +56,12 @@
 }
 .calm-work {
   &-list {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
     @include _992 {
-      margin-bottom: 50px;
+      margin-bottom: 30px;
     }
     @include _767 {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
     &__item {
       display: flex;

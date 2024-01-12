@@ -45,6 +45,7 @@
 .section-subtitle {
   @extend .section-title;
   margin-bottom: 0;
+  font-size: 20px;
   @include _767 {
     font-size: 16px;
   }
