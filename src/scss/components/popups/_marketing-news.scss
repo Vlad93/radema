@@ -1,6 +1,9 @@
 .marketing-news {
   &__content {
     max-width: 70%;
+    @include _767 {
+      max-width: 100%;
+    }
   }
   &__list {
     display: flex;

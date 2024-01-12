@@ -43,6 +43,7 @@
   z-index: 2;
   opacity: 0;
   visibility: hidden;
+  overflow: hidden;
   background-color: $white;
   border-radius: 0 0 30px 30px;
   transition: opacity .3s ease, visibility .3s ease;

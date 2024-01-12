@@ -2168,6 +2168,17 @@ else
   return null;
 }
 
+var visit = get_cookie("cookiteAccept");
+$(document).mouseleave(function (event) {
+  if (visit !== '1'){
+    event = event || window.event;
+    if (event.clientY < 0 || event.clientY < 3) {
+      popupOpen('exit');
+    }
+  }
+});
+
+
 setTimeout(function(){
   var cookiteAccept = get_cookie("cookiteAccept");
   if (get_cookie("cookiteAccept") != '1'){

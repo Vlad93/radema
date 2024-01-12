@@ -36,6 +36,16 @@ const resourcesJs = () => {
   .pipe(gulpif(!isDevFlag, dest('dist/js')))
 }
 
+const resourcesFiles = () => {
+  return src([
+    'src/resources/**/*.pdf',
+    'src/resources/**/*.doc',
+    'src/resources/**/*.docx'
+  ])
+  .pipe(gulpif(isDevFlag, dest('dev/resources')))
+  .pipe(gulpif(!isDevFlag, dest('dist/resources')))
+}
+
 const resourcesCss = () => {
   return src('src/resources/**/*.css')
   .pipe(gulpif(isDevFlag, dest('dev/css')))
@@ -219,7 +229,7 @@ const watchFiles = () => {
   })
 }
 
-const dev =  parallel(resourcesJs, resourcesCss, fonts, htmlMinify, scripts, styles, svgSprites, imagesDev, webpConv);
+const dev =  parallel(resourcesJs, resourcesCss, resourcesFiles, fonts, htmlMinify, scripts, styles, svgSprites, imagesDev, webpConv);
 
 watch('src/**/*.html', htmlMinify);
 watch('src/scss/**/*.scss', styles);
@@ -229,7 +239,8 @@ watch('src/images/**/*', imagesDev);
 watch('src/images/**/*', webpConv);
 watch('src/js/**/*.js', scripts);
 watch('src/resources/**/*.js', resourcesJs);
-watch('src/resources/**/*.css', resourcesCss)
+watch('src/resources/**/*.css', resourcesCss);
+watch('src/resources/**/*', resourcesFiles);
 
 exports.styles = styles;
 exports.scripts = scripts;
