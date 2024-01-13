@@ -1,8 +1,5 @@
 .slider {
   position: relative;
-  &-pagination {
-
-  }
 }
 // .slider-hint {
 //   display: flex;
@@ -40,6 +37,6 @@
   right: 0;
   transform: translate(50%, -50%) rotate(180deg);
   @include _767 {
-    transform: translate(15px, -50%) rotate(180deg);
+    transform: translate(0, -50%) rotate(180deg);
   }
 }

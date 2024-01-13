@@ -111,6 +111,46 @@
       font-size: 16px;
     }
   }
+  &__who-contact {
+    margin-top: 60px;
+    transform: translate(70%, 0);
+    margin-left: auto;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    @include _992 {
+      right: 40px;
+      position: absolute;
+      bottom: 10%;
+      margin: 0;
+      transform: none;
+    }
+    @include _576 {
+      gap: 3px;
+      bottom: 7%;
+      left: 50%;
+      right: auto;
+      max-width: 50%;
+    }
+    &-text {
+      font-weight: 500;
+    }
+    &-name.title-black, &-name .title-accent {
+      margin-bottom: 0;
+      font-size: 32px;
+      @include _767 {
+        line-height: 1.3em;
+        font-size: 26px;
+      }
+      @include _576 {
+        font-size: 22px;
+      }
+    }
+    &-job {
+      font-size: 14px;
+    }
+  }
 }
 
 .popup__close img,

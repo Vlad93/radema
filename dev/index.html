@@ -62,7 +62,7 @@
               </div>
               <a style="background-image:url('./img/icons/phone.svg');" href="tel:88005458225" class="phone__link">8 800 545 82 25</a>
             </div>
-            <button type="button" class="header__cooperation-btn btn">
+            <button type="button" class="header__cooperation-btn btn" popupOpen="discuss">
               Обсудить сотрудничество
             </button>
           </div>
@@ -214,7 +214,7 @@
                 </p>
               </li>
             </ul>
-            <button class="section-hero__offer-btn btn">
+            <button class="section-hero__offer-btn btn" popupOpen="cp">
               Узнать, сколько пациентов я получу
             </button>
           </div>
@@ -432,7 +432,7 @@
             <input type="hidden" name="action" value="quiz">
               <div class="quiz-progress">
                   <div class="progress-bar">
-                    <div class="progress-text">Шаг <span>1</span> из <span>8</span></div>
+                    <div class="progress-text"><span></span></div>
                   </div>
               </div>
               <div class="quiz-questions-container">
@@ -1619,7 +1619,7 @@
                   <input type="checkbox" name="agreement" agreementControlCheckbox_JS checked>
               </div>
               <p>
-                Даю согласие на обработку моих <a href="" class="agreement-link" target="_blank">персональных данных</a>
+                Даю согласие на обработку моих <a href="./resources/10.2 Парадигмы.pdf" class="agreement-link" target="_blank">персональных данных</a>
               </p>
           </div>
         </form>
@@ -1833,7 +1833,7 @@
                   0.5 MB
                 </span>
               </a>
-              <button class="step-card__btn btn">
+              <button class="step-card__btn btn" popupOpen="cp">
                 Получить персональное КП
               </button>
             </div>
@@ -1890,13 +1890,13 @@
               <p class="step-card__text">
                 На основании проведенного аудита и желаемых результатов подготавливаем персональное коммерческое предложение, в которое включаем только те услуги, которые необходимы конкретно в вашем случае
               </p>
-              <a href="" class="step-card__link watch-link">
+              <a href="./resources/10.2 Парадигмы.pdf" class="step-card__link watch-link" target="_blank">
                 Смотреть пример КП
                 <span class="step-card__link-size">
                   0.5 MB
                 </span>
               </a>
-              <button class="step-card__btn btn">
+              <button class="step-card__btn btn" popupOpen="cp">
                 Получить персональное КП
               </button>
             </div>
@@ -1915,7 +1915,7 @@
                 Мы проведем аудит сайта, рекламных кампаний, сервиса, репутации, определим сильные и слабые стороны вашего бизнеса.
                 Подготовим и вышлем вам отчет с результатами аудита
               </p>
-              <a href="" class="step-card__link watch-link">
+              <a href="./resources/10.2 Парадигмы.pdf" class="step-card__link watch-link" target="_blank">
                 Смотреть пример аудита
                 <span class="step-card__link-size">
                   0.5 MB
@@ -2084,7 +2084,7 @@
                   <input type="checkbox" name="agreement" agreementControlCheckbox_JS checked>
               </div>
               <p>
-                Даю согласие на обработку моих <a href="" class="agreement-link" target="_blank">персональных данных</a>
+                Даю согласие на обработку моих <a href="./resources/10.2 Парадигмы.pdf" class="agreement-link" target="_blank">персональных данных</a>
               </p>
           </div>
         </form>
@@ -2365,7 +2365,7 @@
                   <input type="checkbox" name="agreement" agreementControlCheckbox_JS checked>
               </div>
               <p>
-                Даю согласие на обработку моих <a href="" class="agreement-link" target="_blank">персональных данных</a>
+                Даю согласие на обработку моих <a href="./resources/10.2 Парадигмы.pdf" class="agreement-link" target="_blank">персональных данных</a>
               </p>
           </div>
         </form>
@@ -2726,7 +2726,7 @@
             </div>
             <a style="background-image:url('./img/icons/phone.svg');" href="tel:88005458225" class="phone__link">8 800 545 82 25</a>
           </div>
-          <button type="button" class="footer__cooperation-btn btn">
+          <button type="button" class="footer__cooperation-btn btn" popupOpen="discuss">
             Обсудить сотрудничество
           </button>
           <div class="footer__messangers-wrap messangers messangers--footer">
@@ -2757,10 +2757,10 @@
             RADEMA | Radetsky Marketing ИНН 410506402431
           </p>
         </div>
-        <a href="" class="footer__bottom-link">
+        <a href="./resources/10.2 Парадигмы.pdf" class="footer__bottom-link" target="_blank">
           Политика конфиденциальности
         </a>
-        <a href="" class="footer__bottom-link">
+        <a href="./resources/10.2 Парадигмы.pdf" class="footer__bottom-link" target="_blank">
           Партнёрская программа
         </a>
         <div class="footer__bottom-copyrights">
@@ -2886,7 +2886,7 @@
                   <input type="checkbox" name="agreement" agreementControlCheckbox_JS checked>
               </div>
               <p>
-                Даю согласие на обработку моих <a href="" class="agreement-link" target="_blank">персональных данных</a>
+                Даю согласие на обработку моих <a href="./resources/10.2 Парадигмы.pdf" class="agreement-link" target="_blank">персональных данных</a>
               </p>
           </div>
         </form>
@@ -2902,6 +2902,187 @@
 </div>
 </div>
 <!-- END On exit popup  -->
+
+  <!-- Cp popup  -->
+  <div class="popup" popupID="cp">
+    <div class="popup__container">
+      <div class="popup__block cp" style="background-image: url('./img/v_krasnoy_rubashke-left.webp');">
+        <div class="cp__content popup__content">
+          <h3 class="cp__title title">
+            Узнать, сколько пациентов я получу
+          </h3>
+          <div class="cp__wrap popup-wrap">
+            <div class="cp__wrap-item popup-wrap__item">
+              <ul class="cp__list popup-list">
+                <li class="cp__list-item popup-list__item">
+                  <p class="cp__list-text popup-list__text">
+                    Определим ваши цели и задачи
+                  </p>
+                </li>
+                <li class="cp__list-item popup-list__item">
+                  <p class="cp__list-text popup-list__text">
+                    Подберем стратегию, которая даст максимальный результат
+                  </p>
+                </li>
+                <li class="cp__list-item popup-list__item">
+                  <p class="cp__list-text popup-list__text">
+                    Рассчитаем потенциальный объём заявок в месяц
+                  </p>
+                </li>
+              </ul>
+              <div class="cp__who-contact popup__who-contact">
+                <span class="popup__who-contact-text popup__who-contact-text">
+                  C вами свяжется
+                </span>
+                <span class="popup__who-contact-name title-black popup__who-contact-name">
+                  Вячеслав <span class="title-black title-accent">Радецкий</span>
+                </span>
+                <span class="popup__who-contact-job popup__who-contact-job">
+                  Руководитель<br>компании RADEMA
+                </span>
+              </div>
+            </div>
+            <form method="POST" class="cp__form standart-form popup-form" data-file="" data-thx="" formValidate_JS>
+              <input type="hidden" name="action" value="request">
+              <input type="hidden" name="form" value="Баннер получить коммерческое предложение попап">
+              <div class="form-container">
+                <div class="input-wrap">
+                  <label for="site" class="form-label">
+                    <p class="form-text">
+                      Ссылка на ваш сайт
+                    </p>
+                  </label>
+                  <input type="text" name="site" class="form-input" required placeholder="Например: https://radema.ru/">
+                </div>
+                <div class="input-wrap">
+                  <label for="phone" class="form-label">
+                    <p class="form-text">Ваш телефон</p>
+                    <input type="text" name="phone" class="form-input"  phoneMask_JS required>
+                </label>
+                </div>
+                <div class="input-wrap">
+                  <label for="social_type">
+                    <p class="form-text">
+                      В каком мессенджере удобно общаться?
+                    </p>
+                  </label>
+                  <select name="social_type" class="form-select">
+                    <option value="WhatsApp">Получить в WhatsApp</option>
+                    <option value="Telegram">Получить в Telegram</option>
+                  </select>
+                </div>
+                <button class="input-wrap form-btn btn" agreementControlBtn_JS>
+                    <span>Получить предложение</span>
+                </button>
+              </div>
+              <div class="form-checkbox">
+                  <div agreementControl_JS class="checked">
+                      <label for="agreement"></label>
+                      <input type="checkbox" name="agreement" agreementControlCheckbox_JS checked>
+                  </div>
+                  <p>
+                    Даю согласие на обработку моих <a href="./resources/10.2 Парадигмы.pdf" class="agreement-link" target="_blank">персональных данных</a>
+                  </p>
+              </div>
+            </form>
+          </div>
+          <div class="popup__close" popupClose_JS>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.75 5.25L5.25 18.75" stroke="#020528" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18.75 18.75L5.25 5.25" stroke="#020528" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+      </div>
+  </div>
+    <div class="popup__blur" popupClose_JS></div>
+  </div>
+  </div>
+  <!-- END Cp popup  -->
+
+  <!-- Discuss popup  -->
+  <div class="popup" popupID="discuss">
+  <div class="popup__container">
+    <div class="popup__block discuss" style="background-image: url('./img/v_krasnoy_rubashke-right.webp');">
+      <div class="discuss__content popup__content">
+        <h3 class="discuss__title title">
+          Первый шаг — бесплатная консультация маркетолога
+        </h3>
+        <form method="POST" class="discuss__form standart-form popup-form" data-file="" data-thx="" formValidate_JS>
+          <input type="hidden" name="action" value="request">
+          <input type="hidden" name="form" value="Баннер обсудить сотрудничество">
+          <div class="form-container">
+            <div class="form-radio">
+              <span class="form-radio__title">
+                Выберите интересующий вопрос
+              </span>
+              <div class="input-wrap input-wrap_radio">
+                <input type="radio" name="question" value="price" id="price" class="form-input form-radio__input" checked>
+                <label for="price" class="form-label form-radio__label">
+                  <p class="form-text form-radio__text">Узнать стоимость услуг</p>
+                </label>
+              </div>
+              <div class="input-wrap input-wrap_radio">
+                <input type="radio" name="question" value="audit" id="audit" class="form-input form-radio__input">
+                <label for="audit" class="form-label form-radio__label">
+                  <p class="form-text form-radio__text">Получить аудит текущей рекламы</p>
+                </label>
+              </div>
+              <div class="input-wrap input-wrap_radio">
+                <input type="radio" name="question" value="strategy" id="strategy" class="form-input form-radio__input">
+                <label for="strategy" class="form-label form-radio__label">
+                  <p class="form-text form-radio__text">Обсудить стратегию продвижения</p>
+                </label>
+              </div>
+              <div class="input-wrap input-wrap_radio">
+                <input type="radio" name="question" value="other" id="other" class="form-input form-radio__input">
+                <label for="other" class="form-label form-radio__label">
+                  <p class="form-text form-radio__text">Другое</p>
+                </label>
+              </div>
+            </div>
+            <div class="input-wrap">
+              <label for="phone" class="form-label">
+                <p class="form-text">Ваш телефон для связи</p>
+                <input type="text" name="phone" class="form-input"  phoneMask_JS required>
+              </label>
+            </div>
+            <button class="input-wrap form-btn btn" agreementControlBtn_JS>
+                <span>Отправить заявку</span>
+            </button>
+          </div>
+          <div class="form-checkbox">
+              <div agreementControl_JS class="checked">
+                  <label for="agreement"></label>
+                  <input type="checkbox" name="agreement" agreementControlCheckbox_JS checked>
+              </div>
+              <p>
+                Даю согласие на обработку моих <a href="./resources/10.2 Парадигмы.pdf" class="agreement-link" target="_blank">персональных данных</a>
+              </p>
+          </div>
+        </form>
+        <div class="discuss__who-contact popup__who-contact">
+          <span class="popup__who-contact-text popup__who-contact-text">
+            C вами свяжется
+          </span>
+          <span class="popup__who-contact-name title-black popup__who-contact-name">
+            Вячеслав <span class="title-black title-accent">Радецкий</span>
+          </span>
+          <span class="popup__who-contact-job popup__who-contact-job">
+            Руководитель<br>компании RADEMA
+          </span>
+        </div>
+        <div class="popup__close" popupClose_JS>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.75 5.25L5.25 18.75" stroke="#020528" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18.75 18.75L5.25 5.25" stroke="#020528" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+    </div>
+</div>
+  <div class="popup__blur" popupClose_JS></div>
+</div>
+</div>
+<!-- END Discuss popup  -->
 
   <script src="js/polyfill.min.js"></script>
   <script src="js/lazyload.min.js"></script>

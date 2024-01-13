@@ -2,7 +2,13 @@
   background-position: 170% 295%;
   background-size: auto 90%;
   @include _767 {
-    background-image: none!important;
+    padding-bottom: 58vw;
+    background-position: center 140%;
+    background-size: auto 58%;
   }
-
+  @include _576 {
+    padding-bottom: 50vw;
+    background-position: center 135%;
+    background-size: auto 47%;
+  }
 }

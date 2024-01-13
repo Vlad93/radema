@@ -5,6 +5,7 @@
     justify-content: space-between;
     @include _992 {
       flex-direction: column;
+      gap: 10px;
     }
   }
   &__item {
