@@ -164,6 +164,7 @@ const images = () => {
     'src/images/**/*.jpg',
     'src/images/**/*.png',
     'src/images/*.svg',
+    'src/images/**/*.svg',
     'src/images/**/*.jpeg'
   ])
     .pipe(changed('dist/img'))
