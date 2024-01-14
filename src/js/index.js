@@ -1000,10 +1000,10 @@ $(document).ready(function () {
 
         var $swiper = new Swiper($container, {
             direction: 'horizontal',
-            slidesPerView: 1,
+            slidesPerView: 1.06,
             speed: 500,
             loop: true,
-            spaceBetween: 10,
+            spaceBetween: 5,
             navigation: {
                 nextEl: $nextBtn,
                 prevEl: $prevBtn,
@@ -1054,10 +1054,10 @@ $(document).ready(function () {
 
       new Swiper($container, {
           direction: 'horizontal',
-          slidesPerView: 1,
+          slidesPerView: 1.06,
           speed: 500,
           // loop: true,
-          spaceBetween: 10,
+          spaceBetween: 5,
           navigation: {
               nextEl: $nextBtn,
               prevEl: $prevBtn,
@@ -1094,9 +1094,9 @@ $(document).ready(function () {
 
         new Swiper($container, {
             direction: 'horizontal',
-            slidesPerView: 1,
+            slidesPerView: 1.05,
             speed: 500,
-            spaceBetween: 10,
+            spaceBetween: 5,
             navigation: {
                 nextEl: $nextBtn,
                 prevEl: $prevBtn,
@@ -1239,7 +1239,7 @@ $(document).ready(function () {
 	var progressBegin = (1 / stepTotal) * 100;
 	progressBegin = Math.round(progressBegin);
 	$('.progress-bar').css('width', progressBegin + '%');
-	$('.progress-text span').html('1');
+	$('.progress-text span').html(progressBegin + '%');
 
     $('[data-target-question]').on('click', function () {
         var $element = $(this),
@@ -2193,6 +2193,11 @@ setTimeout(function(){
 $('#cookie_notification .btn').click(function () {
   $('#cookie_notification').removeClass('show')
 });
+
+$('img').each( function(e) {
+  $(this).addClass('lazy');
+});
+let lazyLoadInstance = new LazyLoad();
 
 
 

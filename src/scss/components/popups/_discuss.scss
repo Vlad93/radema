@@ -1,0 +1,51 @@
+.discuss {
+  padding-bottom: 66px;
+  position: relative;
+  max-width: 960px;
+  background-size: auto 55%;
+  @include _992 {
+    max-width: 90%;
+    background-size: auto 30%;
+  }
+  @include _767 {
+    background-size: auto 35%;
+    padding-bottom: 20%;
+  }
+  @include _576 {
+    background-size: auto 23%;
+  }
+  &::after {
+    transform: translate(60%,-40%);
+  }
+  &__content {
+    max-width: 85%;
+    @include _767 {
+      max-width: 100%;
+    }
+  }
+  .popup &__title {
+    margin-bottom: 40px;
+    @include _767 {
+      margin-bottom: 20px;
+    }
+  }
+  &__who-contact {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    @include _992 {
+      left: 57%;
+      top: 56%;
+    }
+    @include _767 {
+      margin-top: 30px;
+      position: relative;
+      left: 20%;
+    }
+    @include _576 {
+      left: 0;
+    }
+  }
+
+}
