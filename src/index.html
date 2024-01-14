@@ -1148,7 +1148,7 @@
                   148 000 ₽
                 </span>
               </div>
-              <button class="product-card__btn btn">
+              <button class="product-card__btn btn" popupOpen="order">
                 Обсудить детали
               </button>
             </div>
@@ -1243,7 +1243,7 @@
                   228 000 ₽
                 </span>
               </div>
-              <button class="product-card__btn btn">
+              <button class="product-card__btn btn" popupOpen="order">
                 Обсудить детали
               </button>
             </div>
@@ -1297,7 +1297,7 @@
               <span class="services-card__price">
                 от 39 000 ₽
               </span>
-              <a href="#" class="services-card__btn btn-ghost">
+              <a href="#" class="services-card__btn btn-ghost" popupOpen="order" popupOpen="order">
                 Заказать услугу
               </a>
             </article>
@@ -1328,9 +1328,9 @@
               <span class="services-card__price">
                 от 39 000 ₽
               </span>
-              <a href="#" class="services-card__btn btn-ghost">
+              <button class="services-card__btn btn-ghost" popupOpen="order">
                 Заказать услугу
-              </a>
+              </button>
             </article>
             <article class="section-services__slide services-card swiper-slide">
               <div class="services-card__icon-wrap">
@@ -1359,9 +1359,9 @@
               <span class="services-card__price">
                 от 39 000 ₽
               </span>
-              <a href="#" class="services-card__btn btn-ghost">
+              <button class="services-card__btn btn-ghost" popupOpen="order">
                 Заказать услугу
-              </a>
+              </button>
             </article>
             <article class="section-services__slide services-card swiper-slide">
               <div class="services-card__icon-wrap">
@@ -1385,9 +1385,9 @@
               <span class="services-card__price">
                 от 19 000 ₽
               </span>
-              <a href="#" class="services-card__btn btn-ghost">
+              <button class="services-card__btn btn-ghost" popupOpen="order">
                 Заказать услугу
-              </a>
+              </button>
             </article>
             <article class="section-services__slide services-card swiper-slide">
               <div class="services-card__icon-wrap">
@@ -1421,9 +1421,9 @@
               <span class="services-card__price">
                 от 79 000 ₽
               </span>
-              <a href="#" class="services-card__btn btn-ghost">
+              <button class="services-card__btn btn-ghost" popupOpen="order">
                 Заказать услугу
-              </a>
+              </button>
             </article>
             <article class="section-services__slide services-card swiper-slide">
               <div class="services-card__icon-wrap">
@@ -1447,9 +1447,9 @@
               <span class="services-card__price">
                 от 99 000 ₽
               </span>
-              <a href="#" class="services-card__btn btn-ghost">
+              <button class="services-card__btn btn-ghost" popupOpen="order">
                 Заказать услугу
-              </a>
+              </button>
             </article>
             <article class="section-services__slide services-card swiper-slide">
               <div class="services-card__icon-wrap">
@@ -1468,9 +1468,9 @@
               <span class="services-card__price">
                 от 45 000 ₽
               </span>
-              <a href="#" class="services-card__btn btn-ghost">
+              <button class="services-card__btn btn-ghost" popupOpen="order">
                 Заказать услугу
-              </a>
+              </button>
             </article>
             <article class="section-services__slide services-card swiper-slide">
               <div class="services-card__icon-wrap">
@@ -1499,9 +1499,9 @@
               <span class="services-card__price">
                 от 45 000 ₽
               </span>
-              <a href="#" class="services-card__btn btn-ghost">
+              <button class="services-card__btn btn-ghost" popupOpen="order">
                 Заказать услугу
-              </a>
+              </button>
             </article>
             <article class="section-services__slide services-card swiper-slide">
               <div class="services-card__icon-wrap">
@@ -1525,9 +1525,9 @@
               <span class="services-card__price">
                 от 45 000 ₽
               </span>
-              <a href="#" class="services-card__btn btn-ghost">
+              <button class="services-card__btn btn-ghost" popupOpen="order">
                 Заказать услугу
-              </a>
+              </button>
             </article>
             <article class="section-services__slide services-card swiper-slide">
               <div class="services-card__icon-wrap">
@@ -1556,9 +1556,9 @@
               <span class="services-card__price">
                 от 45 990 ₽
               </span>
-              <a href="#" class="services-card__btn btn-ghost">
+              <button class="services-card__btn btn-ghost" popupOpen="order">
                 Заказать услугу
-              </a>
+              </button>
             </article>
           </div>
         </div>
@@ -3083,6 +3083,54 @@
 </div>
 </div>
 <!-- END Discuss popup  -->
+
+<!-- Order popup  -->
+<div class="popup" popupID="order">
+  <div class="popup__container">
+    <div class="popup__block order">
+      <div class="order__content popup__content">
+        <h3 class="order__title title">
+          Оставьте заявку
+        </h3>
+        <p class="order__text text">
+          И мы свяжемся с вами в течение 5-10 минут
+        </p>
+        <form method="POST" class="order__form standart-form popup-form" data-file="" data-thx="" formValidate_JS>
+          <input type="hidden" name="action" value="request">
+          <input type="hidden" name="form" value="Баннер заказ услуги">
+          <div class="form-container">
+            <div class="input-wrap">
+              <label for="phone" class="form-label">
+                <p class="form-text">Ваш телефон для связи</p>
+                <input type="text" name="phone" class="form-input"  phoneMask_JS required>
+              </label>
+            </div>
+            <button class="input-wrap form-btn btn" agreementControlBtn_JS>
+                <span>Отправить заявку</span>
+            </button>
+          </div>
+          <div class="form-checkbox">
+              <div agreementControl_JS class="checked">
+                  <label for="agreement"></label>
+                  <input type="checkbox" name="agreement" agreementControlCheckbox_JS checked>
+              </div>
+              <p>
+                Даю согласие на обработку моих <a href="./resources/10.2 Парадигмы.pdf" class="agreement-link" target="_blank">персональных данных</a>
+              </p>
+          </div>
+        </form>
+        <div class="popup__close" popupClose_JS>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.75 5.25L5.25 18.75" stroke="#020528" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18.75 18.75L5.25 5.25" stroke="#020528" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+    </div>
+</div>
+  <div class="popup__blur" popupClose_JS></div>
+</div>
+</div>
+<!-- END Order popup  -->
 
   <script src="js/polyfill.min.js"></script>
   <script src="js/lazyload.min.js"></script>
