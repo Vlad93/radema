@@ -1,0 +1,35 @@
+.contacts-bottom {
+  padding: 4px 15px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  display: none;
+  justify-content: space-between;
+  gap: 4px;
+  background-color: $white;
+  &__btn {
+    padding: 4px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    flex-basis: 50%;
+    text-align: left;
+    border-radius: 16px;
+    &-whatsapp {
+      background: #25d366;
+    }
+    &-icon {
+      flex: 0 0 24px;
+      height: 24px;
+    }
+  }
+  @include _767 {
+    display: flex;
+    z-index: 16;
+  }
+}

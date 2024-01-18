@@ -1,5 +1,13 @@
 .phone {
-  color: $white;
+  .header_front-page & {
+    color: $white;
+    @include _992 {
+      color: $primary;
+    }
+  }
+  &.footer__phone-wrap {
+    color: $white;
+  }
   &__working-time {
     margin-bottom: 3px;
     display: flex;

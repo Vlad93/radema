@@ -1,7 +1,9 @@
 .header {
   position: relative;
   z-index: 1;
-  color: $white;
+  &_front-page {
+    color: $white;
+  }
   &__mob {
     display: none;
     &-btn {
