@@ -56,7 +56,7 @@
       object-fit: contain
     }
     @include _992 {
-      margin-bottom: 70px;
+      margin-bottom: 30px;
       position: relative;
       bottom: auto;
       left: 0;
@@ -172,7 +172,7 @@
     width: 132px;
     flex: 0 0 132px;
     height: 132px;
-    background: url('../img/icons/adv-play.svg') no-repeat 55% center / 40px 40px,
+    background: url('../img/icons/adv-play.svg') no-repeat 55% center / 40px 43px,
                  rgba(238, 26, 36, 0.6);
                  transition: transform .3s ease;
     @include _767 {
@@ -198,7 +198,7 @@
     }
     @include interactive {
       &:hover {
-        background: url('../img/icons/adv-play.svg') no-repeat 55% center / 40px 40px,
+        background: url('../img/icons/adv-play.svg') no-repeat 55% center / 40px 43px,
                  rgba(238, 26, 36, 0.4);
         &::after {
           animation-play-state: paused;
