@@ -35,9 +35,15 @@
       width: 16px;
       height: 16px;
       fill: transparent;
-      stroke: $white;
       transition: transform .3s ease;
       & path {
+        stroke: $primary;
+        .header_front-page & {
+          stroke: $white;
+          @include _992 {
+            stroke: $primary;
+          }
+        }
         transition: stroke .3s ease;
       }
       @include _992 {

@@ -1604,14 +1604,40 @@ $(document).ready(function () {
         };
     });
 
+    function scrollAccordion() {
+      var scroll = $(window).scrollTop(),
+          headerHeight = $('.header__top').innerHeight(),
+          accordionHeight = $('.problem-solution-accordion__wrap').innerHeight(),
+          accordionOffset = $('.problem-solution-accordion__wrap').offset().top,
+          activeAccordionContent = $('.problem-solution-accordion__item.active .problem-solution-accordion__content'),
+          visibleContent = scroll + headerHeight,
+          activeAccordionContentOffsetTop = activeAccordionContent.offset().top,
+          activeAccordionContentHeight = activeAccordionContent.innerHeight();
+      if ($(window).outerWidth() > 992) {
+        if (visibleContent >= accordionOffset - 10 && visibleContent <= accordionOffset + accordionHeight - activeAccordionContentHeight + 10) {
+          activeAccordionContent.css({'top': `${visibleContent - accordionOffset + 10}px`});
+        } else if (visibleContent < accordionOffset - 10) {
+          activeAccordionContent.css({'top': `0`});
+        } else if (visibleContent >= accordionOffset + accordionHeight - activeAccordionContentHeight + 10) {
+          activeAccordionContent.css({'top': `${accordionHeight - activeAccordionContentHeight}px`});
+        }
+      } else {
+        activeAccordionContent.css({'top': `0`});
+      }
+    }
+
     $(window).on('scroll', function () {
       var scroll = $(window).scrollTop();
+
       var headerTopHeight;
       if ($(window).outerWidth() > 992) {
         headerTopHeight = $('.header__top').innerHeight();
       } else {
         headerTopHeight = $('.header__mob').innerHeight();
       }
+
+      scrollAccordion();
+
       var ratio = $(document).scrollTop() / (($(document).height() - $(window).height()) / 100);
       $('.header-progress').width(ratio + "%");
       if (scroll > $('.header').innerHeight() + 30) {
@@ -1688,10 +1714,12 @@ $(document).ready(function () {
       $(this).removeClass('active');
       $(this).removeClass('active');
     });
-    if($isOpen) {
+    if($isOpen && $(window).outerWidth() <= 992) {
+      console.log('open')
       return;
     }
     $parent.addClass('active');
+    scrollAccordion();
   }
   function clickHendler() {
     var $accContainer = $(this).closest('.problem-solution-accordion__wrap'),
@@ -1749,6 +1777,7 @@ $(document).ready(function () {
     slideToggleSection();
     problemsAccordionDestroy();
     problemsAccordionInit();
+    scrollAccordion();
   });
 
 

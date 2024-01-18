@@ -24,6 +24,9 @@
     transform: rotate(180deg);
     background: url('../img/caretDown.svg') no-repeat center / auto, linear-gradient(132deg, rgba(2, 5, 40, 0.38) -48.79%, #F85E61 57.89%), #EE1A24;
     transition: opacity .3s ease, visibility .3s ease;
+    @include _767 {
+      bottom: 60px;
+    }
     &.visible {
       opacity: 1;
       visibility: visible;

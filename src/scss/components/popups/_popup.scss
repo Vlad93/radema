@@ -51,11 +51,11 @@
     position: relative;
     background-color: #fff;
     @include _767 {
-      padding: 60px 30px 37px;
+      padding: 40px 30px 37px;
       background-size: auto 50%;
     }
     @include _576 {
-      padding: 60px 20px 37px;
+      padding: 40px 20px 37px;
       background-size: auto 40%;
     }
     &::after {
@@ -82,15 +82,22 @@
     width: 32px;
     height: 32px;
     cursor: pointer;
+    @include _767 {
+      width: 28px;
+      height: 28px;
+      right: 15px;
+    }
   }
   &__content {
     max-width: 80%;
   }
   & .title {
+    margin-top: 0;
     margin-bottom: 15px;
     color: $primary;
     @include _767 {
       margin-bottom: 10px;
+      // max-width: calc(100% - 20px);
       font-size: 26px;
     }
     &-accent {
